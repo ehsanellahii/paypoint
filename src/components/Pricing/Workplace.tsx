@@ -5,10 +5,20 @@ import { FaCheck } from 'react-icons/fa';
 import Wrapper from '../shared/Wrapper';
 import { Heading } from './Pricing';
 import { StaticData } from '@/constants/Static';
-import { useRouter } from '@/navigation'; 
+import { useRouter } from '@/navigation';
 import { getCookie, setSessionCookie } from '@/utils/cookieFunctions';
 
-const ServicesCard = ({ item }) => {
+const ServicesCard = ({
+  item,
+}: {
+  item: {
+    image: string;
+    title: string;
+    about: string;
+    bullets: any[];
+    price: number;
+  };
+}) => {
   const { image, title, about, bullets, price } = item;
   const router = useRouter();
   const handleClick = () => {
