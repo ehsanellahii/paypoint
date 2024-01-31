@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  background-color: #faf7f3;
+}
+
+.swiper-button-prev {
+  display: hidden !important;
+}
+.swiper-button-next {
+  display: hidden !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #0e1318;
+}
+.clip-path {
+  clip-path: ellipse(100% 55% at 48% 44%);
+}
+.about-us-hero {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #faf7f3 83%, #ffffff 83%);
+}
+.item-shadow {
+  box-shadow: rgb(0 0 0 / 14%) 0px 15px 50px 0px;
+}
+@font-face {
+  font-family: 'Avalon';
+  src: url('/fonts/Avalon-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avalon';
+  src: url('/fonts/Avalon-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.avalon-heading {
+  font-family: 'Avalon', sans-serif;
+  font-weight: bold; /* Adjust as needed */
+}
+
+
+
