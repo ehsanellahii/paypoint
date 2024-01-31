@@ -7,7 +7,7 @@ const Accordion = ({
   accordionList,
   arrowColor,
 }: {
-  arrowColor: string;
+  arrowColor?: string;
   accordionList: any;
 }) => {
   const t = useTranslations('Common');

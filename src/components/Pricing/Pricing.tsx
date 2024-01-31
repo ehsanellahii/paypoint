@@ -15,7 +15,7 @@ export const Heading = ({
   style = 'text-black-text',
 }: {
   text: string;
-  style: string;
+  style?: string;
 }) => {
   return (
     <h1
