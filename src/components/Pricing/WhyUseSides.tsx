@@ -4,7 +4,7 @@ import { Heading } from './Pricing';
 import Image from 'next/image';
 import { StaticData } from '@/constants/Static';
 
-const InfoCard = ({ info, value }) => {
+const InfoCard = ({ info, value }: { info: string; value: string }) => {
   return (
     <div className='w-full h-full flex flex-col items-center'>
       <h5 className='font-semibold text-base'>bis zu</h5>
