@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import Wrapper from './Wrapper';
+import Wrapper from '../Wrapper';
 import Image from 'next/image';
 import { StaticData } from '@/constants/Static';
 import { Link } from '@/navigation';

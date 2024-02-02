@@ -31,7 +31,7 @@ const ContentOnRightVideoOnLeft = ({
               preload='auto'
             />
           ) : (
-            <div className='w-full h-[20rem] md:h-full relative'>
+            <div className='w-full h-[20rem] lg:h-full relative'>
               <Image
                 src={ImageUrl || ''}
                 alt={''}

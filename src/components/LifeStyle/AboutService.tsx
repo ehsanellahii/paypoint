@@ -19,11 +19,11 @@ const AboutService = ({ headerTitle, lineOne, lineTwo, lineThree, about }: Props
         <Heading text={t('Die Unabhängigkeitserklärung für deinen Lieferservice')} />
         <p className='text-black-text text-center text-base px-4'>
           {t(
-            'Lange Lieferzeiten und eine unübersichtliche Verwaltung der Order-Kanäle haben jetzt ein Ende! Mit SIDES werden Bestellungen automatisch im'
+            ''
           )}
           {t('Gastro-Kassensystem')}
           {t(
-            'zusammengefasst Bestellungen von Webshop und App, in-House, Telefon und Lieferportalen werden anschließend direkt an den Küchenmanager weitergeleitet Auslieferungen werden automatisch in Routen gebündelt und Fahrer:innen sind via Tracking schneller erreichbar Dein Vorteil: Garantierte Auslieferung in unter 30 Minuten und bessere Kundenbewertungen!'
+            ''
           )}
         </p>
       </div>

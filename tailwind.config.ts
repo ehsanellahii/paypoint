@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
       },
+      screens: {
+        xs: '450px',
+      },
       colors: {
         main: {
           brand: '#5897CD',

@@ -1,11 +1,11 @@
 import React from 'react';
 import Hero from './Hero';
-import AboutService from './AboutService';
+import AboutService from '../shared/sections/AboutService';
 import Wrapper from '../shared/Wrapper';
 import OneSystem from './OneSystem';
 import { StaticData } from '@/constants/Static';
-import ImageOnLeftContentOnRight from '../shared/ImageContentSides/ImageOnLeftContentOnRight';
-import ImageOnRightContentOnLeft from '../shared/ImageContentSides/ImageOnRightContentOnLeft';
+import ImageOnLeftContentOnRight from '../shared/sections/ImageContentSides/ImageOnLeftContentOnRight';
+import ImageOnRightContentOnLeft from '../shared/sections/ImageContentSides/ImageOnRightContentOnLeft';
 import FAQ from './FAQ';
 
 const Restaurant = () => {

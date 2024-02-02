@@ -1,12 +1,13 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { FaCheck } from 'react-icons/fa';
+import { FaCheck, FaChevronRight } from 'react-icons/fa';
 import Wrapper from '../shared/Wrapper';
 import { Heading } from './Pricing';
 import { StaticData } from '@/constants/Static';
 import { useRouter } from '@/navigation';
 import { getCookie, setSessionCookie } from '@/utils/cookieFunctions';
+import { FaArrowRight } from 'react-icons/fa';
 
 const ServicesCard = ({
   item,
@@ -31,7 +32,7 @@ const ServicesCard = ({
       className='w-full h-full text-grey-pText flex flex-col gap-4 bg-white-main py-6 hover:scale-[1.1] hover:shadow-md'>
       <h1 className='font-bold text-2xl text-black-text text-center'>{title}</h1>
       <p className='text-center'>{about}</p>
-      <div className='w-full h-full flex flex-col md:grid md:grid-cols-[.7fr,1fr] '>
+      <div className='w-full h-full flex flex-col md:grid md:grid-cols-[.7fr,1fr,3rem] '>
         <div className='w-[10rem] h-[10rem] md:w-full md:h-full mx-auto'>
           <div className='w-full h-full relative '>
             <Image src={image} alt='' fill className='object-contain' />
@@ -50,6 +51,9 @@ const ServicesCard = ({
               </li>
             ))}
           </ul>
+        </div>
+        <div className='h-full flex justify-center items-center'>
+          <FaChevronRight size={30} />
         </div>
       </div>
       <h3 className='font-bold text-center text-[2.4rem] text-main-brand'>{price} €**</h3>

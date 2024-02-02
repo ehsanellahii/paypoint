@@ -1,19 +1,22 @@
 import React from 'react';
 import Hero from './Hero';
-import AboutService from './AboutService';
+// import AboutService from './AboutService';
 import Wrapper from '../shared/Wrapper';
 import OneSystem from './OneSystem';
 import { StaticData } from '@/constants/Static';
-import ImageOnRightContentOnLeft from '../shared/ImageContentSides/ImageOnRightContentOnLeft';
-import ImageOnLeftContentOnRight from '../shared/ImageContentSides/ImageOnLeftContentOnRight';
+import ImageOnRightContentOnLeft from '../shared/sections/ImageContentSides/ImageOnRightContentOnLeft';
+import ImageOnLeftContentOnRight from '../shared/sections/ImageContentSides/ImageOnLeftContentOnRight';
 import FAQ from './FAQ';
-
+import AboutService from '../shared/sections/AboutService';
 const LifeStyle = () => {
   return (
     <>
       <Hero />
       <Wrapper style='w-full h-full bg-white-main'>
-        <AboutService headerTitle='' lineOne='' lineTwo='' lineThree='' about='' />
+        <AboutService
+          headerTitle='Die Unabhängigkeitserklärung für deinen Lieferservice'
+          about='Lange Lieferzeiten und eine unübersichtliche Verwaltung der Order-Kanäle haben jetzt ein Ende! Mit SIDES werden Bestellungen automatisch im Gastro-Kassensystem zusammengefasst Bestellungen von Webshop und App, in-House, Telefon und Lieferportalen werden anschließend direkt an den Küchenmanager weitergeleitet Auslieferungen werden automatisch in Routen gebündelt und Fahrer:innen sind via Tracking schneller erreichbar Dein Vorteil: Garantierte Auslieferung in unter 30 Minuten und bessere Kundenbewertungen!'
+        />
         <OneSystem />
         <ImageOnRightContentOnLeft
           Header={StaticData.LifeStyle.WebShop.Header}

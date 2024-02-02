@@ -36,31 +36,20 @@ const ContentOnLeftVideoOnRight = ({
           {video ? (
             <video
               src={video}
-              className='w-full h-full object-cover'
+              className='w-full h-full sm:h-[22rem] lg:h-full object-contain'
               autoPlay
               muted
               loop
               preload='auto'
             />
           ) : (
-            <div className='w-full h-[20rem] md:h-full relative'>
-              {isGif ? (
-                <Image
-                  src={isGif}
-                  alt={''}
-                  width={120}
-                  height={120}
-                  unoptimized={true}
-                  className='w-full h-full object-contain'
-                />
-              ) : (
-                <Image
-                  src={ImageUrl || ''}
-                  alt={''}
-                  fill
-                  className='w-full h-full object-contain rounded-2xl'
-                />
-              )}
+            <div className='w-full h-[20rem] lg:h-full relative'>
+              <Image
+                src={ImageUrl || ''}
+                alt={''}
+                fill
+                className='w-full h-full object-contain rounded-2xl'
+              />
             </div>
           )}
         </article>

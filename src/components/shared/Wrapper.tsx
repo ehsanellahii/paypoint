@@ -11,7 +11,7 @@ const Wrapper = ({
 }) => {
   return (
     <section id={id} className={style}>
-      <div className='w-full h-full max-w-[1320px] mx-auto px-4 relative'>{children}</div>
+      <div className='w-full h-full max-w-[1420px] mx-auto px-4 relative'>{children}</div>
     </section>
   );
 };

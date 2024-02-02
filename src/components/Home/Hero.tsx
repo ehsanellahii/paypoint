@@ -60,7 +60,7 @@ const Hero = () => {
               <span className='bg-red-cool p-1 rounded-lg text-white-main'>NEU</span>{' '}
               {t('HeroTextTwo')}
             </p>
-            <div className='w-full h-full flex flex-col gap-4 md:px-4'>
+            <div className='w-full h-full md:max-w-full mx-auto flex flex-col sm:flex-row md:flex-col gap-4 md:px-4'>
               <Button
                 className='rounded-3xl text-xl bg-blue-light hover:bg-blue-dark text-white-main px-4 py-6 font-bold flex justify-center w-full outline-none border-none focus:outline-none focus:border-none'
                 type='button'>
@@ -90,8 +90,8 @@ const Hero = () => {
             </div>
           </article>
           {/* Right Side */}
-          <article className='w-full h-full md:py-12 md:px-8'>
-            <div className='relative w-full h-[13rem] md:h-full'>
+          <article className='w-full h-full md:py-12 sm:w-auto sm:px-4 md:px-8'>
+            <div className='relative w-full h-[13rem] xs:h-[18rem] sm:h-[21rem] md:h-full '>
               <Image
                 src='/Assets/Home/your_orders.png'
                 alt=''

@@ -1,7 +1,7 @@
 import { Roboto } from 'next/font/google';
 import './globals.css';
-import Navigation from '@/components/shared/Navigation/Navigation';
-import Footer from '@/components/shared/Footer';
+import Navigation from '@/components/shared/layout/Navigation';
+import Footer from '@/components/shared/layout/Footer';
 import {
   useLocale,
   useMessages,
@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const locale = useLocale()
+  const locale = useLocale();
   const messages = useMessages();
   // Show a 404 error if the user requests an unknown locale
   if (params.locale !== locale) {
