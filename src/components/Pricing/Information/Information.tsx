@@ -252,8 +252,8 @@ const Information = () => {
                     <FaRegCheckCircle size={60} />
                   </span>
                   <p className='w-full h-full text-xl'>
-                    Thanks for your demo request! We&rsquo;ll respond within one business
-                    day. Stay tuned!
+                    We have received your request. We will get back to you within one
+                    working day!
                   </p>
                   <Button
                     color='primary'

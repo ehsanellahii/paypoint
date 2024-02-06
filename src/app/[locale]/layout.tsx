@@ -11,6 +11,7 @@ import {
 import { notFound } from 'next/navigation';
 import { Providers } from './providers';
 import { locales } from '@/navigation';
+import { Metadata } from 'next';
 
 const roboto = Roboto({
   weight: ['100', '300', '400', '500', '700', '900'],
@@ -18,9 +19,10 @@ const roboto = Roboto({
   subsets: ['latin'],
 });
 
-export const metadata = {
-  title: 'Payout',
-  description: 'Method to take out transactions.',
+export const metadata: Metadata = {
+  title: { default: 'Paypoint', template: '%s | Paypoint' },
+  description:
+    'No manual management of orders.NEW Integrated automations.NEU Integrated automations.',
 };
 
 export default function RootLayout({

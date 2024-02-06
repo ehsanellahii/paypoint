@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Wrapper from '../shared/Wrapper';
 import Image from 'next/image';
