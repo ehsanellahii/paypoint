@@ -21,6 +21,7 @@ const ServicesCard = ({
     price: number;
   };
 }) => {
+  const t  = useTranslations('Pricing');
   const { image, title, about, bullets, price } = item;
   const router = useRouter();
   const handleClick = () => {
@@ -30,28 +31,33 @@ const ServicesCard = ({
   return (
     <article
       onClick={handleClick}
-      className={`w-full h-[25rem] text-grey-pText flex flex-col space-y-between bg-white-main py-6 hover:scale-[1.1] hover:shadow-md`}>
-      <h1 className='font-bold text-[2.3rem] text-black-text text-center'>{title}</h1>
-      <div className='w-full h-full flex flex-col md:grid md:grid-cols-[.7fr,1fr,3rem] gap-2'>
-        <div className='w-[10rem] h-[10rem] md:w-full md:h-full mx-auto'>
+      className={`w-full h-full lg:h-[25rem] text-grey-pText flex flex-col space-y-between bg-white-main py-6 hover:border hover:border-main-brand hover:shadow-md`}>
+      <h1 className='font-bold text-[2.3rem] text-black-text text-center'>{t(title)}</h1>
+      <div className='w-full h-full flex flex-col items-center md:grid md:grid-cols-[.7fr,1.4fr] gap-2'>
+        <div
+          className={`w-[10rem] h-[10rem] md:w-full md:h-full mx-auto ${
+            image === '/Assets/Home/dashboard.png' ? 'px-4' : ''
+          }`}>
           <div className='w-full h-full relative '>
             <Image src={image} alt='' fill className='object-contain' />
           </div>
         </div>
-        <ul className='w-full h-full flex flex-col justify-center gap-1'>
-          {bullets.map((itm, idx) => (
-            <li
-              key={idx}
-              className='bg-white-main text-grey-pText flex gap-3 items-center'>
-              <span className='text-main-brand text-xl font-extrabold'>
-                <FaCheck />
-              </span>
-              {itm}
-            </li>
-          ))}
-        </ul>
-        <div className='h-full flex justify-center items-center'>
-          <FaChevronRight size={30} />
+        <div className='w-full h-full flex justify-between px-4 sm:px-6 md:px-0'>
+          <ul className='w-full h-full flex flex-col justify-center  gap-1'>
+            {bullets.map((itm, idx) => (
+              <li
+                key={idx}
+                className='bg-white-main text-grey-pText flex gap-3 items-center'>
+                <span className='text-main-brand text-xl font-extrabold'>
+                  <FaCheck />
+                </span>
+                {t(itm)}
+              </li>
+            ))}
+          </ul>
+          <div className='h-full flex justify-center items-center'>
+            <FaChevronRight size={30} />
+          </div>
         </div>
       </div>
       <h3 className='font-bold text-center text-[2.4rem] text-main-brand'>{price}€</h3>
@@ -65,17 +71,17 @@ const Workplace = () => {
     <Wrapper style='w-full h-full my-8 bg-white-lightOrange'>
       <section className='w-full h-full flex flex-col gap-4'>
         <Heading
-          text='Baue leistungsstarke All-in-One Workspaces.'
+          text={t('Baue leistungsstarke All-in-One Workspaces')}
           style='text-black-main'
         />
-        <div className='w-full h-full grid md:grid-cols-2 gap-12 my-8'>
+        <div className='w-full h-full grid lg:grid-cols-2 gap-12 my-8'>
           {StaticData.Pricing.Services.map((itm, idx) => (
             <ServicesCard key={idx} item={itm} />
           ))}
         </div>
         <p className='text-center'>
-          **Die ausgewiesenen
-          <span className='font-bold'> Preise sind monatliche Nettopreise</span> in Euro
+          **{t("Die ausgewiesenen")}
+          <span className='font-bold'> {t("Preise sind monatliche Nettopreise")}</span> in Euro
         </p>
       </section>
     </Wrapper>

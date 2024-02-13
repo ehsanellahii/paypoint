@@ -1,12 +1,9 @@
 'use client';
 import React from 'react';
-import Wrapper from '../shared/Wrapper';
-import Image from 'next/image';
 
 import { StaticData } from '@/constants/Static';
 import Accordion from '../shared/Accordion/Accordion';
 import Workplace from './Workplace';
-import SavingInformation from './SavingInformation';
 import Calculation from './Calculation';
 import WhyUseSides from './WhyUseSides';
 import FAQ from './FAQ';
@@ -30,10 +27,9 @@ const Pricing = () => {
   return (
     <>
       <Workplace />
-      <SavingInformation />
       <Calculation />
       <WhyUseSides />
-      {/* <FAQ /> */}
+      <FAQ />
     </>
   );
 };

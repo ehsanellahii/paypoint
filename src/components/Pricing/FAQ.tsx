@@ -3,13 +3,15 @@ import Wrapper from '../shared/Wrapper';
 import { Heading } from './Pricing';
 import Accordion from '../shared/Accordion/Accordion';
 import { StaticData } from '@/constants/Static';
+import { useTranslations } from 'next-intl';
 
 const FAQ = () => {
+  const t = useTranslations("Pricing")
   return (
     <Wrapper style='bg-white-lightOrange py-8'>
-      <Heading text='Häufige gestellte Fragen' />
+      <Heading text={t('Häufige gestellte Fragen')} />
       <div className='w-full h-full md:max-w-[80%] mx-auto py-8'>
-        <Accordion accordionList={StaticData.Pricing.FAQ} />
+        <Accordion accordionList={StaticData.Resutaurant.FAQ} />
       </div>
     </Wrapper>
   );

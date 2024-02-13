@@ -102,7 +102,7 @@ export const StaticData = {
       {
         title: 'Kassensystem POS',
         about: 'Web-Shop mit.de/.at Domain',
-        image: '/Assets/Pricing/web.webp',
+        image: '/Assets/Home/dashboard.png',
         bullets: [
           '1x Schnittstelle',
           '100% Finanzamtkonform',
@@ -143,7 +143,7 @@ export const StaticData = {
       {
         title: 'Paypoint',
         about: 'Alternative Bestellannahme-Möglichkeit',
-        image: '/Assets/Pricing/ordermanager.webp',
+        image: '/Assets/Restaurant/payments.png',
         bullets: [
           'Responsive Design',
           'HTTPS Verschlüsselung',
@@ -221,6 +221,30 @@ export const StaticData = {
         Name: 'Pay Later',
         ImageURL: '/Assets/Pricing/pay-later.png',
       },
+    ],
+    Bestellungen: [
+      { label: '50 Bestellungen pro Monat', value: '50' },
+      { label: '100 Bestellungen pro Monat', value: '100' },
+      { label: '200 Bestellungen pro Monat', value: '200' },
+      { label: '300 Bestellungen pro Monat', value: '300' },
+      { label: '400 Bestellungen pro Monat', value: '400' },
+      { label: '500 Bestellungen pro Monat', value: '500' },
+      { label: '700 Bestellungen pro Monat', value: '700' },
+      { label: '1000 Bestellungen pro Monat', value: '1000' },
+      { label: '1500 Bestellungen pro Monat', value: '1500' },
+    ],
+    Bestellwert: [
+      { label: 'Bestellwert 25€', value: '25' },
+      { label: 'Bestellwert 30€', value: '30' },
+      { label: 'Bestellwert 35€', value: '35' },
+      { label: 'Bestellwert 40€', value: '40' },
+      { label: 'Bestellwert 45€', value: '45' },
+      { label: 'Bestellwert 50€', value: '50' },
+      { label: 'Bestellwert 60€', value: '60' },
+      { label: 'Bestellwert 70€', value: '70' },
+      { label: 'Bestellwert 80€', value: '80' },
+      { label: 'Bestellwert 90€', value: '90' },
+      { label: 'Bestellwert 100€', value: '100' },
     ],
   },
   AboutUs: {

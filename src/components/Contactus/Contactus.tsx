@@ -1,24 +1,20 @@
 'use client';
 import Wrapper from '@/components/shared/Wrapper';
 import React, { ChangeEvent, FormEvent, useState } from 'react';
-import { CommonApi } from '@/utils/firebase/api/Common';
-import { Button, Input, useDisclosure } from '@nextui-org/react';
+import { Button, Input, } from '@nextui-org/react';
 import { Select, SelectItem } from '@nextui-org/react';
 import { Autocomplete, AutocompleteItem } from '@nextui-org/react';
-import Countries from '../../../constants/Countries.json';
-import { serverTimestamp } from 'firebase/firestore';
+import Countries from '../../constants/Countries.json';
 import { useTranslations } from 'next-intl';
 import {
   Modal,
   ModalContent,
-  ModalHeader,
   ModalBody,
-  ModalFooter,
 } from '@nextui-org/react';
 import { FaRegCheckCircle } from 'react-icons/fa';
 import { useRouter } from '@/navigation';
 
-const Information = () => {
+const Contactus = () => {
   const { push } = useRouter();
   const [openPopup, setOpenPopUp] = useState<boolean>(false);
   console.log(openPopup);
@@ -271,4 +267,4 @@ const Information = () => {
   );
 };
 
-export default Information;
+export default Contactus;
