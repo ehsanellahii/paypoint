@@ -8,6 +8,7 @@ import { StaticData } from '@/constants/Static';
 import { useRouter } from '@/navigation';
 import { getCookie, setSessionCookie } from '@/utils/cookieFunctions';
 import { FaArrowRight } from 'react-icons/fa';
+import { useTranslations } from 'next-intl';
 
 const ServicesCard = ({
   item,
@@ -29,39 +30,37 @@ const ServicesCard = ({
   return (
     <article
       onClick={handleClick}
-      className='w-full h-full text-grey-pText flex flex-col gap-4 bg-white-main py-6 hover:scale-[1.1] hover:shadow-md'>
-      <h1 className='font-bold text-2xl text-black-text text-center'>{title}</h1>
-      <p className='text-center'>{about}</p>
-      <div className='w-full h-full flex flex-col md:grid md:grid-cols-[.7fr,1fr,3rem] '>
+      className={`w-full h-[25rem] text-grey-pText flex flex-col space-y-between bg-white-main py-6 hover:scale-[1.1] hover:shadow-md`}>
+      <h1 className='font-bold text-[2.3rem] text-black-text text-center'>{title}</h1>
+      <div className='w-full h-full flex flex-col md:grid md:grid-cols-[.7fr,1fr,3rem] gap-2'>
         <div className='w-[10rem] h-[10rem] md:w-full md:h-full mx-auto'>
           <div className='w-full h-full relative '>
             <Image src={image} alt='' fill className='object-contain' />
           </div>
         </div>
-        <div>
-          <ul className='w-full h-full flex flex-col gap-0'>
-            {bullets.map((itm, idx) => (
-              <li
-                key={idx}
-                className='bg-white-main text-grey-pText p-2 flex gap-3 items-center'>
-                <span className='text-main-brand text-xl font-extrabold'>
-                  <FaCheck />
-                </span>
-                {itm}
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className='w-full h-full flex flex-col justify-center gap-1'>
+          {bullets.map((itm, idx) => (
+            <li
+              key={idx}
+              className='bg-white-main text-grey-pText flex gap-3 items-center'>
+              <span className='text-main-brand text-xl font-extrabold'>
+                <FaCheck />
+              </span>
+              {itm}
+            </li>
+          ))}
+        </ul>
         <div className='h-full flex justify-center items-center'>
           <FaChevronRight size={30} />
         </div>
       </div>
-      <h3 className='font-bold text-center text-[2.4rem] text-main-brand'>{price} €**</h3>
+      <h3 className='font-bold text-center text-[2.4rem] text-main-brand'>{price}€</h3>
     </article>
   );
 };
 
 const Workplace = () => {
+  const t = useTranslations('Pricing');
   return (
     <Wrapper style='w-full h-full my-8 bg-white-lightOrange'>
       <section className='w-full h-full flex flex-col gap-4'>
@@ -76,7 +75,7 @@ const Workplace = () => {
         </div>
         <p className='text-center'>
           **Die ausgewiesenen
-          <span className='font-bold'>Preise sind monatliche Nettopreise</span> in Euro
+          <span className='font-bold'> Preise sind monatliche Nettopreise</span> in Euro
         </p>
       </section>
     </Wrapper>

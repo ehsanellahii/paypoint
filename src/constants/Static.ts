@@ -58,17 +58,16 @@ export const StaticData = {
     ],
     Testimonials: [
       {
-        image: '/Assets/Home/Reviews/Review-1.jpg',
-        name: 'Justus Morisse',
+        image: '/Assets/Home/Reviews/Review-1.jpeg',
+        name: 'Sebastian Belka',
         designation: 'Head of Logistics Platform, everstox',
-        testimonial: `"Tape has simplified our project and product management processes, so we no longer have to switch between spreadsheets, email, and other tools. It's great how easily we can track and manage all our tasks - from the very beginning to the end."`,
+        testimonial: 'TestimonialOne',
       },
       {
-        image: '/Assets/Home/Reviews/Review-2.jpg',
-        name: 'Martin Niebuhr',
-        designation: 'CEO, OCD Land',
-        testimonial: `
-        "Tape has become a fundamental part of how we work. Using Tape, we have been able to create clear workflows for content production, identify bottlenecks early on, and optimize content creation in the long run. The Tape offers a compelling example of how even powerful and high-performance software can be easy to use."`,
+        image: '/Assets/Home/Reviews/Review-2.jpeg',
+        name: 'Marvin Thiel',
+        designation: 'CEO, Burgerbars GmbH',
+        testimonial: 'TestimonialTwo',
       },
     ],
   },
@@ -101,52 +100,57 @@ export const StaticData = {
   Pricing: {
     Services: [
       {
-        title: 'Web-Shop',
+        title: 'Kassensystem POS',
         about: 'Web-Shop mit.de/.at Domain',
         image: '/Assets/Pricing/web.webp',
         bullets: [
-          'Responsive Design',
-          'HTTPS Verschlüsselung',
-          'Modernes Design',
-          'Google optimiert',
+          '1x Schnittstelle',
+          '100% Finanzamtkonform',
+          'Kostenloser 24/7 Support',
+          'Vollständiges Kassensystem',
         ],
-        price: 119,
+        price: 49,
       },
       {
-        title: 'Web und App-Shop',
+        title: 'Webshop und App Shop',
         about: 'als Kombi Paket',
         image: '/Assets/Pricing/app.webp',
         bullets: [
           'Responsive Design',
           'HTTPS Verschlüsselung',
           'Modernes Design',
+          '1x Schnittstelle',
           'Google optimiert',
         ],
-        price: 229,
+        price: 169,
       },
       {
-        title: 'Web-Shop und Cloud-POS',
+        title: 'Kassensystem, Web und AppShop',
         about: 'als Kombi Paket',
         image: '/Assets/Pricing/pos.webp',
+        bullets: [
+          'Responsive Design',
+          '100% Finanzamtkonform',
+          'HTTPS Verschlüsselung',
+          'Modernes Design',
+          'Google optimiert',
+          'Vollständiges Kassensystem',
+          'Einfache Buchhaltung',
+          'Kostenloser 24/7 Support',
+        ],
+        price: 199,
+      },
+      {
+        title: 'Paypoint',
+        about: 'Alternative Bestellannahme-Möglichkeit',
+        image: '/Assets/Pricing/ordermanager.webp',
         bullets: [
           'Responsive Design',
           'HTTPS Verschlüsselung',
           'Modernes Design',
           'Google optimiert',
-          'Einfache Buchhaltung',
         ],
-        price: 208,
-      },
-      {
-        title: 'Order Manager',
-        about: 'Alternative Bestellannahme-Möglichkeit',
-        image: '/Assets/Pricing/ordermanager.webp',
-        bullets: [
-          'SIM-Karte oder WLAN',
-          'Touchscreen mit Farbdisplay',
-          'Unterstützung per Fernwartung',
-        ],
-        price: 299,
+        price: 149,
       },
     ],
     WhyCustomerUseUs: [
@@ -222,34 +226,46 @@ export const StaticData = {
   AboutUs: {
     TeamMembers: [
       {
-        image: '/Assets/AboutUs/TeamMembers/Stefan.png',
-        name: 'Stefan Eschenbach',
-        designation: 'CEO & Co-Founder',
-        linkedinProfileUrl: '#',
+        image: '/Assets/AboutUs/TeamMembers/team-1.jpeg',
+        name: 'Timur TÜREL',
+        designation: 'Geschäftsführer',
+        description:
+          'Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen',
       },
       {
-        image: '/Assets/AboutUs/TeamMembers/Leo.png',
-        name: 'Leonhard Rottmeir',
-        designation: 'CPO & Co-Founder',
-        linkedinProfileUrl: '#',
+        image: '/Assets/AboutUs/TeamMembers/team-2.jpeg',
+        name: 'Timur TÜREL',
+        designation: 'Geschäftsführer',
+        description:
+          'Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen',
       },
       {
-        image: '/Assets/AboutUs/TeamMembers/Ben.png',
-        name: 'Benjamin Assadsoliman',
-        designation: 'CTO & Co-Founder',
-        linkedinProfileUrl: '#',
+        image: '/Assets/AboutUs/TeamMembers/team-1.jpeg',
+        name: 'Timur TÜREL',
+        designation: 'Geschäftsführer',
+        description:
+          'Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen',
       },
       {
-        image: '/Assets/AboutUs/TeamMembers/Tim.png',
-        name: 'Tim Schmidt',
-        designation: 'CTO & Co-Founder',
-        linkedinProfileUrl: '#',
+        image: '/Assets/AboutUs/TeamMembers/team-1.jpeg',
+        name: 'Timur TÜREL',
+        designation: 'Geschäftsführer',
+        description:
+          'Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen',
       },
       {
-        image: '/Assets/AboutUs/TeamMembers/Felix.png',
-        name: 'Felix Matschilles',
-        designation: 'Software Engineer & Chef Cook',
-        linkedinProfileUrl: '#',
+        image: '/Assets/AboutUs/TeamMembers/team-1.jpeg',
+        name: 'Timur TÜREL',
+        designation: 'Geschäftsführer',
+        description:
+          'Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen',
+      },
+      {
+        image: '/Assets/AboutUs/TeamMembers/team-1.jpeg',
+        name: 'Timur TÜREL',
+        designation: 'Geschäftsführer',
+        description:
+          'Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen',
       },
     ],
   },

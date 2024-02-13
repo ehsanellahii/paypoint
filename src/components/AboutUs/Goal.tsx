@@ -1,18 +1,18 @@
 import React from 'react';
 import Wrapper from '../shared/Wrapper';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const Goal = () => {
+  const t = useTranslations('Aboutus');
+
   return (
     <Wrapper style='w-full h-full py-8 md:py-12 bg-white-main'>
-      <article className='w-full h-full grid md:grid-cols-[30fr,70fr]'>
+      <article className='w-full h-full grid md:grid-cols-[30fr,70fr] md:max-w-[85%] lg:max-w-[85%] mx-auto'>
         <div className='w-full h-full '>
-          <h1 className='font-bold text-[2.5rem]'>Unser Ziel</h1>
+          <h1 className='font-bold text-[2.5rem]'>{t("Unser Ziel")}</h1>
           <p className='text-start text-black-text text-lg'>
-            Mit Tape wollen wir zu der #1 Low-Code Business-Plattform werden. Wir wollen
-            nicht nur mit innovativen Funktionen und moderner Technologie überzeugen,
-            sondern es mehr und mehr Menschen ermöglichen ihre eigenen leistungsstarken
-            und einzigartigen Business-Lösungen zu bauen.
+            {t("Unser Ziel ist es, Ihr Geschäft mit PayPoint zu unterstützen, indem wir Ihnen eine umfassende Kassenlösung bieten, die nicht nur benutzerfreundlich ist, sondern auch leistungsstarke Funktionen bietet, um Ihre betrieblichen Abläufe zu optimieren und Ihren Geschäftserfolg zu steigern")}
           </p>
         </div>
         <div className='w-full h-full flex justify-center items-center'>
@@ -21,7 +21,7 @@ const Goal = () => {
               src='/Assets/AboutUs/quote_change.svg'
               alt='We believe that change is the only constant'
               fill
-              className='object-cover'
+              className=''
             />
           </div>
         </div>

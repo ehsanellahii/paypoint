@@ -23,9 +23,6 @@ export const metadata: Metadata = {
   title: { default: 'Paypoint', template: '%s | Paypoint' },
   description:
     'No manual management of orders.NEW Integrated automations.NEU Integrated automations.',
-  openGraph: {
-    url: '/opengraph-image.png',
-  },
 };
 
 export default function RootLayout({

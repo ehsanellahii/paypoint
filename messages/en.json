@@ -38,7 +38,10 @@
     "Alles im Überblick Genau das was du willst": "Everything at a glance. Exactly what you want.",
     "Das System bündelt alle Bestellungen der Filialen automatisch, und zeigt sie in einer Übersicht an, inklusive Tagesumsatz, Arbeitszeiten der Mitarbeiter:innen uvm": "The system automatically bundles all orders from the branches and displays them in an overview, including daily sales, employee working hours and much more.",
     "Real-Time Tracking Der Lieferungen": "Real-time tracking of deliveries.",
-    "Schnellere Auftragsvergabe über die Fahrer-App für Fahrer:innen in der Nähe Lieferung in unter 30 Minuten dank automatischer TourenplanungEBIKE DELIVERY": "Faster order placement via the driver app for nearby drivers. Delivery in under 30 minutes thanks to automatic route planning.EBIKE DELIVERY"
+    "Schnellere Auftragsvergabe über die Fahrer-App für Fahrer:innen in der Nähe Lieferung in unter 30 Minuten dank automatischer TourenplanungEBIKE DELIVERY": "Faster order placement via the driver app for nearby drivers. Delivery in under 30 minutes thanks to automatic route planning.EBIKE DELIVERY",
+    "Kundenstimmen": "Customer Testimonials",
+    "TestimonialOne": "PayPoint exceeded my expectations! The user interface is intuitive and easy to use. The integration with my store was seamless, and I particularly appreciate the extensive reporting features that help me keep track of my sales.",
+    "TestimonialTwo": "PayPoint is a reliable POS system that has helped my small business increase sales. It offers basic features at a reasonable price and has proven to be a good investment."
   },
   "Footer": {
     "Begleite und gestalte die Reise von Payout": "Accompany and shape Paypoint's journey.",
@@ -175,5 +178,24 @@
     "Delivery service": "Delivery service",
     "Supermarket": "Supermarket",
     "Kiosk": "Kiosk"
+  },
+  "Aboutus": {
+    "Wer wir sind?": "Who we are?",
+    "Wir sind": "We are",
+    "Wir packen Dinge an und präsentieren Lösungen Wir lieben Innovationen,glauben an das Unmögliche und stellen unsere Community an erste Stelle": "We tackle things and present solutions. We love innovations, believe in the impossible, and prioritize our community.",
+    "Unsere Geschichte": "Our History",
+    "Unser Kassensystem, PayPoint, ist eine umfassende Lösung für Ihr Unternehmen, die darauf abzielt, den Zahlungsprozess zu optimieren und die Geschäftseffizienz zu steigern Durch seine benutzerfreundliche Oberfläche ermöglicht es eine einfache Abwicklung von Transaktionen und bietet gleichzeitig leistungsstarke Funktionen für die Verfolgung von Verkäufen und die Verwaltung des Inventars": "Our cash register system, PayPoint, is a comprehensive solution for your business, aiming to optimize the payment process and increase business efficiency. Its user-friendly interface allows for easy transaction processing, while providing powerful features for sales tracking and inventory management.",
+    "Diese Kombination aus Benutzerfreundlichkeit und Funktionalität macht PayPoint zu einem unverzichtbaren Werkzeug für Geschäftsleute, die ihre Abläufe verbessern möchten Mit PayPoint können Sie sich von komplizierten Kassenprozessen verabschieden und ein effizienteres, produktiveres Geschäftsumfeld schaffen": "This combination of user-friendliness and functionality makes PayPoint an indispensable tool for business people looking to improve their operations. With PayPoint, you can say goodbye to complicated cash register processes and create a more efficient, productive business environment.",
+    "Entdecken Sie, wie PayPoint Ihr Unternehmen revolutionieren kann und Ihnen dabei hilft, Zeit zu sparen und Ressourcen effektiver einzusetzen Von kleinen Unternehmen bis hin zu großen Einzelhändlern bietet PayPoint eine maßgeschneiderte Lösung für Ihre spezifischen Bedürfnisse und trägt dazu bei, Ihren Geschäftserfolg zu maximieren": "Discover how PayPoint can revolutionize your business and help you save time and use resources more effectively. From small businesses to large retailers, PayPoint offers a tailored solution for your specific needs, contributing to maximizing your business success.",
+    "Unser Ziel": "Our Goal",
+    "Unser Ziel ist es, Ihr Geschäft mit PayPoint zu unterstützen, indem wir Ihnen eine umfassende Kassenlösung bieten, die nicht nur benutzerfreundlich ist, sondern auch leistungsstarke Funktionen bietet, um Ihre betrieblichen Abläufe zu optimieren und Ihren Geschäftserfolg zu steigern": "Our goal is to support your business with PayPoint by providing a comprehensive cash register solution that is not only user-friendly but also offers powerful features to optimize your operational processes and increase your business success.",
+    "Ein Team von begeisterten Unternehmern und Software Freaks": "A team of enthusiastic entrepreneurs and software freaks.",
+    "Unabhängig von anderen Unternehmen oder technischen Vorgaben": "Independent of other companies or technical specifications.",
+    "Und Du…?": "And You...?",
+    "Wir suchen kluge Köpfe": "We are looking for smart minds",
+    "Was wäre eine ständig wachsende Firma ohne Zuwachs? Wenn Du eine neue Herausforderung suchst, können wir Dir vielleicht helfen": "What would a constantly growing company be without growth? If you are looking for a new challenge, we might be able to help you.",
+    "Zim Kontaktformular": "To the contact form",
+    "Geschäftsführer": "CEO",
+    "Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen": "Timur circulates as an all-knowing GastroSoft visionary between the developer's desk, customers, and project management. Some say he sees customer wishes before they arise."
   }
 }

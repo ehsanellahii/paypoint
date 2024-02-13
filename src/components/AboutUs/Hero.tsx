@@ -1,27 +1,28 @@
 import React from 'react';
 import Wrapper from '../shared/Wrapper';
+import { useTranslations } from 'next-intl';
 
 const Hero = () => {
+  const t = useTranslations('Aboutus');
   return (
-    <Wrapper style='w-full h-full bg-white-lightOrange  pt-8 md:pt-16'>
+    <Wrapper style='w-full h-full bg-white-lightOrange about-us-hero  pt-8 md:pt-16'>
       {/* Left Side */}
-      <div className='w-full h-full about-us-hero flex flex-col md:flex-row gap-4 '>
-        <article className='w-full md:max-w-[40%] h-full flex flex-col justify-center items-center'>
-          <div className='w-full h-full'>
-            <h1 className='font-bold text-[4rem] lg:text-[6rem] leading-[4rem] lg:leading-[6rem] py-4'>
-              <span>Wir sind</span> <span className='text-blue-dark'>Paypoint.</span>
-            </h1>
-            <p className='text-base md:text-2xl text-black-text'>
-              Wir packen Dinge an und präsentieren Lösungen. Wir lieben Innovationen,
-              glauben an das Unmögliche und stellen unsere Community an erste Stelle.
-            </p>
-          </div>
-        </article>
+      <div className='w-full h-full  flex flex-col md:flex-row gap-4'>
+        <div className='w-full md:max-w-[40%] h-full  flex flex-col justify-between gap-4 lg:gap-16 lg:pt-20'>
+          <h1 className='font-bold md:h-full text-[4rem] lg:text-[5rem] leading-[5rem] lg:leading-[5rem]'>
+            <span>{t('Wir sind')}</span> <span className='text-blue-dark'>Paypoint.</span>
+          </h1>
+          <p className='text-base md:h-full md:text-lg text-black-text'>
+            {t(
+              'Wir packen Dinge an und präsentieren Lösungen Wir lieben Innovationen,glauben an das Unmögliche und stellen unsere Community an erste Stelle'
+            )}
+          </p>
+        </div>
         {/* Right Side Video one */}
-        <article className='h-full  w-full  md:max-w-[60%] border-none rounded-lg outline-none shadow-video'>
+        <article className='h-full w-full  md:max-w-[60%] border-none rounded-lg outline-none '>
           <video
             src={'/Assets/Home/DummyVideo.mp4'}
-            className='w-full h-full max-w-full object-cover border-none outline-none leading-3 rounded-xl'
+            className='w-auto h-full max-h-[30rem] object-cover border-none outline-none leading-3 rounded-xl shadow-video'
             autoPlay
             muted
             loop

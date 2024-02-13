@@ -3,13 +3,14 @@ import React, { useState } from 'react';
 import Wrapper from '../Wrapper';
 import Image from 'next/image';
 import { StaticData } from '@/constants/Static';
-import { Link } from '@/navigation';
+import { Link, useRouter } from '@/navigation';
 import { IoGlobe } from 'react-icons/io5';
 import { useTranslations } from 'next-intl';
 import { Button } from '@nextui-org/react';
 
 const Footer = () => {
   const t = useTranslations('Footer');
+  const router = useRouter();
   return (
     <section className='w-full h-full flex flex-col gap-2 my-4'>
       <section className='w-full h-full py-10 bg-blue-dark clip-path'>
@@ -29,6 +30,11 @@ const Footer = () => {
           </h1>
           <div className='flex flex-col md:flex-row items-center gap-3 justify-center max-w-[90%] mx-auto md:max-w-[50%]'>
             <Button
+              onClick={() =>
+                router.push(
+                  'https://forms.gastrosoft.de/gastrosoftgmbh/form/UnverbindlichesAngebotfrDeinGastroSoftKassensystem/formperma/DJVmlx_F57t2rzGQnzLown0G26T_Yfc9O7QaO7lSzrw'
+                )
+              }
               className='w-full text-lg md:text-xl font-bold bg-white-main text-black-text py-6 px-6 rounded-[4rem]'
               type='button'>
               {t('Kostenlos testen')}

@@ -1,34 +1,29 @@
 import React from 'react';
 import Wrapper from '../shared/Wrapper';
 import Heading from '../shared/Heading/Heading';
+import { useTranslations } from 'next-intl';
 
 const History = () => {
+  const t = useTranslations('Aboutus');
   return (
     <Wrapper style='bg-white-main py-8 md:py-16'>
       {/* History */}
       <article className='w-full h-full flex flex-col justify-center items-center gap-3 px-4 py-8 md:py-12  '>
-        <Heading text='Unsere Geschichte' />
-        <p className='text-center text-xl text-black-text mt-4'>
-          Plattformen, die es Menschen ermöglichen, ihr gesamtes Business abzubilden und
-          alle ihre Arbeitsabläufe zu digitalisieren, waren für uns schon immer etwas
-          Magisches.
+        <h1 className='text-center text-3xl font-black'>{t('Unsere Geschichte')}</h1>
+        <p className='text-center text-base text-black-text mt-4'>
+          {t(
+            'Unser Kassensystem, PayPoint, ist eine umfassende Lösung für Ihr Unternehmen, die darauf abzielt, den Zahlungsprozess zu optimieren und die Geschäftseffizienz zu steigern Durch seine benutzerfreundliche Oberfläche ermöglicht es eine einfache Abwicklung von Transaktionen und bietet gleichzeitig leistungsstarke Funktionen für die Verfolgung von Verkäufen und die Verwaltung des Inventars'
+          )}
         </p>
-        <p className='text-center text-xl text-black-text'>
-          Im heutigen No-Code/Low-Code Markt sind leistungsstarke Plattformen mit einer
-          starken generischen Datenbank, einem brillanten App-Creator, vielen
-          verschiedenen Feldtypen und übersichtlichen Datensätzen mit unterschiedlichen
-          Ansichtsoptionen eher selten zu finden.
+        <p className='text-center text-base text-black-text'>
+          {t(
+            'Diese Kombination aus Benutzerfreundlichkeit und Funktionalität macht PayPoint zu einem unverzichtbaren Werkzeug für Geschäftsleute, die ihre Abläufe verbessern möchten Mit PayPoint können Sie sich von komplizierten Kassenprozessen verabschieden und ein effizienteres, produktiveres Geschäftsumfeld schaffen'
+          )}
         </p>
-        <p className='text-center text-xl text-black-text'>
-          Eine Plattform zu finden, die eine innovative Technologie und eine moderne
-          Schnittstelle mit einem solchen Kraftpaket kombiniert, ist scheinbar unmöglich.
-          Deshalb haben wir angefangen, das Unmögliche zu bauen
-        </p>
-        <p className='text-center text-xl text-black-text'>
-          Nachdem wir die größten technischen Herausforderungen gemeistert haben, ist es
-          Zeit durchzustarten. Wir wollen zur #1 Low-Code-Business-Plattform werden und es
-          unserer Community ermöglichen zu noch besseren “Buildern” zu werden. Mit
-          innovativer Technologie und einem modernen User Interface.
+        <p className='text-center text-base text-black-text'>
+          {t(
+            'Entdecken Sie, wie PayPoint Ihr Unternehmen revolutionieren kann und Ihnen dabei hilft, Zeit zu sparen und Ressourcen effektiver einzusetzen Von kleinen Unternehmen bis hin zu großen Einzelhändlern bietet PayPoint eine maßgeschneiderte Lösung für Ihre spezifischen Bedürfnisse und trägt dazu bei, Ihren Geschäftserfolg zu maximieren'
+          )}
         </p>
       </article>
     </Wrapper>

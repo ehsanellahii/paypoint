@@ -13,7 +13,7 @@ const AboutUs = () => {
       <History />
       <Goal />
       <WhoAreWe />
-      <Life />
+      {/* <Life /> */}
     </>
   );
 };

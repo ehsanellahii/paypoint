@@ -38,7 +38,10 @@
     "Alles im Überblick Genau das was du willst": "Alles im Überblick. Genau das was du willst.",
     "Das System bündelt alle Bestellungen der Filialen automatisch, und zeigt sie in einer Übersicht an, inklusive Tagesumsatz, Arbeitszeiten der Mitarbeiter:innen uvm": "Das System bündelt alle Bestellungen der Filialen automatisch, und zeigt sie in einer Übersicht an, inklusive Tagesumsatz, Arbeitszeiten der Mitarbeiter:innen u.v.m.",
     "Real-Time Tracking Der Lieferungen": "Real-Time Tracking Der Lieferungen.",
-    "Schnellere Auftragsvergabe über die Fahrer-App für Fahrer:innen in der Nähe Lieferung in unter 30 Minuten dank automatischer TourenplanungEBIKE DELIVERY": "Schnellere Auftragsvergabe über die Fahrer-App für Fahrer:innen in der Nähe. Lieferung in unter 30 Minuten dank automatischer Tourenplanung.EBIKE DELIVERY"
+    "Schnellere Auftragsvergabe über die Fahrer-App für Fahrer:innen in der Nähe Lieferung in unter 30 Minuten dank automatischer TourenplanungEBIKE DELIVERY": "Schnellere Auftragsvergabe über die Fahrer-App für Fahrer:innen in der Nähe. Lieferung in unter 30 Minuten dank automatischer Tourenplanung.EBIKE DELIVERY",
+    "Kundenstimmen": "Kundenstimmen",
+    "TestimonialOne": "PayPoint hat meine Erwartungen übertroffen! Die Benutzeroberfläche ist intuitiv und einfach zu bedienen. Die Integration mit meinem Geschäft war nahtlos, und ich schätze besonders die umfangreichen Berichtsfunktionen, die mir helfen, den Überblick über meine Verkäufe zu behalten.",
+    "TestimonialTwo": "PayPoint ist ein zuverlässiges Kassensystem, das meinem kleinen Geschäft geholfen hat, den Umsatz zu steigern. Es bietet grundlegende Funktionen zu einem vernünftigen Preis und hat sich als gute Investition erwiesen."
   },
   "Footer": {
     "Begleite und gestalte die Reise von Payout": "Begleite und gestalte die Reise von Paypoint.",
@@ -156,6 +159,8 @@
     "Lange Lieferzeiten und eine unübersichtliche Verwaltung der Order-Kanäle haben jetzt ein Ende! Mit SIDES werden Bestellungen automatisch im Gastro-Kassensystem zusammengefasst Bestellungen von Webshop und App, in-House, Telefon und Lieferportalen werden anschließend direkt an den Küchenmanager weitergeleitet Auslieferungen werden automatisch in Routen gebündelt und Fahrer:innen sind via Tracking schneller erreichbar Dein Vorteil: Garantierte Auslieferung in unter 30 Minuten und bessere Kundenbewertungen!": "Lange Lieferzeiten und eine unübersichtliche Verwaltung der Order-Kanäle haben jetzt ein Ende! Mit SIDES werden Bestellungen automatisch im Gastro-Kassensystem zusammengefasst Bestellungen von Webshop und App, in-House, Telefon und Lieferportalen werden anschließend direkt an den Küchenmanager weitergeleitet Auslieferungen werden automatisch in Routen gebündelt und Fahrer:innen sind via Tracking schneller erreichbar Dein Vorteil: Garantierte Auslieferung in unter 30 Minuten und bessere Kundenbewertungen!"
   },
   "Pricing": {
+    "Baue leistungsstarke All-in-One Workspaces": "Baue leistungsstarke All-in-One Workspaces.",
+
     "Submit the form and": "Formular absenden und",
     "get the demo": "Demo erhalten",
     "Getorder": "GetOrder integriert und zentralisiert alle Ihre Online-Bestellungen in Ihr vorhandenes POS-System und macht das Management von Online-Bestellungen einfach, benutzerfreundlich und zuverlässig.",
@@ -175,5 +180,24 @@
     "Delivery service": "Lieferservice",
     "Supermarket": "Supermarkt",
     "Kiosk": "Kiosk"
+  },
+  "Aboutus": {
+    "Wer wir sind?": "Wer wir sind?",
+    "Wir sind": "Wir sind",
+    "Wir packen Dinge an und präsentieren Lösungen Wir lieben Innovationen,glauben an das Unmögliche und stellen unsere Community an erste Stelle": "Wir packen Dinge an und präsentieren Lösungen. Wir lieben Innovationen,glauben an das Unmögliche und stellen unsere Community an erste Stelle.",
+    "Unsere Geschichte": "Unsere Geschichte",
+    "Unser Kassensystem, PayPoint, ist eine umfassende Lösung für Ihr Unternehmen, die darauf abzielt, den Zahlungsprozess zu optimieren und die Geschäftseffizienz zu steigern Durch seine benutzerfreundliche Oberfläche ermöglicht es eine einfache Abwicklung von Transaktionen und bietet gleichzeitig leistungsstarke Funktionen für die Verfolgung von Verkäufen und die Verwaltung des Inventars": "Unser Kassensystem, PayPoint, ist eine umfassende Lösung für Ihr Unternehmen, die darauf abzielt, den Zahlungsprozess zu optimieren und die Geschäftseffizienz zu steigern. Durch seine benutzerfreundliche Oberfläche ermöglicht es eine einfache Abwicklung von Transaktionen und bietet gleichzeitig leistungsstarke Funktionen für die Verfolgung von Verkäufen und die Verwaltung des Inventars.",
+    "Diese Kombination aus Benutzerfreundlichkeit und Funktionalität macht PayPoint zu einem unverzichtbaren Werkzeug für Geschäftsleute, die ihre Abläufe verbessern möchten Mit PayPoint können Sie sich von komplizierten Kassenprozessen verabschieden und ein effizienteres, produktiveres Geschäftsumfeld schaffen": "Diese Kombination aus Benutzerfreundlichkeit und Funktionalität macht PayPoint zu einem unverzichtbaren Werkzeug für Geschäftsleute, die ihre Abläufe verbessern möchten. Mit PayPoint können Sie sich von komplizierten Kassenprozessen verabschieden und ein effizienteres, produktiveres Geschäftsumfeld schaffen.",
+    "Entdecken Sie, wie PayPoint Ihr Unternehmen revolutionieren kann und Ihnen dabei hilft, Zeit zu sparen und Ressourcen effektiver einzusetzen Von kleinen Unternehmen bis hin zu großen Einzelhändlern bietet PayPoint eine maßgeschneiderte Lösung für Ihre spezifischen Bedürfnisse und trägt dazu bei, Ihren Geschäftserfolg zu maximieren": "Entdecken Sie, wie PayPoint Ihr Unternehmen revolutionieren kann und Ihnen dabei hilft, Zeit zu sparen und Ressourcen effektiver einzusetzen. Von kleinen Unternehmen bis hin zu großen Einzelhändlern bietet PayPoint eine maßgeschneiderte Lösung für Ihre spezifischen Bedürfnisse und trägt dazu bei, Ihren Geschäftserfolg zu maximieren.",
+    "Unser Ziel": "Unser Ziel",
+    "Unser Ziel ist es, Ihr Geschäft mit PayPoint zu unterstützen, indem wir Ihnen eine umfassende Kassenlösung bieten, die nicht nur benutzerfreundlich ist, sondern auch leistungsstarke Funktionen bietet, um Ihre betrieblichen Abläufe zu optimieren und Ihren Geschäftserfolg zu steigern": "Unser Ziel ist es, Ihr Geschäft mit PayPoint zu unterstützen, indem wir Ihnen eine umfassende Kassenlösung bieten, die nicht nur benutzerfreundlich ist, sondern auch leistungsstarke Funktionen bietet, um Ihre betrieblichen Abläufe zu optimieren und Ihren Geschäftserfolg zu steigern",
+    "Ein Team von begeisterten Unternehmern und Software Freaks": "Ein Team von begeisterten Unternehmern und Software Freaks.",
+    "Unabhängig von anderen Unternehmen oder technischen Vorgaben": "Unabhängig von anderen Unternehmen oder technischen Vorgaben.",
+    "Und Du…?": "Und Du…?",
+    "Wir suchen kluge Köpfe": "Wir suchen kluge Köpfe",
+    "Was wäre eine ständig wachsende Firma ohne Zuwachs? Wenn Du eine neue Herausforderung suchst, können wir Dir vielleicht helfen": "Was wäre eine ständig wachsende Firma ohne Zuwachs? Wenn Du eine neue Herausforderung suchst, können wir Dir vielleicht helfen.",
+    "Zim Kontaktformular": "Zim Kontaktformular",
+    "Geschäftsführer": "Geschäftsführer",
+    "Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen": "Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement. Manche sagen, er sieht Kundenwünsche, bevor sie entstehen"
   }
 }

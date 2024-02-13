@@ -6,6 +6,7 @@ import Heading from './Heading';
 import { useTranslations } from 'next-intl';
 import { Button } from '@nextui-org/react';
 import { IconType } from 'react-icons';
+import { useRouter } from '@/navigation';
 
 const InfoCard = ({
   icon: Icon,
@@ -48,6 +49,7 @@ const InfoCard = ({
 
 const Hero = () => {
   const t = useTranslations('Landing');
+  const router = useRouter();
   return (
     <>
       <Wrapper style='mt-8'>
@@ -62,6 +64,11 @@ const Hero = () => {
             </p>
             <div className='w-full h-full md:max-w-full mx-auto flex flex-col sm:flex-row md:flex-col gap-4 md:px-4'>
               <Button
+                onClick={() =>
+                  router.push(
+                    'https://forms.gastrosoft.de/gastrosoftgmbh/form/UnverbindlichesAngebotfrDeinGastroSoftKassensystem/formperma/DJVmlx_F57t2rzGQnzLown0G26T_Yfc9O7QaO7lSzrw'
+                  )
+                }
                 className='rounded-3xl text-xl bg-blue-light hover:bg-blue-dark text-white-main px-4 py-6 font-bold flex justify-center w-full outline-none border-none focus:outline-none focus:border-none'
                 type='button'>
                 {t('TryButton')}
