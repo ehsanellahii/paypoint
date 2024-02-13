@@ -12,6 +12,7 @@ import { notFound } from 'next/navigation';
 import { Providers } from './providers';
 import { locales } from '@/navigation';
 import { Metadata } from 'next';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const roboto = Roboto({
   weight: ['100', '300', '400', '500', '700', '900'],
