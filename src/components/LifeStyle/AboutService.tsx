@@ -42,7 +42,7 @@ const AboutService = ({ headerTitle, lineOne, lineTwo, lineThree, about }: Props
           </p>
         </div>
         <div className='w-full h-full  md:max-w-full grid grid-cols-2 gap-2'>
-          <div className='w-full h-[10rem] md:h-full bg-white-snow flex justify-center items-center px-4 rounded-lg'>
+          <div className='w-full h-[10rem] md:h-full bg-[#f6f6f6] flex justify-center items-center px-4 rounded-lg'>
             <h1
               className='font-bold text-[1.5rem] md:text-[2.5rem] uppercase underline decoration-2'
               style={{ fontFamily: 'Times New Roman' }}>

@@ -21,7 +21,7 @@ const WhyUseSides = () => {
   const t = useTranslations('Pricing');
   return (
     <Wrapper style='bg-white-main py-8 md:py-16'>
-      <Heading text={t('Warum über 4500 Kund:innen PAYPOINT nutzen')} />
+      <Heading text={t('Warum über 300 Kund:innen PayPoint nutzen')} />
       <article className='w-full h-full max-w-[85%] mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-10'>
         {StaticData.Pricing.WhyCustomerUseUs.map((itm, idx) => (
           <InfoCard info={itm.info} value={itm.value} key={idx} />
