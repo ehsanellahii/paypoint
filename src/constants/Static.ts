@@ -434,7 +434,7 @@ export const StaticData = {
         'Digitale Übertragung von Bestellungen an den Küchenmanager',
         'Geringere Fehlerquote dank Schritt-für-Schritt Anleitung am Monitor',
       ],
-      Image: '/Assets/LifeStyle/kasse.webp',
+      Image: '/Assets/LifeStyle/kasse.jpeg',
       LearnMoreUrl: '#',
     },
     FleetManagement: {

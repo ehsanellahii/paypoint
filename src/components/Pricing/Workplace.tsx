@@ -26,15 +26,28 @@ const ServicesCard = ({
   const router = useRouter();
   const handleClick = () => {
     setSessionCookie('selectedOfferDetails', JSON.stringify(item));
-    router.push('/pricing/information');
+    router.push('/pricing/contact');
   };
   return (
     <article
       onClick={handleClick}
       className={`w-full h-full lg:h-[25rem] text-grey-pText flex flex-col space-y-between bg-white-main py-6 hover:border hover:border-main-brand hover:shadow-md`}>
-      <h1 className='font-bold text-[2.3rem] leading-[2.8rem] text-black-text text-center'>
-        {t(title)}
-      </h1>
+      {title === 'Paypoint' ? (
+        <div className='flex justify-center'>
+          <div className='w-[25rem] h-20 relative r'>
+            <Image
+              src='/Assets/Pricing/paypoint_pay.jpeg'
+              alt=''
+              fill
+              className='w-full h-full'
+            />
+          </div>
+        </div>
+      ) : (
+        <h1 className='font-bold text-[2.3rem] leading-[2.8rem] text-black-text text-center'>
+          {t(title)}
+        </h1>
+      )}
       <div className='w-full h-full flex flex-col items-center md:grid md:grid-cols-[.7fr,1.4fr] gap-2'>
         <div
           className={`w-[10rem] h-[10rem] md:w-full md:h-full mx-auto ${

@@ -30,11 +30,7 @@ const Footer = () => {
           </h1>
           <div className='flex flex-col md:flex-row items-center gap-3 justify-center max-w-[90%] mx-auto md:max-w-[50%]'>
             <Button
-              onClick={() =>
-                router.push(
-                  'https://forms.gastrosoft.de/gastrosoftgmbh/form/UnverbindlichesAngebotfrDeinGastroSoftKassensystem/formperma/DJVmlx_F57t2rzGQnzLown0G26T_Yfc9O7QaO7lSzrw'
-                )
-              }
+              onClick={() => router.push('/contact')}
               className='w-full text-lg md:text-xl font-bold bg-white-main text-black-text py-6 px-6 rounded-[4rem]'
               type='button'>
               {t('Kostenlos testen')}

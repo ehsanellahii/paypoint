@@ -11,7 +11,7 @@ const ForContact = () => {
       <div className='w-full h-full flex flex-col gap-4 md:px-10 md:max-w-[50%] mx-auto'>
         <div className='w-full h-[12rem] relative'>
           <Image
-            src='/Assets/AboutUs/person.png'
+            src='/Assets/AboutUs/user.png'
             alt='Work better together.'
             fill
             className='object-contain'
