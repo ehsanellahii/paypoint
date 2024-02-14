@@ -166,16 +166,14 @@ const Navigation = () => {
       <Wrapper
         style={`${
           showAdd ? 'block' : 'hidden'
-        } bg-black-main md:bg-transparent py-4 md:py-6 `}>
+        } bg-black-main md:bg-transparent py-4 sm:py-4 md:py-6 `}>
         <div
           className={`${
             showAdd ? 'block' : 'hidden'
-          } w-full flex justify-between items-center bg-black-main md:px-8 py-5 text-white-main text-lg md:text-xl rounded-[1rem] md:rounded-[5rem] mt-2`}>
+          } w-full flex justify-between items-center bg-black-main md:px-8 md:py-5 text-white-main text-lg md:text-xl rounded-[1rem] md:rounded-[5rem] md:mt-2`}>
           <p>
             {headerTranslation('HeaderText')} 🔥
-            <span className='underline'>
-              {headerTranslation('UserLinedHeaderText')}
-            </span>{' '}
+            <span className='underline'>{headerTranslation('UserLinedHeaderText')}</span>
             ➡️
           </p>
           <div

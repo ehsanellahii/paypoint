@@ -19,7 +19,7 @@ const TeamMemberCard = ({ item }: TeamMemberProps) => {
   const t = useTranslations('Aboutus');
 
   return (
-    <div className='w-full h-full flex flex-col justify-center items-center py-4'>
+    <div className='w-full h-full max-w-[25rem] flex flex-col justify-center items-center py-4'>
       <Image
         src={item.image}
         alt={item.name}
@@ -44,7 +44,7 @@ const WhoAreWe = () => {
           {t('Ein Team von begeisterten Unternehmern und Software Freaks')}
           <br /> {t('Unabhängig von anderen Unternehmen oder technischen Vorgaben')}
         </p>
-        <div className='w-full h-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center'>
+        <div className='w-full h-full flex flex-wrap items-center justify-center'>
           {StaticData.AboutUs.TeamMembers.map((itm, idx) => (
             <TeamMemberCard key={idx} item={itm} />
           ))}
