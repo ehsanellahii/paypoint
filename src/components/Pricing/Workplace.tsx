@@ -26,7 +26,7 @@ const ServicesCard = ({
   const router = useRouter();
   const handleClick = () => {
     setSessionCookie('selectedOfferDetails', JSON.stringify(item));
-    router.push('/pricing/contact');
+    router.push('/contact');
   };
   return (
     <article
