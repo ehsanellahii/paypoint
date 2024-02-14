@@ -5,6 +5,7 @@ import History from './History';
 import Goal from './Goal';
 import WhoAreWe from './WhoAreWe';
 import Life from './Life';
+import ForContact from './ForContact';
 
 const AboutUs = () => {
   return (
@@ -13,6 +14,7 @@ const AboutUs = () => {
       <History />
       <Goal />
       <WhoAreWe />
+      <ForContact />
       {/* <Life /> */}
     </>
   );
