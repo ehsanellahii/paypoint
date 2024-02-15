@@ -88,7 +88,7 @@ const Calculation = () => {
                 )}
                 €
               </p>
-              <p className='text-grey-pText text-start text-sm'>{t('monatlich')}</p>
+              <p className='text-grey-pText text-center md:text-start text-sm'>{t('monatlich')}</p>
             </div>
           </div>
         </article>

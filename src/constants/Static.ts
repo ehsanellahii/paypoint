@@ -34,7 +34,7 @@ export const StaticData = {
       {
         title: 'Keine Fehler',
         text: 'Ihre Anweisungen werden akkurat befolgt, was dazu führt, dass  menschliche Fehler vermieden werden',
-        bgColor: 'bg-blue-light',
+        bgColor: 'bg-primary',
         icon: IoBug,
       },
       {

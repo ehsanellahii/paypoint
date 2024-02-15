@@ -33,8 +33,8 @@ const ServicesCard = ({
       onClick={handleClick}
       className={`w-full h-full lg:h-[25rem] text-grey-pText flex flex-col space-y-between bg-white-main py-6 hover:border hover:border-main-brand hover:shadow-md`}>
       {title === 'Paypoint' ? (
-        <div className='flex justify-center'>
-          <div className='w-[24rem] h-20 relative r'>
+        <div className='flex justify-center items-center'>
+          <div className='w-[18rem] h-12 relative r'>
             <Image
               src='/Assets/Pricing/paypoint_pay.jpeg'
               alt=''

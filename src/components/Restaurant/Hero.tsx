@@ -36,7 +36,7 @@ const Hero = () => {
               {t('und verwaltest alle Bestellungen an einem Ort')}
             </p>
             <div className='w-full h-full md:px-4'>
-              <Button className='bg-blue-light px-6 py-7 capitalize text-xl text-white-main rounded-lg'>
+              <Button className='bg-primary px-6 py-7 capitalize text-xl text-white-main rounded-lg'>
                 {t('Kontaktieren Sie uns')}
               </Button>
             </div>

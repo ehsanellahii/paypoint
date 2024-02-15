@@ -22,7 +22,7 @@ const InfoCard = ({
   const t = useTranslations('Landing');
   //@ts-ignore
   if (Icon === 'IoBug') {
-    bgColor = 'bg-blue-dark';
+    bgColor = 'bg-primaryDark';
   }
   if (title === 'Keine Manuelle Arbeit') {
     bgColor = 'bg-[#FFD800]';
@@ -69,12 +69,12 @@ const Hero = () => {
                     'https://forms.gastrosoft.de/gastrosoftgmbh/form/UnverbindlichesAngebotfrDeinGastroSoftKassensystem/formperma/DJVmlx_F57t2rzGQnzLown0G26T_Yfc9O7QaO7lSzrw'
                   )
                 }
-                className='rounded-3xl text-xl bg-blue-light hover:bg-blue-dark text-white-main px-4 py-6 font-bold flex justify-center w-full outline-none border-none focus:outline-none focus:border-none'
+                className='rounded-3xl text-xl bg-primary hover:bg-primaryDark text-white-main px-4 py-6 font-bold flex justify-center w-full outline-none border-none focus:outline-none focus:border-none'
                 type='button'>
                 {t('TryButton')}
               </Button>
               <Button
-                className='rounded-3xl text-xl border-blue-light border-[1px] text-blue-light px-4 py-6 font-bold flex justify-center w-full'
+                className='rounded-3xl text-xl border-primary border-[1px] text-primary px-4 py-6 font-bold flex justify-center w-full'
                 type='button'>
                 {t('ExploreButton')}
               </Button>

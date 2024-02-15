@@ -66,7 +66,7 @@ const Contactus = () => {
         <article className='w-full h-full md:max-w-[85%] mx-auto space-y-4  py-4'>
           <h1 className='font-bold text-[2.5rem] text-center'>
             {t('Submit the form and')}
-            <span className='pb-[3px] border-b-blue-light border-b-[3px] ml-2'>
+            <span className='pb-[3px] border-b-primary border-b-[3px] ml-2'>
               {t('get the demo')}
             </span>
           </h1>

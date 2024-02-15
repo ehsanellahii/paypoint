@@ -12,7 +12,7 @@ const ToContactUsButton = () => {
       type='button'
       onClick={() => router.push('/contact')}
       color='primary'
-      className='flex gap-3 text-white-main bg-blue-dark text-3xl py-10'>
+      className='flex gap-3 text-white-main bg-primaryDark text-2xl py-8 px-6'>
       <FaAngleRight /> {t('Zim Kontaktformular')}
     </Button>
   );

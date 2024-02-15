@@ -10,7 +10,7 @@ const Hero = () => {
       <div className='w-full h-full  flex flex-col md:flex-row gap-4'>
         <div className='w-full md:max-w-[40%] h-full  flex flex-col justify-between gap-4 lg:gap-16 lg:pt-20'>
           <h1 className='font-bold md:h-full text-[4rem] lg:text-[5rem] leading-[5rem] lg:leading-[5rem]'>
-            <span>{t('Wir sind')}</span> <span className='text-blue-dark'>Paypoint.</span>
+            <span>{t('Wir sind')}</span> <span className='text-primaryDark'>PayPoint.</span>
           </h1>
           <p className='text-base md:h-full md:text-lg text-black-text'>
             {t(

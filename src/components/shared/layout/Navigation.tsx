@@ -87,7 +87,7 @@ const Navigation = () => {
                     key={idx}
                     className='relative text-xl break-keep font-semibold whitespace-nowrap group capitalize'>
                     <span className='pb-2'>{navbarTranslation(itm.name)}</span>
-                    <span className='absolute inset-x-0 bottom-0 h-[2.5px] bg-blue-dark transform origin-left scale-x-0 transition-transform group-hover:scale-x-100'></span>
+                    <span className='absolute inset-x-0 bottom-0 h-[2.5px] bg-primaryDark transform origin-left scale-x-0 transition-transform group-hover:scale-x-100'></span>
                   </Link>
                 );
               })}
@@ -139,7 +139,7 @@ const Navigation = () => {
                     <div key={idx} className='py-3 w-full border-b'>
                       <Link
                         href={itm.link}
-                        className='w-full text-xl hover:text-blue-dark text-black-main hover:underline font-semibold'>
+                        className='w-full text-xl hover:text-primaryDark text-black-main hover:underline font-semibold'>
                         {navbarTranslation(itm.name)}
                       </Link>
                     </div>
@@ -148,7 +148,7 @@ const Navigation = () => {
                   <div key={idx} className='py-3 w-full border-b'>
                     <Link
                       href={itm.link}
-                      className='w-full text-xl hover:text-blue-dark text-black-main hover:underline font-semibold'>
+                      className='w-full text-xl hover:text-primaryDark text-black-main hover:underline font-semibold'>
                       {navbarTranslation(itm.name)}
                     </Link>
                   </div>
@@ -156,7 +156,7 @@ const Navigation = () => {
               })}
             </div>
             <Button
-              className='rounded-3xl text-xl bg-blue-light hover:bg-blue-dark text-white-main px-4 py-4 font-semibold mt-2 flex justify-center w-full outline-none border-none focus:outline-none focus:border-none'
+              className='rounded-3xl text-xl bg-primary hover:bg-primaryDark text-white-main px-4 py-4 font-semibold mt-2 flex justify-center w-full outline-none border-none focus:outline-none focus:border-none'
               type='button'>
               {t('TryButton')}
             </Button>

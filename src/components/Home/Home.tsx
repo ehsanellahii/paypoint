@@ -17,7 +17,7 @@ const Home = () => {
       <Hero />
       {/* Features Section */}
       <Features />
-      <div className='w-full h-full flex flex-col gap-3 '>
+      <div className='w-full h-full flex flex-col gap-3 md:gap-4 lg:gap-5 '>
         <ContentOnRightVideoOnLeft
           title='Deine eigene App und Webshop Individuell und unabhängig'
           text='Fange ganz einfach an zu bauen Der Template- Markt und das intuitive Design von Tape ermöglichen es dir, selbst komplexe Anforderungen abzubilden'

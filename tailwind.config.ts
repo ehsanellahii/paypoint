@@ -17,6 +17,10 @@ module.exports = {
         xs: '450px',
       },
       colors: {
+        primary: '#5897CD',
+        primaryDark: '#0071BB',
+        bgApp: '#f6f6f6',
+
         main: {
           brand: '#5897CD',
           off: '',
@@ -29,9 +33,7 @@ module.exports = {
         },
         white: {
           main: '#FFFFFF',
-          off: '#FAF7F3',
           lightOrange: '#f6f6f6',
-
           snow: '#F3ECDA',
         },
         black: {
@@ -39,20 +41,14 @@ module.exports = {
           text: '#0e1318',
         },
         grey: {
-          off: 'F6F6F6',
           text: '#526370',
           pText: '#4a4e57',
         },
-        yellow: {
-          main: '#FFD800',
-        },
+
         red: {
           cool: '#E06259',
           dark: '#5A0024',
           neon: '#FF3131',
-        },
-        orange: {
-          main: '#ff8300',
         },
       },
       boxShadow: {
