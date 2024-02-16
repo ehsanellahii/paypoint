@@ -25,18 +25,18 @@ const Footer = () => {
               className='w-full h-full object-cover'
             />
           </div>
-          <h1 className='text-white-main text-[2.5rem] leading-[2.5rem] md:text-[3rem] text-center font-bold md:font-black px-2'>
+          <h1 className='text-white text-[2.5rem] leading-[2.5rem] md:text-[3rem] text-center font-bold md:font-black px-2'>
             {t('Begleite und gestalte die Reise von Payout')}
           </h1>
           <div className='flex flex-col md:flex-row items-center gap-3 justify-center max-w-[90%] mx-auto md:max-w-[50%]'>
             <Button
               onClick={() => router.push('/contact')}
-              className='w-full text-lg md:text-xl font-bold bg-white-main text-black-text py-6 px-6 rounded-[4rem]'
+              className='w-full text-lg md:text-xl font-bold bg-white text-black-text py-6 px-6 rounded-[4rem]'
               type='button'>
               {t('Kostenlos testen')}
             </Button>
             <Button
-              className='w-full text-lg md:text-xl font-bold bg-transparent border-[2px] text-white-main  py-6 px-6 rounded-[4rem]'
+              className='w-full text-lg md:text-xl font-bold bg-transparent border-[2px] text-white  py-6 px-6 rounded-[4rem]'
               type='button'>
               {t('Updates erhalten')}
             </Button>

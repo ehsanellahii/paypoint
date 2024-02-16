@@ -21,8 +21,8 @@ const Calculation = () => {
     return total.toFixed(2);
   };
   return (
-    <Wrapper style='bg-white-lightOrange w-full h-full py-10 '>
-      <section className='w-full h-full md:max-w-[85%] mx-auto bg-white-main px-4'>
+    <Wrapper style='bg-bgApp w-full h-full py-10 '>
+      <section className='w-full h-full md:max-w-[85%] mx-auto bg-white px-4'>
         <article className='w-full h-full grid md:grid-cols-[70fr,30fr] gap-4 md:gap-0 place-items-center py-8 px-4'>
           <div className='w-full h-full flex flex-col gap-4'>
             <h5 className='w-full h-full font-bold text-xl'>

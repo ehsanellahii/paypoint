@@ -12,7 +12,7 @@ const Restaurant = () => {
   return (
     <>
       <Hero />
-      <Wrapper style='w-full h-full bg-white-main'>
+      <Wrapper style='w-full h-full bg-white'>
         <AboutService
           headerTitle={'Für volle Teller und stressfreien Service'}
           about={

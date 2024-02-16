@@ -35,7 +35,7 @@ const InfoCard = ({
     <article className='w-full h-full flex gap-2 '>
       <div className={`px-4 flex items-start justify-center`}>
         <div
-          className={`${bgColor} text-white-main w-10 h-10 rounded-full flex items-center justify-center`}>
+          className={`${bgColor} text-white w-10 h-10 rounded-full flex items-center justify-center`}>
           <Icon />
         </div>
       </div>
@@ -59,17 +59,13 @@ const Hero = () => {
             <Heading text={'Entdecken Sie unsere Lösungen'} />
             <p className='text-grey-text text-lg'>
               {t('HeroTextOne')}
-              <span className='bg-red-cool p-1 rounded-lg text-white-main'>NEU</span>{' '}
+              <span className='bg-red-cool p-1 rounded-lg text-white'>NEU</span>{' '}
               {t('HeroTextTwo')}
             </p>
             <div className='w-full h-full md:max-w-full mx-auto flex flex-col sm:flex-row md:flex-col gap-4 md:px-4'>
               <Button
-                onClick={() =>
-                  router.push(
-                    'https://forms.gastrosoft.de/gastrosoftgmbh/form/UnverbindlichesAngebotfrDeinGastroSoftKassensystem/formperma/DJVmlx_F57t2rzGQnzLown0G26T_Yfc9O7QaO7lSzrw'
-                  )
-                }
-                className='rounded-3xl text-xl bg-primary hover:bg-primaryDark text-white-main px-4 py-6 font-bold flex justify-center w-full outline-none border-none focus:outline-none focus:border-none'
+                onClick={() => router.push('/contact')}
+                className='rounded-3xl text-xl bg-primary hover:bg-primaryDark text-white px-4 py-6 font-bold flex justify-center w-full outline-none border-none focus:outline-none focus:border-none'
                 type='button'>
                 {t('TryButton')}
               </Button>
@@ -110,7 +106,7 @@ const Hero = () => {
         </section>
       </Wrapper>
       {/* Information related to Payout */}
-      <Wrapper style='mt-8 bg-white-main py-12'>
+      <Wrapper style='mt-8 bg-white py-12'>
         <section className='w-full h-full grid md:grid-cols-3 sm:grid-cols-2 place-items-center '>
           {StaticData.Landing.AboutFeatures.map((itm, idx) => (
             <InfoCard

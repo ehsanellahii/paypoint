@@ -7,7 +7,7 @@ const Goal = () => {
   const t = useTranslations('Aboutus');
 
   return (
-    <Wrapper style='w-full h-full py-8 md:py-12 bg-white-main'>
+    <Wrapper style='w-full h-full py-8 md:py-12 bg-white'>
       <article className='w-full h-full grid md:grid-cols-[30fr,70fr] md:max-w-[85%] lg:max-w-[85%] mx-auto'>
         <div className='w-full h-full '>
           <h1 className='font-bold text-[2.5rem]'>{t("Unser Ziel")}</h1>

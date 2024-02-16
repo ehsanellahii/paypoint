@@ -15,7 +15,7 @@ const OneSystem = () => {
       <Heading text={t('Ein System für alle Prozesse')} />
       <div className='w-full h-full grid py-12'>
         <div
-          className='w-full h-[20rem] md:h-[25rem] relative mx-auto'
+          className='w-full h-[20rem] md:h-[27rem] relative mx-auto'
           style={{
             backgroundImage: "url('/Assets/LifeStyle/OneSystem.png')",
             backgroundPosition: 'center center',
@@ -24,7 +24,7 @@ const OneSystem = () => {
           <div className='absolute top-[22%] left-[33%] md:top-[24%] md:left-[34%] '>
             <button
               onClick={() => handleClick(1)}
-              className='flex gap-2 bg-white-main rounded-3xl px-1 py-0.5 md:px-3 md:py-2 items-center transition duration-250'>
+              className='flex gap-2 bg-white rounded-3xl px-1 py-0.5 md:px-3 md:py-2 items-center transition duration-250'>
               <span className='text-main-brand text-3xl'>
                 <TiPlus />
               </span>
@@ -33,7 +33,7 @@ const OneSystem = () => {
               </span>
             </button>
             {activeIndex === 1 && (
-              <div className='p-3 relative z-[999] bg-white-main max-w-[14rem] mt-2 rounded-lg'>
+              <div className='p-3 relative z-[999] bg-white max-w-[14rem] mt-2 rounded-lg'>
                 <p>
                   {t(
                     'Automatisiere deine Küchenprozesse und verwalte Bestellungen digital am Küchenmonitor'
@@ -45,7 +45,7 @@ const OneSystem = () => {
           <div className='absolute top-[55%] left-[20%] md:top-[53%] md:left-[33%] '>
             <button
               onClick={() => handleClick(2)}
-              className='flex gap-2 bg-white-main rounded-3xl px-3 py-2 items-center'>
+              className='flex gap-2 bg-white rounded-3xl px-3 py-2 items-center'>
               <span className='text-main-brand text-3xl'>
                 <TiPlus />
               </span>
@@ -54,7 +54,7 @@ const OneSystem = () => {
               </span>
             </button>
             {activeIndex === 2 && (
-              <div className='p-3 relative z-[999] bg-white-main max-w-[14rem] mt-2 rounded-lg'>
+              <div className='p-3 relative z-[999] bg-white max-w-[14rem] mt-2 rounded-lg'>
                 <p>
                   {t(
                     'Wickle bargeldlose Zahlungen im Restaurant und online schnell und sicher ab'
@@ -66,7 +66,7 @@ const OneSystem = () => {
           <div className='absolute top-[35%] md:top-[48%] md:left-[9%] '>
             <button
               onClick={() => handleClick(3)}
-              className='flex gap-2 bg-white-main rounded-3xl px-3 py-2 items-center'>
+              className='flex gap-2 bg-white rounded-3xl px-3 py-2 items-center'>
               <span className='text-main-brand text-3xl'>
                 <TiPlus />
               </span>
@@ -75,7 +75,7 @@ const OneSystem = () => {
               </span>
             </button>
             {activeIndex === 3 && (
-              <div className='p-3 relative z-[999] bg-white-main max-w-[14rem] mt-2 rounded-lg'>
+              <div className='p-3 relative z-[999] bg-white max-w-[14rem] mt-2 rounded-lg'>
                 <p>
                   {t(
                     'Verwalte alle Bestellkanäle direkt in der Kasse - egal ob Lieferportal-, Theken- oder Webshop-Bestellung'
@@ -87,7 +87,7 @@ const OneSystem = () => {
           <div className='absolute top-[35%] md:top-[57%] left-[60%] md:left-[55%] '>
             <button
               onClick={() => handleClick(4)}
-              className='flex gap-2 bg-white-main rounded-3xl px-3 py-2 items-center'>
+              className='flex gap-2 bg-white rounded-3xl px-3 py-2 items-center'>
               <span className='text-main-brand text-3xl'>
                 <TiPlus />
               </span>
@@ -96,7 +96,7 @@ const OneSystem = () => {
               </span>
             </button>
             {activeIndex === 4 && (
-              <div className='p-3 relative z-[999] bg-white-main max-w-[14rem] mt-2 rounded-lg'>
+              <div className='p-3 relative z-[999] bg-white max-w-[14rem] mt-2 rounded-lg'>
                 <p>
                   {t(
                     'Nimm Bestellungen schneller entgegen und übertrage Bestellungen automatisch an die Küche'
@@ -108,7 +108,7 @@ const OneSystem = () => {
           <div className='absolute top-[60%] md:top-[45%] left-[60%] md:left-[70%] '>
             <button
               onClick={() => handleClick(6)}
-              className='flex gap-2 bg-white-main rounded-3xl px-3 py-2 items-center'>
+              className='flex gap-2 bg-white rounded-3xl px-3 py-2 items-center'>
               <span className='text-main-brand text-3xl'>
                 <TiPlus />
               </span>
@@ -117,7 +117,7 @@ const OneSystem = () => {
               </span>
             </button>
             {activeIndex === 6 && (
-              <div className='p-3 relative z-[999] bg-white-main max-w-[14rem] mt-2 rounded-lg'>
+              <div className='p-3 relative z-[999] bg-white max-w-[14rem] mt-2 rounded-lg'>
                 <p>
                   {t(
                     'Biete Gästen die Möglichkeit, kontaktlos über QR-Codes zu bestellen und bezahlen'

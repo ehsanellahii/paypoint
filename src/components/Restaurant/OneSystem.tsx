@@ -24,14 +24,14 @@ const OneSystem = () => {
           <div className='absolute top-[10%] left-[12%] '>
             <button
               onClick={() => handleClick(1)}
-              className='flex gap-2 bg-white-main rounded-xl md:rounded-[2rem] px-3 md:px-5 py-2 md:py-4 items-center transition duration-250'>
+              className='flex gap-2 bg-white rounded-xl md:rounded-[2rem] px-3 md:px-5 py-2 md:py-4 items-center transition duration-250'>
               <span className='text-main-brand text-3xl'>
                 <TiPlus />
               </span>
               <span className='text-black-text font-bold'>{t('Küchenmanager')}</span>
             </button>
             {activeIndex === 1 && (
-              <div className='p-3 relative z-[999] bg-white-main max-w-[14rem] mt-2 rounded-lg'>
+              <div className='p-3 relative z-[999] bg-white max-w-[14rem] mt-2 rounded-lg'>
                 <p>
                   {t(
                     'Automatisiere deine Küchenprozesse und verwalte Bestellungen digital am Küchenmonitor'
@@ -43,14 +43,14 @@ const OneSystem = () => {
           <div className='absolute top-[20%] left-[60%] '>
             <button
               onClick={() => handleClick(2)}
-              className='flex gap-2 bg-white-main rounded-xl md:rounded-[2rem] px-3 md:px-5 py-2 md:py-4 items-center'>
+              className='flex gap-2 bg-white rounded-xl md:rounded-[2rem] px-3 md:px-5 py-2 md:py-4 items-center'>
               <span className='text-main-brand text-3xl'>
                 <TiPlus />
               </span>
               <span className='text-black-text font-bold'>{t('Payment')}</span>
             </button>
             {activeIndex === 2 && (
-              <div className='p-3 relative z-[999] bg-white-main max-w-[14rem] mt-2 rounded-lg'>
+              <div className='p-3 relative z-[999] bg-white max-w-[14rem] mt-2 rounded-lg'>
                 <p>
                   {t(
                     'Wickle bargeldlose Zahlungen im Restaurant und online schnell und sicher ab'
@@ -62,14 +62,14 @@ const OneSystem = () => {
           <div className='absolute top-[35%] left-[7%] '>
             <button
               onClick={() => handleClick(3)}
-              className='flex gap-2 bg-white-main rounded-xl md:rounded-[2rem] px-3 md:px-5 py-2 md:py-4 items-center'>
+              className='flex gap-2 bg-white rounded-xl md:rounded-[2rem] px-3 md:px-5 py-2 md:py-4 items-center'>
               <span className='text-main-brand text-3xl'>
                 <TiPlus />
               </span>
               <span className='text-black-text font-bold'>{t('Kassensystem')}</span>
             </button>
             {activeIndex === 3 && (
-              <div className='p-3 relative z-[999] bg-white-main max-w-[14rem] mt-2 rounded-lg'>
+              <div className='p-3 relative z-[999] bg-white max-w-[14rem] mt-2 rounded-lg'>
                 <p>
                   {t(
                     'Verwalte alle Bestellkanäle direkt in der Kasse - egal ob Lieferportal-, Theken- oder Webshop-Bestellung'
@@ -81,14 +81,14 @@ const OneSystem = () => {
           <div className='absolute top-[45%] md:top-[40%] left-[60%] md:left-[70%] '>
             <button
               onClick={() => handleClick(4)}
-              className='flex gap-2 bg-white-main rounded-xl md:rounded-[2rem] px-3 md:px-5 py-2 md:py-4 items-center'>
+              className='flex gap-2 bg-white rounded-xl md:rounded-[2rem] px-3 md:px-5 py-2 md:py-4 items-center'>
               <span className='text-main-brand text-3xl'>
                 <TiPlus />
               </span>
               <span className='text-black-text font-bold'>{t('Mobile Kasse')}</span>
             </button>
             {activeIndex === 4 && (
-              <div className='p-3 relative z-[999] bg-white-main max-w-[14rem] mt-2 rounded-lg'>
+              <div className='p-3 relative z-[999] bg-white max-w-[14rem] mt-2 rounded-lg'>
                 <p>
                   {t(
                     'Nimm Bestellungen schneller entgegen und übertrage Bestellungen automatisch an die Küche'
@@ -100,7 +100,7 @@ const OneSystem = () => {
           <div className='absolute top-[60%] left-[7%] md:left-[12%] '>
             <button
               onClick={() => handleClick(6)}
-              className='flex gap-2 bg-white-main rounded-xl md:rounded-[2rem] px-3 md:px-5 py-2 md:py-4 items-center'>
+              className='flex gap-2 bg-white rounded-xl md:rounded-[2rem] px-3 md:px-5 py-2 md:py-4 items-center'>
               <span className='text-main-brand text-3xl'>
                 <TiPlus />
               </span>
@@ -109,7 +109,7 @@ const OneSystem = () => {
               </span>
             </button>
             {activeIndex === 6 && (
-              <div className='p-3 relative z-[999] bg-white-main max-w-[14rem] mt-2 rounded-lg'>
+              <div className='p-3 relative z-[999] bg-white max-w-[14rem] mt-2 rounded-lg'>
                 <p>
                   {t(
                     'Biete Gästen die Möglichkeit, kontaktlos über QR-Codes zu bestellen und bezahlen'
@@ -121,14 +121,14 @@ const OneSystem = () => {
           <div className='absolute top-[78%] left-[50%] md:left-[60%] '>
             <button
               onClick={() => handleClick(5)}
-              className='flex gap-2 bg-white-main rounded-xl md:rounded-[2rem] px-3 md:px-5 py-2 md:py-4   items-center'>
+              className='flex gap-2 bg-white rounded-xl md:rounded-[2rem] px-3 md:px-5 py-2 md:py-4   items-center'>
               <span className='text-main-brand text-3xl'>
                 <TiPlus />
               </span>
               <span className='text-black-text font-bold'>{t('Bonussystem')}</span>
             </button>
             {activeIndex === 5 && (
-              <div className='p-3 relative z-[999] bg-white-main max-w-[14rem] mt-2 rounded-lg'>
+              <div className='p-3 relative z-[999] bg-white max-w-[14rem] mt-2 rounded-lg'>
                 <p>
                   {t(
                     'Schaffe Bestellanreize und binde Gäste langfristig an deinen Gastronomiebetrieb'

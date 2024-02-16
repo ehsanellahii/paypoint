@@ -20,7 +20,7 @@ module.exports = {
         primary: '#5897CD',
         primaryDark: '#0071BB',
         bgApp: '#f6f6f6',
-
+        white:"#ffffff",
         main: {
           brand: '#5897CD',
           off: '',
@@ -31,11 +31,7 @@ module.exports = {
           royal: '#0057fc',
           teal: '#2f3460',
         },
-        white: {
-          main: '#FFFFFF',
-          lightOrange: '#f6f6f6',
-          snow: '#F3ECDA',
-        },
+        
         black: {
           main: '#0a0a0a',
           text: '#0e1318',

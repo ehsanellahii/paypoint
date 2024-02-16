@@ -12,7 +12,7 @@ const LifeStyle = () => {
   return (
     <>
       <Hero />
-      <Wrapper style='w-full h-full bg-white-main'>
+      <Wrapper style='w-full h-full bg-white'>
         <AboutService
           headerTitle='Die Unabhängigkeitserklärung für deinen Lieferservice'
           about='Lange Lieferzeiten und eine unübersichtliche Verwaltung der Order-Kanäle haben jetzt ein Ende! Mit SIDES werden Bestellungen automatisch im Gastro-Kassensystem zusammengefasst Bestellungen von Webshop und App, in-House, Telefon und Lieferportalen werden anschließend direkt an den Küchenmanager weitergeleitet Auslieferungen werden automatisch in Routen gebündelt und Fahrer:innen sind via Tracking schneller erreichbar Dein Vorteil: Garantierte Auslieferung in unter 30 Minuten und bessere Kundenbewertungen!'

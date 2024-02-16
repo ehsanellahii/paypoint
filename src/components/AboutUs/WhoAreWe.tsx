@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { StaticData } from '@/constants/Static';
 import Heading from '../shared/Heading/Heading';
 import { useTranslations } from 'next-intl';
-import ToContactUsButton from './ToContactusButton';
 
 type TeamMemberProps = {
   item: {
@@ -37,7 +36,7 @@ const TeamMemberCard = ({ item }: TeamMemberProps) => {
 const WhoAreWe = () => {
   const t = useTranslations('Aboutus');
   return (
-    <Wrapper style='w-full h-full bg-white-lightOrange py-8 md:py-12'>
+    <Wrapper style='w-full h-full bg-bgApp py-8 md:py-12'>
       <article className='w-full h-full flex flex-col gap-4'>
         <Heading text={t('Wer wir sind?')} />
         <p className='text-center text-xl text-black-text md:max-w-[60%] mx-auto '>

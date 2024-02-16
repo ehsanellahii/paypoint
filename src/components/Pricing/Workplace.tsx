@@ -6,8 +6,7 @@ import Wrapper from '../shared/Wrapper';
 import { Heading } from './Pricing';
 import { StaticData } from '@/constants/Static';
 import { useRouter } from '@/navigation';
-import { getCookie, setSessionCookie } from '@/utils/cookieFunctions';
-import { FaArrowRight } from 'react-icons/fa';
+import {  setSessionCookie } from '@/utils/cookieFunctions';
 import { useTranslations } from 'next-intl';
 
 const ServicesCard = ({
@@ -31,7 +30,7 @@ const ServicesCard = ({
   return (
     <article
       onClick={handleClick}
-      className={`w-full h-full lg:h-[25rem] text-grey-pText flex flex-col space-y-between bg-white-main py-6 hover:border hover:border-main-brand hover:shadow-md`}>
+      className={`w-full h-full lg:h-[25rem] text-grey-pText flex flex-col space-y-between bg-white py-6 hover:border hover:border-main-brand hover:shadow-md`}>
       {title === 'Paypoint' ? (
         <div className='flex justify-center items-center'>
           <div className='w-[18rem] h-12 relative r'>
@@ -62,7 +61,7 @@ const ServicesCard = ({
             {bullets.map((itm, idx) => (
               <li
                 key={idx}
-                className='bg-white-main text-grey-pText flex gap-3 items-center'>
+                className='bg-white text-grey-pText flex gap-3 items-center'>
                 <span className='text-main-brand text-xl font-extrabold'>
                   <FaCheck />
                 </span>
@@ -83,7 +82,7 @@ const ServicesCard = ({
 const Workplace = () => {
   const t = useTranslations('Pricing');
   return (
-    <Wrapper style='w-full h-full my-8 bg-white-lightOrange'>
+    <Wrapper style='w-full h-full my-8 bg-bgApp'>
       <section className='w-full h-full flex flex-col gap-4'>
         <Heading
           text={t('Baue leistungsstarke All-in-One Workspaces')}

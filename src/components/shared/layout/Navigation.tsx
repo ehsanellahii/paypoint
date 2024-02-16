@@ -62,7 +62,7 @@ const Navigation = () => {
           isOpen ? 'h-full' : 'h-[5rem]'
         } md:sticky top-0 z-[500] transition-all duration-1000 ${
           Show && 'md:-top-[6rem] text-black-text'
-        } bg-white-main `}>
+        } bg-white `}>
         <nav className='w-full h-full flex gap-5 justify-between md:justify-start items-center px-2 py-2 md:py-0'>
           {/* Logos*/}
           <Link
@@ -156,7 +156,7 @@ const Navigation = () => {
               })}
             </div>
             <Button
-              className='rounded-3xl text-xl bg-primary hover:bg-primaryDark text-white-main px-4 py-4 font-semibold mt-2 flex justify-center w-full outline-none border-none focus:outline-none focus:border-none'
+              className='rounded-3xl text-xl bg-primary hover:bg-primaryDark text-white px-4 py-4 font-semibold mt-2 flex justify-center w-full outline-none border-none focus:outline-none focus:border-none'
               type='button'>
               {t('TryButton')}
             </Button>
@@ -170,7 +170,7 @@ const Navigation = () => {
         <div
           className={`${
             showAdd ? 'block' : 'hidden'
-          } w-full flex justify-between items-center bg-black-main md:px-8 md:py-5 text-white-main text-lg md:text-xl rounded-[1rem] md:rounded-[5rem] md:mt-2`}>
+          } w-full flex justify-between items-center bg-black-main md:px-8 md:py-5 text-white text-lg md:text-xl rounded-[1rem] md:rounded-[5rem] md:mt-2`}>
           <p>
             {headerTranslation('HeaderText')} 🔥
             <span className='underline'>{headerTranslation('UserLinedHeaderText')}</span>

@@ -15,7 +15,10 @@ const DropdownComponent = ({
   const router = useRouter();
   const navbarTranslation = useTranslations('Navbar');
   return (
-    <Dropdown>
+    <Dropdown
+      onOpenChange={(isOpen: boolean) => {
+        console.log(isOpen);
+      }}>
       <DropdownTrigger className='capitalize text-xl break-keep font-bold whitespace-nowrap group'>
         {DropdownTitle}
       </DropdownTrigger>

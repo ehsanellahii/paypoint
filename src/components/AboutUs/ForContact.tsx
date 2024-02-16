@@ -7,7 +7,7 @@ import Wrapper from '../shared/Wrapper';
 const ForContact = () => {
   const t = useTranslations('Aboutus');
   return (
-    <Wrapper style='w-full h-full bg-white-lightOrange py-4 sm:py-6 md:py-10'>
+    <Wrapper style='w-full h-full bg-bgApp py-4 sm:py-6 md:py-10'>
       <div className='w-full h-full flex flex-col gap-4 md:px-10 md:max-w-[40%] mx-auto'>
         <div className='w-full h-[12rem] relative'>
           <Image

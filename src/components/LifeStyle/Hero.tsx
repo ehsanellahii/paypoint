@@ -14,7 +14,7 @@ const Hero = () => {
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}
-        className='w-full h-full md:min-h-[50rem]  text-white-main'>
+        className='w-full h-full md:min-h-[50rem]  text-white'>
         <div className='w-full h-full max-w-[1320px] mx-auto px-4 relative py-8'>
           <div className='w-full h-full flex flex-col gap-4 md:gap-16 px-4 md:px-12  lg:pr-16 pl-4 md:pl-10  md:py-10'>
             <h4 className='text-xl md:text-3xl'>
@@ -35,7 +35,7 @@ const Hero = () => {
               )}
             </p>
             <div className='w-full h-full md:px-4'>
-              <Button className='bg-primary px-6 py-7 capitalize text-xl text-white-main rounded-lg'>
+              <Button className='bg-primary px-6 py-7 capitalize text-xl text-white rounded-lg'>
                 {t('Kontaktieren Sie uns')}
               </Button>
             </div>

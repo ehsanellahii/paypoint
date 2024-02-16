@@ -8,7 +8,7 @@ import { useTranslations } from 'next-intl';
 const FAQ = () => {
   const t = useTranslations("Pricing")
   return (
-    <Wrapper style='bg-white-lightOrange py-8'>
+    <Wrapper style='bg-bgApp py-8'>
       <Heading text={t('Häufige gestellte Fragen')} />
       <div className='w-full h-full md:max-w-[80%] mx-auto py-8'>
         <Accordion accordionList={StaticData.Resutaurant.FAQ} />

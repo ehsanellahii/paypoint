@@ -21,7 +21,7 @@ const WhyUseSides = () => {
   const t = useTranslations('Pricing');
   return (
     <>
-      <Wrapper style='bg-white-main py-8 md:py-16'>
+      <Wrapper style='bg-white py-8 md:py-16'>
         <Heading text={t('Warum über 300 Kund:innen PayPoint nutzen')} />
         <article className='w-full h-full max-w-[85%] mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-10'>
           {StaticData.Pricing.WhyCustomerUseUs.map((itm, idx) => (
@@ -42,7 +42,7 @@ const WhyUseSides = () => {
         </div>
       </Wrapper>
       <Wrapper style='bg-primaryDark'>
-        <article className='w-full h-full max-w-[90%] mx-auto text-white-main py-16'>
+        <article className='w-full h-full max-w-[90%] mx-auto text-white py-16'>
           <div className='w-full h-full max-w-[80%] mx-auto flex flex-col gap-4 justify-center items-center'>
             <h1 className='w-full h-full text-[1.8rem] md:text-[2.5rem] lg:text-[3rem] leading-7 sm:leading-8 md:leading-10 lg:leading-[3rem] text-center font-bold lg:max-w-[90%]'>
               {t('Machen Sie mehr als 100000 € Umsatz pro Jahr?')}
@@ -54,7 +54,7 @@ const WhyUseSides = () => {
             </p>
             <Button
               type='button'
-              className='bg-white-main text-black-main font-medium px-6 py-4 rounded-2xl text-center'>
+              className='bg-white text-black-main font-medium px-6 py-4 rounded-2xl text-center'>
               {t('Kontaktieren Sie uns')}
             </Button>
           </div>

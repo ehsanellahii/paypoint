@@ -1,0 +1,43 @@
+/* styles.css */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.dropdown-list li {
+  padding: 10px;
+  cursor: pointer;
+  border-top: 1px solid #ccc;
+}
+
+.dropdown-list li:hover {
+  background-color: #f0f0f0;
+}

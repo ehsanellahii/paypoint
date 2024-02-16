@@ -22,7 +22,7 @@ const Features = () => {
               <li
                 key={idx}
                 className='w-full h-full flex justify-start gap-2 items-center'>
-                <div className='w-[1.7rem] h-[1.7rem] rounded-full text-white-main bg-primary p-1 flex items-center justify-center'>
+                <div className='w-[1.7rem] h-[1.7rem] rounded-full text-white bg-primary p-1 flex items-center justify-center'>
                   <MdOutlineDone size={20} />
                 </div>
                 {t(itm)}
@@ -30,7 +30,7 @@ const Features = () => {
             ))}
           </ul>
           <Button
-            className='bg-primary px-8 py-6 rounded-md font-semibold text-white-main border-none mt-4 text-lg md:text-xl'
+            className='bg-primary px-8 py-6 rounded-md font-semibold text-white border-none mt-4 text-lg md:text-xl'
             type='button'>
             {t('Demo anfordern')}
           </Button>

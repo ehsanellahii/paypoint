@@ -1,12 +1,11 @@
 import React from 'react';
 import Wrapper from '../shared/Wrapper';
-import Heading from '../shared/Heading/Heading';
 import { useTranslations } from 'next-intl';
 
 const History = () => {
   const t = useTranslations('Aboutus');
   return (
-    <Wrapper style='bg-white-main py-8 md:py-16'>
+    <Wrapper style='bg-white py-8 md:py-16'>
       {/* History */}
       <article className='w-full h-full flex flex-col justify-center items-center gap-3 px-4 py-8 md:py-12  '>
         <h1 className='text-center text-3xl font-black'>{t('Unsere Geschichte')}</h1>

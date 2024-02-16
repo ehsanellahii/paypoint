@@ -20,14 +20,14 @@ const AboutService = ({ headerTitle, about }: PropsType) => {
         </div>
         <div className='w-full h-full md:max-h-[20rem] md:max-w-[90%] mx-auto grid md:grid-cols-2 gap-2 px-4 md:px-0'>
           <div className='w-full h-full md:max-w-full md:max-h-[20rem] p-8 md:px-12 py-8 space-y-6 bg-blue-teal rounded-lg '>
-            <p className='text-left avalon-heading text-xl text-white-main'>
+            <p className='text-left avalon-heading text-xl text-white'>
               „
               {t(
                 'Mit der PayPoint Lieferdienst Software bekomme ich alles mit Ich kann alle Bestellungen immer in Verbindung mit den Lieferzeiten nachvollziehen und sehe genau, welche Bestellungen noch offen sind'
               )}
               “
             </p>
-            <p className='text-white-main'>
+            <p className='text-white'>
               <span className='avalon-heading'>- Björn Tischler</span>, Geschäftsführer
               bei Diazo
             </p>

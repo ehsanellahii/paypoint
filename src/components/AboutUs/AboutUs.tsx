@@ -1,5 +1,4 @@
 import React from 'react';
-import Wrapper from '../shared/Wrapper';
 import Hero from './Hero';
 import History from './History';
 import Goal from './Goal';
@@ -14,7 +13,6 @@ const AboutUs = () => {
       <Goal />
       <WhoAreWe />
       <ForContact />
-      {/* <Life /> */}
     </>
   );
 };

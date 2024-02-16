@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 const Hero = () => {
   const t = useTranslations('Aboutus');
   return (
-    <Wrapper style='w-full h-full bg-white-lightOrange about-us-hero  pt-8 md:pt-16'>
+    <Wrapper style='w-full h-full bg-bgApp about-us-hero  pt-8 md:pt-16'>
       {/* Left Side */}
       <div className='w-full h-full  flex flex-col md:flex-row gap-4'>
         <div className='w-full md:max-w-[40%] h-full  flex flex-col justify-between gap-4 lg:gap-16 lg:pt-20'>
