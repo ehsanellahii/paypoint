@@ -23,6 +23,10 @@ export const StaticData = {
       name: 'Über uns',
       link: '/aboutus',
     },
+    {
+      name: 'Kontakt',
+      link: '/contactus',
+    },
   ],
   Landing: {
     TrustGainedTeam: [
@@ -531,8 +535,33 @@ export const StaticData = {
     ],
   },
   Contact: {
+    SocialMedia: [
+      {
+        title: 'Whatsapp',
+        image: '/Assets/ContactUs/socials/whatsapp.png',
+        link: '#',
+        bgColor: '#25D366',
+        btnText: 'Kontakt',
+      },
+      {
+        title: 'Customer Support',
+        image: '/Assets/ContactUs/socials/paypoint.png',
+        link: '#',
+        bgColor: '#f6f6f6',
+        btnText: '030/45023722',
+      },
+      {
+        title: 'E-mail Support',
+        image: '/Assets/ContactUs/socials/mail.png',
+        link: '#0071BB',
+        btnText: 'info@get-paypoint.de',
+      },
+    ],
     BusinessOptions: [
-      { image: '/Assets/Pricing/BusinessTypeOptions/gastronomy.jpg', title: 'gastronomy' },
+      {
+        image: '/Assets/Pricing/BusinessTypeOptions/gastronomy.jpg',
+        title: 'gastronomy',
+      },
       { image: '/Assets/Pricing/BusinessTypeOptions/retail.jpg', title: 'retail trade' },
       { image: '/Assets/Pricing/BusinessTypeOptions/club.jpg', title: 'club' },
       { image: '/Assets/Pricing/BusinessTypeOptions/foodtruck.jpg', title: 'food truck' },

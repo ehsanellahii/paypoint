@@ -8,7 +8,8 @@
     "Über uns": "Über uns",
     "Business Typen": "Business Typen",
     "Restaurant": "Restaurant",
-    "Life Style": "Lebensstil"
+    "Life Style": "Lebensstil",
+    "Kontakt": "Kontakt"
   },
   "Landing": {
     "Entdecken Sie unsere Lösungen": "Entdecken Sie unsere Lösungen.",
@@ -192,13 +193,14 @@
     "Potentielle Ersparnis": "Potentielle Ersparnis",
     "monatlich": "monatlich",
     "Bestell Wert": "Bestell Wert",
-    "portalProvision":"Portal Provision","Häufige gestellte Fragen":"Häufige gestellte Fragen",
+    "portalProvision": "Portal Provision",
+    "Häufige gestellte Fragen": "Häufige gestellte Fragen",
 
     "Submit the form and": "Formular absenden und",
     "get the demo": "Demo erhalten",
     "Getorder": "GetOrder integriert und zentralisiert alle Ihre Online-Bestellungen in Ihr vorhandenes POS-System und macht das Management von Online-Bestellungen einfach, benutzerfreundlich und zuverlässig.",
     "Your Store": "Ihr Geschäft",
-    "Select Your Store": "Wählen Sie Ihr Geschäft aus",
+
     "Store Name": "Geschäftsname",
     "Select Your Country": "Wählen Sie Ihr Land aus",
     "Number of Stores": "Anzahl der Geschäfte",
@@ -232,5 +234,19 @@
     "Zim Kontaktformular": "Zim Kontaktformular",
     "Geschäftsführer": "Geschäftsführer",
     "Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen": "Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement. Manche sagen, er sieht Kundenwünsche, bevor sie entstehen"
+  },
+  "Contactus": {
+    "Wir sind für Sie da": "Wir sind für Sie da",
+    "Via Whatsapp, Online Chat oder über E-Mail Gerne Rufen wir Sie auch kostenlos zurück": "Via Whatsapp, Online Chat oder über E-Mail. Gerne Rufen wir Sie auch kostenlos zurück",
+    "Alle Kontaktmöglichkeiten sehen Jetzt runterscrollen": "Alle Kontaktmöglichkeiten sehen. Jetzt runterscrollen.",
+    "Kontakt": "Kontakt",
+    "Kundendienst": "Kundendienst",
+    "Email Unterstützung": "Email Unterstützung",
+    "Brauchst du eine Beratung?": "Brauchst du eine Beratung?",
+    "Füll den Online-Fragebogen aus für ein maßgeschneidertes Kassensystem-Angebot": "Füll den Online-Fragebogen aus für ein maßgeschneidertes Kassensystem-Angebot",
+    "Zum Onlineformular": "Zum Onlineformular",
+    "Brauchst du einen Rückruf?": "Brauchst du einen Rückruf?",
+    "Abschicken": "Abschicken",
+    "Select Your Store": "Wählen Sie Ihr Geschäft aus"
   }
 }

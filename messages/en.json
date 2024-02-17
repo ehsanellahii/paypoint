@@ -8,7 +8,8 @@
     "Über uns": "About Us",
     "Business Typen": "Business Type",
     "Restaurant": "Restaurant",
-    "Life Style": "Life Style"
+    "Life Style": "Life Style",
+    "Kontakt": "Contact Us"
   },
   "Landing": {
     "Entdecken Sie unsere Lösungen": "Discover our solutions.",
@@ -199,7 +200,7 @@
     "get the demo": "get the demo",
     "Getorder": "GetOrder integrates and centralizes all your online orders to your existing POS system, making online order management simple, friendly and reliable.",
     "Your Store": "Your Store",
-    "Select Your Store": "Select Your Store",
+
     "Store Name": "Store Name",
     "Select Your Country": "Select Your Country",
     "Number of Stores": "Number of Stores",
@@ -233,5 +234,19 @@
     "Zim Kontaktformular": "To the contact form",
     "Geschäftsführer": "CEO",
     "Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen": "Timur circulates as an all-knowing GastroSoft visionary between the developer's desk, customers, and project management. Some say he sees customer wishes before they arise."
+  },
+  "Contactus": {
+    "Wir sind für Sie da": "We are here for you",
+    "Via Whatsapp, Online Chat oder über E-Mail Gerne Rufen wir Sie auch kostenlos zurück": "Via WhatsApp, online chat, or through email. We are also happy to call you back for free.",
+    "Alle Kontaktmöglichkeiten sehen Jetzt runterscrollen": "See all contact options. Scroll down now.",
+    "Kontakt": "Contact",
+    "Kundendienst": "Customer Service",
+    "Email Unterstützung": "Email Support",
+    "Brauchst du eine Beratung?": "Need advice?",
+    "Füll den Online-Fragebogen aus für ein maßgeschneidertes Kassensystem-Angebot": "Fill out the online questionnaire for a customized cash register system offer",
+    "Zum Onlineformular": "To the online form",
+    "Brauchst du einen Rückruf?": "Need a callback?",
+    "Abschicken": "Submit",
+    "Select Your Store": "Select Your Store"
   }
 }
