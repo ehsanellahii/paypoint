@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import TabsWrapper from '../TabsWrapper';
 import { Input } from '@nextui-org/react';
 import { BiScan } from 'react-icons/bi';
-import ContactFooter from '../ContactFooter';
 import { ContactTabsType } from '@/interface/Common';
 
 const ScanIcon = () => {

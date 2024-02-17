@@ -1,18 +1,18 @@
 import React from 'react';
 import { IoMdArrowRoundBack, IoMdArrowRoundForward } from 'react-icons/io';
 
-interface ContactFooterProps {
+interface TryForFreeFooterProps {
   showBackBtn?: boolean;
   showFurtherBtn?: boolean;
   backward?: () => void;
   forward?: () => void;
 }
-const ContactFooter = ({
+const TryForFreeFooter = ({
   showBackBtn = true,
   showFurtherBtn = true,
   backward,
   forward,
-}: ContactFooterProps) => {
+}: TryForFreeFooterProps) => {
   return (
     <div className='bg-primaryDark p-4 flex items-center rounded-b-2xl'>
       {showBackBtn && (
@@ -39,4 +39,4 @@ const ContactFooter = ({
   );
 };
 
-export default ContactFooter;
+export default TryForFreeFooter;

@@ -1,7 +1,6 @@
 import { StaticData } from '@/constants/Static';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import ContactFooter from '../ContactFooter';
 import TabsWrapper from '../TabsWrapper';
 import { ContactTabsType } from '@/interface/Common';
 

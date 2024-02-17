@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactFooter from './ContactFooter';
+import TryForFreeFooter from './TryForFreeFooter';
 
 const TabsWrapper = ({
   children,
@@ -27,7 +27,7 @@ const TabsWrapper = ({
         </h1>
         {children}
       </div>
-      <ContactFooter
+      <TryForFreeFooter
         forward={handleForward}
         backward={handleBackward}
         showFurtherBtn={showForwardBtn}
