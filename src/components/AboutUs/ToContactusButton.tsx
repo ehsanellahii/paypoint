@@ -10,7 +10,7 @@ const ToContactUsButton = () => {
   return (
     <Button
       type='button'
-      onClick={() => router.push('/contact')}
+      onClick={() => router.push('/tryforfree')}
       color='primary'
       className='flex gap-3 text-white bg-primaryDark text-2xl py-8 px-6'>
       <FaAngleRight /> {t('Zim Kontaktformular')}

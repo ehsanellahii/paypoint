@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+  --primary: '#5897CD';
+}
+
 body {
   background-color: #faf7f3;
 }
@@ -45,5 +49,18 @@ body {
   font-weight: bold; /* Adjust as needed */
 }
 
-
-
+/* .imgSelectionDiv::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  right: -38px;
+  top: -10px;
+  border-width: 18px;
+  border-style: solid;
+  border-image: initial;
+  border-color: var(--primary) var(--primary) transparent transparent;
+  border-width: 23px;
+  border-radius: 0px;
+} */

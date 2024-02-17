@@ -25,7 +25,7 @@ const ServicesCard = ({
   const router = useRouter();
   const handleClick = () => {
     setSessionCookie('selectedOfferDetails', JSON.stringify(item));
-    router.push('/contact');
+    router.push('/tryforfree');
   };
   return (
     <article

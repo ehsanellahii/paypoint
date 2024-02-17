@@ -64,7 +64,7 @@ const Hero = () => {
             </p>
             <div className='w-full h-full md:max-w-full mx-auto flex flex-col sm:flex-row md:flex-col gap-4 md:px-4'>
               <Button
-                onClick={() => router.push('/contact')}
+                onClick={() => router.push('/tryforfree')}
                 className='rounded-3xl text-xl bg-primary hover:bg-primaryDark text-white px-4 py-6 font-bold flex justify-center w-full outline-none border-none focus:outline-none focus:border-none'
                 type='button'>
                 {t('TryButton')}

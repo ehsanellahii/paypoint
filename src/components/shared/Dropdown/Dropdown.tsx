@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import React from 'react';
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from '@nextui-org/react';
 import { useRouter } from '@/navigation';
+import { IoIosArrowDown } from 'react-icons/io';
 
 const DropdownComponent = ({
   DropdownTitle,
@@ -14,13 +15,19 @@ const DropdownComponent = ({
 }) => {
   const router = useRouter();
   const navbarTranslation = useTranslations('Navbar');
+  const [isOpen, setIsOpen] = React.useState(false);
   return (
     <Dropdown
-      onOpenChange={(isOpen: boolean) => {
-        console.log(isOpen);
+      onOpenChange={(value: boolean) => {
+        setIsOpen(value);
       }}>
       <DropdownTrigger className='capitalize text-xl break-keep font-bold whitespace-nowrap group'>
-        {DropdownTitle}
+        <div className='flex items-center gap-3'>
+          <h6>{DropdownTitle}</h6>
+          <span className={`arrow ${isOpen ? 'open rotate-180' : ''}`}>
+            <IoIosArrowDown />
+          </span>
+        </div>
       </DropdownTrigger>
       <DropdownMenu aria-label='Dynamic Actions' items={item}>
         {(item: any) => (

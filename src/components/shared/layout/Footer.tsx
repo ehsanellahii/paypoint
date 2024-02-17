@@ -12,7 +12,7 @@ const Footer = () => {
   const t = useTranslations('Footer');
   const router = useRouter();
   return (
-    <section className='w-full h-full flex flex-col gap-2 my-4'>
+    <section className='w-full h-full flex flex-col gap-2'>
       <section className='w-full h-full py-10 bg-primaryDark clip-path'>
         {/* Footer Header */}
         <article className=' py-10 space-y-8 my-2'>
@@ -30,7 +30,7 @@ const Footer = () => {
           </h1>
           <div className='flex flex-col md:flex-row items-center gap-3 justify-center max-w-[90%] mx-auto md:max-w-[50%]'>
             <Button
-              onClick={() => router.push('/contact')}
+              onClick={() => router.push('/tryforfree')}
               className='w-full text-lg md:text-xl font-bold bg-white text-black-text py-6 px-6 rounded-[4rem]'
               type='button'>
               {t('Kostenlos testen')}
