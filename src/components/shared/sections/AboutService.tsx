@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import React from 'react';
-import Heading from '../Heading/Heading';
 import { useTranslations } from 'next-intl';
 
 type PropsType = {
