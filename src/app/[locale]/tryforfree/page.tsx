@@ -1,4 +1,4 @@
-import TryForFree from '@/components/Contactus/Contactus';
+import TryForFree from '@/components/TryForFree/TryForFree';
 import React from 'react';
 
 const TryFree = () => {
