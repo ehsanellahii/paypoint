@@ -28,13 +28,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://get-paypoint.de/en',
   },
+  keywords: ['delivery', 'management', 'system', 'automations', 'orders', 'paypoint', 'get-paypoint', 'get-paypoint.de',],
   openGraph: {
     title: 'Paypoint - The smart delivery management system',
     description:
       'No manual management of orders.NEW Integrated automations.NEU Integrated automations',
     images: '/og.png',
   },
-  
   twitter: {
     card: 'summary_large_image',
     site: 'https://get-paypoint.de/en',

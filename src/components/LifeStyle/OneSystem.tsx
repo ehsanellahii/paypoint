@@ -15,7 +15,7 @@ const OneSystem = () => {
       <Heading text={t('Ein System für alle Prozesse')} />
       <div className='w-full h-full grid py-12'>
         <div
-          className='w-full h-[20rem] md:h-[27rem] relative mx-auto'
+          className='w-full h-[22rem] md:h-[29rem] relative mx-auto'
           style={{
             backgroundImage: "url('/Assets/LifeStyle/OneSystem.png')",
             backgroundPosition: 'center center',
