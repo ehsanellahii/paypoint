@@ -21,10 +21,13 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://paypoint-new.vercel.app/'),
+  metadataBase: new URL('https://get-paypoint.de/en'),
   title: { default: 'PayPoint', template: '%s | PayPoint' },
   description:
     'No manual management of orders.NEW Integrated automations.NEU Integrated automations.',
+  alternates: {
+    canonical: 'https://get-paypoint.de/en',
+  },
 };
 
 export default function RootLayout({
