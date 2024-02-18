@@ -28,6 +28,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://get-paypoint.de/en',
   },
+  openGraph: {
+    title: 'Paypoint - The smart delivery management system',
+    description: 'No manual management of orders.NEW Integrated automations.NEU Integrated automations',
+    images: '/opengraph-image.png',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: 'https://get-payPayPointTitle webtsite',
+    description: 'No manual management of orders.NEW Integrated automations.NEU Integrated automations',
+    images: '/opengraph-image.png',
+  },
 };
 
 export default function RootLayout({

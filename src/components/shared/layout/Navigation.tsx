@@ -97,9 +97,13 @@ const Navigation = () => {
             <div className='pr-2 md:pr-7'>
               <Dropdown>
                 <DropdownTrigger>
-                  <h1>
-                    <IoGlobe size={30} />
-                  </h1>
+                  <div className='relative w-[2rem] h-[2rem]'>
+                    <Image
+                      src={locale === 'en' ? '/us_flag.svg' : '/germany_flag.svg'}
+                      alt=''
+                      fill
+                    />
+                  </div>
                 </DropdownTrigger>
                 <DropdownMenu
                   aria-label='Single selection example'
@@ -110,13 +114,21 @@ const Navigation = () => {
                   onSelectionChange={setSelectedKeys}>
                   <DropdownItem
                     key='english'
+                    className='py-0'
                     onClick={() => router.push(path, { locale: otherLocale })}>
-                    English
+                    <div className='inline-flex items-center gap-3'>
+                      <Image src={'/us_flag.svg'} alt='' width={30} height={30} />
+                      <p>English</p>
+                    </div>
                   </DropdownItem>
                   <DropdownItem
                     key='germen'
+                    className='py-0'
                     onClick={() => router.push(path, { locale: otherLocale })}>
-                    Germen
+                    <div className='inline-flex items-center gap-3'>
+                      <Image src={'/germany_flag.svg'} alt='' width={30} height={30} />
+                      <p>Germen</p>
+                    </div>
                   </DropdownItem>
                 </DropdownMenu>
               </Dropdown>

@@ -43,7 +43,7 @@ const ContentOnRightVideoOnLeft = ({
         </article>
         <article className='w-full h-full md:py-12 order-1 lg:order-2 md:pr-4'>
           <div className='w-full h-full space-y-4'>
-            <h1 className='font-black text-[2.3rem] leading-[2.3rem] md:text-[3.4rem] md:leading-[3rem] text-wrap'>
+            <h1 className='font-black text-[2.3rem] leading-[2.3rem] md:text-[3.4rem] md:leading-[3.4rem] text-wrap'>
               {t(title)}
             </h1>
             <p className='text-grey-text text-base md:text-xl'>{t(text)}</p>
