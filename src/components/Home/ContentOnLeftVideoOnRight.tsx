@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Wrapper from '../shared/Wrapper';
 import Heading from './Heading';
 import Image from 'next/image';
@@ -18,6 +18,16 @@ const ContentOnLeftVideoOnRight = ({
   isGif?: string;
 }) => {
   const t = useTranslations('Landing');
+  const videoRef = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    const playPromise = videoRef.current?.play();
+
+    if (playPromise !== undefined) {
+      playPromise
+        .then((_) => {})
+        .catch((error) => console.error('Autoplay error:', error));
+    }
+  }, []);
   return (
     <Wrapper style='w-full h-full my-4'>
       <section
@@ -35,12 +45,15 @@ const ContentOnLeftVideoOnRight = ({
         <article className={`w-full h-full  ${video ? 'md:px-[3.3rem]' : ''}`}>
           {video ? (
             <video
+              ref={videoRef}
               src={video}
               className='w-full h-full sm:h-[22rem] lg:h-full object-contain'
               autoPlay
               muted
               loop
               preload='auto'
+              playsInline // Add this line
+              controls={false}
             />
           ) : (
             <div className='w-full h-[20rem] lg:h-full relative'>

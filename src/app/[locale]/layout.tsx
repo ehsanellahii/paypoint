@@ -34,6 +34,7 @@ export const metadata: Metadata = {
       'No manual management of orders.NEW Integrated automations.NEU Integrated automations',
     images: '/og.png',
   },
+  
   twitter: {
     card: 'summary_large_image',
     site: 'https://get-paypoint.de/en',

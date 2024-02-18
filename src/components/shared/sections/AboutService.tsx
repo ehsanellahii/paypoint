@@ -12,7 +12,7 @@ const AboutService = ({ headerTitle, about }: PropsType) => {
   const t = useTranslations('Common');
   return (
     <section className='w-full h-full py-8 md:py-12 space-y-4 md:space-y-6'>
-      <h1 className='font-black text-[2rem] text-center'>{t(headerTitle)}</h1>
+      <h1 className='font-black text-[2rem] text-center px-2'>{t(headerTitle)}</h1>
       {/* <Heading text={t(headerTitle)} style='text-center text-[1rem]' /> */}
       <article className='w-full h-full  md:max-w-[90%] lg:max-w-[85%] mx-auto flex flex-col gap-6 md:gap-8'>
         <div className='w-full h-full md:max-w-[90%] md:mx-auto'>
