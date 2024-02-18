@@ -30,14 +30,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Paypoint - The smart delivery management system',
-    description: 'No manual management of orders.NEW Integrated automations.NEU Integrated automations',
-    images: '/opengraph-image.png',
+    description:
+      'No manual management of orders.NEW Integrated automations.NEU Integrated automations',
+    images: '/og.png',
   },
   twitter: {
     card: 'summary_large_image',
-    site: 'https://get-payPayPointTitle webtsite',
-    description: 'No manual management of orders.NEW Integrated automations.NEU Integrated automations',
-    images: '/opengraph-image.png',
+    site: 'https://get-payPayPointTitlepoint.de/en',
+    description:
+      'No manual management of orders.NEW Integrated automations.NEU Integrated automations',
+    images: '/og.png',
   },
 };
 

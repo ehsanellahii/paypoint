@@ -47,6 +47,7 @@ const BusinessType = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) =
           input: 'bg-transparent',
         }}
       />
+    
     </TabsWrapper>
   );
 };

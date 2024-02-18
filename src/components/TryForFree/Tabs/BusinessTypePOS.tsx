@@ -43,18 +43,19 @@ const BusinessTypePOS = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType
       required
       title=' What type of business do you need a POS system for ?'>
       <div className='w-full grid grid-cols-3 gap-4'>
-      {StaticData.Contact.BusinessOptions.map((itm, idx) => (
-        <Option
-          key={idx}
-          active={itm.title === formRef.current[formKey] ? true : false}
-          img={itm.image}
-          title={itm.title}
-          handleSelected={(val) => {
-            formRef.current[formKey] = val;
-            uiRefresh(Date.now());
-          }}
-        />
-      ))}
+        {StaticData.Contact.BusinessOptions.map((itm, idx) => (
+          <Option
+            key={idx}
+            active={itm.title === formRef.current[formKey] ? true : false}
+            img={itm.image}
+            title={itm.title}
+            handleSelected={(val) => {
+              formRef.current[formKey] = val;
+              uiRefresh(Date.now());
+              setTimeout(() => handleForward(), 500);
+            }}
+          />
+        ))}
       </div>
     </TabsWrapper>
   );

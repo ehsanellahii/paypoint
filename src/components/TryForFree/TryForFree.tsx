@@ -13,26 +13,26 @@ import Telephone from './Tabs/Telephone';
 import EmailTab from './Tabs/EmailAddress';
 import DataProtectionTab from './Tabs/DataProtection';
 import SubmitSuccessTab from './Tabs/SubmitSuccessTab';
-
+export const initialState = {
+  businessTypePOS: '',
+  businessType: '',
+  needHardware: 'Yes',
+  acceptPayment: '',
+  receiptRolls: 'Yes',
+  additionalFunctionality: '',
+  firstName: '',
+  lastName: '',
+  concernName: '',
+  street: '',
+  city: '',
+  postalCode: '',
+  phoneNumber: '',
+  email: '',
+  dataProtection: false,
+};
 const TryForFree = () => {
   const steps = useRef(1);
-  const formRef = useRef({
-    businessTypePOS: '',
-    businessType: '',
-    needHardware: 'Yes',
-    acceptPayment: '',
-    receiptRolls: 'Yes',
-    additionalFunctionality: '',
-    firstName: '',
-    lastName: '',
-    concernName: '',
-    street: '',
-    city: '',
-    postalCode: '',
-    phoneNumber: '',
-    email: '',
-    dataProtection: false,
-  });
+  const formRef = useRef(initialState);
   const [ui, uiRefresh] = useState(0);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -172,7 +172,14 @@ const TryForFree = () => {
                 />
               );
             case 12:
-              return <SubmitSuccessTab />;
+              return (
+                <SubmitSuccessTab
+                  formKey=''
+                  steps={steps}
+                  formRef={formRef}
+                  uiRefresh={uiRefresh}
+                />
+              );
             default:
               return null;
           }

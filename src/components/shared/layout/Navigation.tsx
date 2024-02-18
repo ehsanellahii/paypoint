@@ -114,20 +114,18 @@ const Navigation = () => {
                   onSelectionChange={setSelectedKeys}>
                   <DropdownItem
                     key='english'
-                    className='py-0'
                     onClick={() => router.push(path, { locale: otherLocale })}>
                     <div className='inline-flex items-center gap-3'>
                       <Image src={'/us_flag.svg'} alt='' width={30} height={30} />
-                      <p>English</p>
+                      <p>{navbarTranslation('English')}</p>
                     </div>
                   </DropdownItem>
                   <DropdownItem
                     key='germen'
-                    className='py-0'
                     onClick={() => router.push(path, { locale: otherLocale })}>
                     <div className='inline-flex items-center gap-3'>
                       <Image src={'/germany_flag.svg'} alt='' width={30} height={30} />
-                      <p>Germen</p>
+                      <p>{navbarTranslation('Germen')}</p>
                     </div>
                   </DropdownItem>
                 </DropdownMenu>
