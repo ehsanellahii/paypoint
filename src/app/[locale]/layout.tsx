@@ -21,7 +21,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://get-paypoint.de/en'),
+  metadataBase: new URL('https://get-paypoint.de'),
   title: { default: 'PayPoint', template: '%s | PayPoint' },
   description:
     'No manual management of orders.NEW Integrated automations.NEU Integrated automations.',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: 'https://get-payPayPointTitlepoint.de/en',
+    site: 'https://get-paypoint.de/en',
     description:
       'No manual management of orders.NEW Integrated automations.NEU Integrated automations',
     images: '/og.png',
