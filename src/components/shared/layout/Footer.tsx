@@ -15,7 +15,7 @@ const Footer = () => {
     <section className='w-full h-full flex flex-col gap-2'>
       <section className='w-full h-full py-10 bg-primaryDark clip-path'>
         {/* Footer Header */}
-        <article className=' py-10 space-y-8 my-2'>
+        <article className=' py-10 space-y-8 my-2 max-w-[1420px] mx-auto'>
           {/* Logo */}
           <div className='w-full h-full relative'>
             <Image

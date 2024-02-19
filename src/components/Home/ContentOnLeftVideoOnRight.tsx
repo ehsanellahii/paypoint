@@ -42,12 +42,12 @@ const ContentOnLeftVideoOnRight = ({
             <p className='text-grey-text text-base md:text-xl'>{t(text)}</p>
           </div>
         </article>
-        <article className={`w-full h-full  ${video ? 'md:px-[3.3rem]' : ''}`}>
+        <article className={`w-full h-full  ${video ? 'md:px-[6.8rem]' : ''}`}>
           {video ? (
             <video
               ref={videoRef}
               src={video}
-              className='w-full h-full sm:h-[22rem] lg:h-full object-contain'
+              className='w-full h-full sm:h-[22rem] lg:h-full object-contain rounded-lg'
               autoPlay
               muted
               loop
