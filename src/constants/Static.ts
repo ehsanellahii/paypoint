@@ -255,45 +255,45 @@ export const StaticData = {
     TeamMembers: [
       {
         image: '/Assets/AboutUs/TeamMembers/team-1.jpeg',
-        name: 'Timur TÜREL',
+        name: 'Jelena Fischer',
         designation: 'Geschäftsführer',
         description:
-          'Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen',
+          'Jelena Fischer ist die visionäre Kopf des Unternehmens, die mit strategischem Geschick und einem Fokus auf Exzellenz den Erfolg vorantreibt Ihr Verständnis für den Markt und ihre Förderung einer innovativen Arbeitskultur sichern das Wachstum und die Prosperität des Unternehmens',
       },
       {
         image: '/Assets/AboutUs/TeamMembers/team-2.jpeg',
-        name: 'Timur TÜREL',
-        designation: 'Geschäftsführer',
+        name: 'Abdullah Aslam',
+        designation: 'Team Lead Produktmanagement',
         description:
-          'Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen',
+          'Abdullah ist das kreative Genie im Team, das Jelenas Visionen in innovative Softwarelösungen verwandelt Seine Leidenschaft für Code und ständige Neugier treiben ihn an, kontinuierlich die Produkte von PayPoint zu verbessern und zu erweitern',
       },
       {
-        image: '/Assets/AboutUs/TeamMembers/team-1.jpeg',
-        name: 'Timur TÜREL',
-        designation: 'Geschäftsführer',
+        image: '/Assets/AboutUs/TeamMembers/team-3.jpeg',
+        name: 'Isa Kocak',
+        designation: 'leitender Vertriebsleiter',
         description:
-          'Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen',
+          'Isa ist der dynamische Motor im Vertriebsteam von PayPoint Mit seinem unübertroffenen Verhandlungsgeschick und seiner Fähigkeit, starke Kundenbeziehungen aufzubauen, treibt er das Wachstum des Unternehmens voran',
       },
       {
-        image: '/Assets/AboutUs/TeamMembers/team-1.jpeg',
-        name: 'Timur TÜREL',
-        designation: 'Geschäftsführer',
+        image: '/Assets/AboutUs/TeamMembers/team-4.jpeg',
+        name: 'Gian Djawa',
+        designation: 'Vertriebsleitung',
         description:
-          'Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen',
+          'Gian ist der inspirierende Leiter des Vertriebsteams bei PayPoint Mit seiner strategischen Herangehensweise und seinem Engagement für Kundenzufriedenheit ist er ein wesentlicher Treiber für den Erfolg im Vertriebsbereich',
       },
       {
-        image: '/Assets/AboutUs/TeamMembers/team-1.jpeg',
-        name: 'Timur TÜREL',
-        designation: 'Geschäftsführer',
+        image: '/Assets/AboutUs/TeamMembers/team-5.jpeg',
+        name: 'Ricarda Lang',
+        designation: 'Bürokommunikation',
         description:
-          'Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen',
+          'Jelena ist das organisatorische Rückgrat des Unternehmens und sorgt für eine reibungslose Kommunikation und Abläufe im Büro Mit ihrer Effizienz, ihrem Organisationstalent und ihrer freundlichen Art unterstützt sie das Team und trägt dazu bei, dass alle Arbeitsabläufe reibungslos funktionieren',
       },
       {
-        image: '/Assets/AboutUs/TeamMembers/team-1.jpeg',
-        name: 'Timur TÜREL',
-        designation: 'Geschäftsführer',
+        image: '/Assets/AboutUs/TeamMembers/team-6.jpeg',
+        name: 'Touseef Ahmed',
+        designation: 'Softwareentwickler',
         description:
-          'Timur kreist als allwissender GastroSoftVisionär zwischen Entwicklerplatz, Kunden und Projektmanagement Manche sagen, er sieht Kundenwünsche, bevor sie entstehen',
+          'Toussef ist ein kreativer Softwareentwickler, der mit Leidenschaft und Fachkenntnissen an der Entwicklung innovativer Lösungen arbeitet Sein technisches Geschick und sein Engagement für Qualität machen ihn zu einem wertvollen Mitglied des Teams, das kontinuierlich daran arbeitet, die Produkte von PayPoint zu verbessern und zu optimieren',
       },
     ],
   },
@@ -571,6 +571,42 @@ export const StaticData = {
         title: 'hairdresser & beauty',
       },
       { image: '/Assets/Pricing/BusinessTypeOptions/other.png', title: 'other' },
+    ],
+    FAQ: [
+      {
+        title: 'Kann das System Rabatte oder Sonderangebote verwalten?',
+        contentParts: [
+          {
+            text: 'Ja, das System bietet die Möglichkeit, Rabatte oder Sonderangebote zu verwalten Durch die Benutzeroberfläche der Kassensoftware können Sie verschiedene Arten von Rabatten einrichten, wie zum Beispiel prozentuale Rabatte, Mengenrabatte oder festgelegte Geldbeträge Diese Rabatte können dann während des Checkout-Prozesses angewendet werden, entweder automatisch oder manuell durch den Kassierer',
+          },
+        ],
+      },
+      {
+        title: 'Wie kann ich technische Probleme mit der Software oder Hardware lösen?',
+        contentParts: [
+          {
+            text: 'Wir bieten einen umfassenden Kundenservice, der es Ihnen ermöglicht, sich direkt mit unserem Support-Team zu verbinden Durch Tools wie TeamViewer können wir uns schnell und effizient mit Ihrem PC verbinden, um technische Probleme zu diagnostizieren und zu lösen Unser Support-Team steht Ihnen rund um die Uhr zur Verfügung, um sicherzustellen, dass Sie jederzeit Unterstützung erhalten, falls Probleme auftreten sollten Sie können uns einfach kontaktieren, und wir werden uns bemühen, Ihre Anliegen so schnell wie möglich zu lösen, um Ausfallzeiten zu minimieren und den reibungslosen Betrieb Ihrer Kassensoftware sicherzustellen',
+          },
+        ],
+      },
+      {
+        title:
+          'Bietet das System Funktionen zur Verwaltung von Reservierungen für Tische oder Veranstaltungen?',
+        contentParts: [
+          {
+            text: 'Das System bietet Funktionen zur Verwaltung von Reservierungen für Tische oder Veranstaltungen an Damit können Sie den Buchungsprozess effizient verwalten und den Gästen eine reibungslose Erfahrung bieten',
+          },
+        ],
+      },
+      {
+        title:
+          'Gibt es eine Möglichkeit, Sonderwünsche oder Anpassungen für Bestellungen zu berücksichtigen?',
+        contentParts: [
+          {
+            text: 'Ja, das System bietet die Möglichkeit, Sonderwünsche oder Anpassungen für Bestellungen zu berücksichtigen Damit können Kunden ihre Bestellungen individuell anpassen und sicherstellen, dass ihre Bedürfnisse erfüllt werden',
+          },
+        ],
+      },
     ],
   },
 };

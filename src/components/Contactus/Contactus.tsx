@@ -5,8 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Button, Checkbox, Input, Select, SelectItem, Textarea } from '@nextui-org/react';
 import { FaFacebook, FaFacebookMessenger, FaTelegram } from 'react-icons/fa';
 import Image from 'next/image';
-import { StaticData } from '@/constants/Static';
-import FAQ from '../Pricing/FAQ';
+import FAQ from './FAQ';
 import { useRouter } from '@/navigation';
 
 const Heading = ({ text }: { text: string }) => {
@@ -142,7 +141,7 @@ const ContactUs = () => {
               )}
             </p>
             <div className='w-full flex justify-center'>
-              <Button className='bg-primaryDark text-white  text-lg !rounded-[0px] px-12 !py-4'>
+              <Button className='bg-primaryDark text-white  text-lg md:text-xl rounded-[4rem] font-bold p-6'>
                 {t('Zum Onlineformular')}
               </Button>
             </div>
@@ -169,7 +168,7 @@ const ContactUs = () => {
               <Input label='Vorname' required />
               <Input label='Nachname' required />
             </div>
-            <Input label='E-Mail' />
+            <Input label='E-Mail'  />
             <Input label='Telefonnummer' />
             <Textarea label='Name des Gesschafts' />
             {/* <Select
@@ -192,7 +191,7 @@ const ContactUs = () => {
               Do you agree to our terms and conditions?
             </Checkbox>
             <div className='flex justify-center'>
-              <Button className='bg-white text-black-main font-medium text-lg !rounded-[0px] px-12 py-3'>
+              <Button className='bg-white text-black-main text-lg md:text-xl rounded-[4rem]  font-bold p-6'>
                 {t('Abschicken')}
               </Button>
             </div>

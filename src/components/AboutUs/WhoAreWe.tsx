@@ -26,7 +26,7 @@ const TeamMemberCard = ({ item }: TeamMemberProps) => {
         height={150}
         className='rounded-full object-cover'
       />
-      <h1 className='font-bold capitalize'>{item.name}</h1>
+      <h1 className='font-bold capitalize mt-4'>{item.name}</h1>
       <p className='text-grey-text '>{t(item.designation)}</p>
       <p className='mt-2 max-w-[80%] mx-auto text-center'>{t(item.description)}</p>
     </div>

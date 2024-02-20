@@ -31,7 +31,7 @@ const Footer = () => {
           <div className='flex flex-col md:flex-row items-center gap-3 justify-center max-w-[90%] mx-auto md:max-w-[50%]'>
             <Button
               onClick={() => router.push('/tryforfree')}
-              className='w-full text-lg md:text-xl font-bold bg-white text-black-text py-6 px-6 rounded-[4rem]'
+              className='w-full text-lg md:text-xl font-bold bg-white text-black-text p-6 rounded-[4rem]'
               type='button'>
               {t('Kostenlos testen')}
             </Button>
