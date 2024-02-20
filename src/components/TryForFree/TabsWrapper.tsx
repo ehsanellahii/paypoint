@@ -1,5 +1,6 @@
 import React from 'react';
 import TryForFreeFooter from './TryForFreeFooter';
+import { useTranslations } from 'next-intl';
 
 const TabsWrapper = ({
   children,
@@ -18,11 +19,12 @@ const TabsWrapper = ({
   showBackBtn?: boolean;
   showForwardBtn?: boolean;
 }) => {
+  const t = useTranslations('TryForFree');
   return (
     <section className='bg-white w-full h-full space-y-4  rounded-2xl'>
-      <div className='px-8 py-6 space-y-4'>
+      <div className='px-2 sm:px-8 py-6 space-y-4'>
         <h1 className='text-xl font-medium '>
-          {title}
+          {t(title)}
           {required && <span className='text-red-400'> *</span>}
         </h1>
         {children}

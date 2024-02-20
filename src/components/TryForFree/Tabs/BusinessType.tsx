@@ -34,9 +34,8 @@ const BusinessType = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) =
       title='What type of business is this?'>
       <Input
         isClearable
-        type='email'
+        type='text'
         labelPlacement='outside'
-        startContent={<ScanIcon />}
         value={formRef.current[formKey]}
         onValueChange={(e) => {
           formRef.current[formKey] = e;
@@ -47,7 +46,6 @@ const BusinessType = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) =
           input: 'bg-transparent',
         }}
       />
-    
     </TabsWrapper>
   );
 };

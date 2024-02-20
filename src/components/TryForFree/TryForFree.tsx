@@ -13,7 +13,10 @@ import Telephone from './Tabs/Telephone';
 import EmailTab from './Tabs/EmailAddress';
 import DataProtectionTab from './Tabs/DataProtection';
 import SubmitSuccessTab from './Tabs/SubmitSuccessTab';
-export const initialState = {
+import ServingTables from './Tabs/ServingTables';
+import CustomerSeats from './Tabs/CustomerSeats';
+import ConsultationTables from './Tabs/ConsulationTables';
+export const initialState: { [key: string]: string | boolean } = {
   businessTypePOS: '',
   businessType: '',
   needHardware: 'Yes',
@@ -29,10 +32,13 @@ export const initialState = {
   phoneNumber: '',
   email: '',
   dataProtection: false,
+  tablesHost: '',
+  customerSeats: '',
+  consultationTables: '',
 };
 const TryForFree = () => {
   const steps = useRef(1);
-  const formRef = useRef(initialState);
+  const formRef = useRef<{ [key: string]: string | boolean }>(initialState);
   const [ui, uiRefresh] = useState(0);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -74,112 +80,335 @@ const TryForFree = () => {
                 />
               );
             case 2:
-              return (
-                <BusinessType
-                  key={steps.current}
-                  steps={steps}
-                  formKey='businessType'
-                  formRef={formRef}
-                  uiRefresh={uiRefresh}
-                />
-              );
+              let componentRender;
+              if (formRef.current.businessTypePOS === 'Gastronomy') {
+                componentRender = (
+                  <ServingTables
+                    key={steps.current}
+                    steps={steps}
+                    formKey='tablesHost'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              } else if (formRef.current.businessTypePOS === 'Hairdresser & Beauty') {
+                componentRender = (
+                  <CustomerSeats
+                    key={steps.current}
+                    steps={steps}
+                    formKey='customerSeats'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              } else if (formRef.current.businessTypePOS === 'Optician') {
+                componentRender = (
+                  <ConsultationTables
+                    key={steps.current}
+                    steps={steps}
+                    formKey='consultationTables'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              } else if (formRef.current.businessTypePOS === 'Other') {
+                componentRender = (
+                  <BusinessType
+                    key={steps.current}
+                    steps={steps}
+                    formKey='businessType'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              } else {
+                componentRender = (
+                  <NeedHardware
+                    key={steps.current}
+                    steps={steps}
+                    formKey='needHardware'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              }
+              return componentRender;
             case 3:
-              return (
-                <NeedHardware
-                  key={steps.current}
-                  steps={steps}
-                  formKey='needHardware'
-                  formRef={formRef}
-                  uiRefresh={uiRefresh}
-                />
-              );
+              let componentToRenderThree;
+              if (
+                formRef.current.businessTypePOS === 'Gastronomy' ||
+                formRef.current.businessTypePOS === 'Other' ||
+                formRef.current.businessTypePOS === 'Optician' ||
+                formRef.current.businessTypePOS === "'Hairdresser & Beauty'"
+              ) {
+                componentToRenderThree = (
+                  <CardPayment
+                    key={steps.current}
+                    steps={steps}
+                    formKey='acceptPayment'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              } else {
+                componentToRenderThree = (
+                  <NeedHardware
+                    key={steps.current}
+                    steps={steps}
+                    formKey='needHardware'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              }
+              return componentToRenderThree;
             case 4:
-              return (
-                <CardPayment
-                  key={steps.current}
-                  steps={steps}
-                  formKey='acceptPayment'
-                  formRef={formRef}
-                  uiRefresh={uiRefresh}
-                />
-              );
+              let componentToRenderFour;
+              if (
+                formRef.current.businessTypePOS === 'Gastronomy' ||
+                formRef.current.businessTypePOS === 'Other' ||
+                formRef.current.businessTypePOS === 'Optician' ||
+                formRef.current.businessTypePOS === "'Hairdresser & Beauty'"
+              ) {
+                componentToRenderFour = (
+                  <ReceiptRolls
+                    key={steps.current}
+                    steps={steps}
+                    formKey='receiptRolls'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              } else {
+                componentToRenderFour = (
+                  <CardPayment
+                    key={steps.current}
+                    steps={steps}
+                    formKey='acceptPayment'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              }
+              return componentToRenderFour;
             case 5:
-              return (
-                <ReceiptRolls
-                  key={steps.current}
-                  steps={steps}
-                  formKey='receiptRolls'
-                  formRef={formRef}
-                  uiRefresh={uiRefresh}
-                />
-              );
+              let componentToRenderFive;
+              if (
+                formRef.current.businessTypePOS === 'Gastronomy' ||
+                formRef.current.businessTypePOS === 'Other' ||
+                formRef.current.businessTypePOS === 'Optician' ||
+                formRef.current.businessTypePOS === "'Hairdresser & Beauty'"
+              ) {
+                componentToRenderFive = (
+                  <AdditionalFunctionality
+                    key={steps.current}
+                    steps={steps}
+                    formKey='additionalFunctionality'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              } else {
+                componentToRenderFive = (
+                  <ReceiptRolls
+                    key={steps.current}
+                    steps={steps}
+                    formKey='receiptRolls'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              }
+              return componentToRenderFive;
             case 6:
-              return (
-                <AdditionalFunctionality
-                  key={steps.current}
-                  steps={steps}
-                  formKey='additionalFunctionality'
-                  formRef={formRef}
-                  uiRefresh={uiRefresh}
-                />
-              );
+              let componentToRenderSix;
+              if (
+                formRef.current.businessTypePOS === 'Gastronomy' ||
+                formRef.current.businessTypePOS === 'Other' ||
+                formRef.current.businessTypePOS === 'Optician' ||
+                formRef.current.businessTypePOS === "'Hairdresser & Beauty'"
+              ) {
+                componentToRenderSix = (
+                  <UserInformation
+                    steps={steps}
+                    key={steps.current}
+                    formKey=''
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              } else {
+                componentToRenderSix = (
+                  <AdditionalFunctionality
+                    key={steps.current}
+                    steps={steps}
+                    formKey='additionalFunctionality'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              }
+              return componentToRenderSix;
             case 7:
-              return (
-                <UserInformation
-                  steps={steps}
-                  key={steps.current}
-                  formKey=''
-                  formRef={formRef}
-                  uiRefresh={uiRefresh}
-                />
-              );
+              let componentToRenderSeven;
+              if (
+                formRef.current.businessTypePOS === 'Gastronomy' ||
+                formRef.current.businessTypePOS === 'Other' ||
+                formRef.current.businessTypePOS === 'Optician' ||
+                formRef.current.businessTypePOS === "'Hairdresser & Beauty'"
+              ) {
+                componentToRenderSeven = (
+                  <AddressInformation
+                    steps={steps}
+                    formKey=''
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                    key={steps.current}
+                  />
+                );
+              } else {
+                componentToRenderSeven = (
+                  <UserInformation
+                    steps={steps}
+                    key={steps.current}
+                    formKey=''
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              }
+              return componentToRenderSeven;
             case 8:
-              return (
-                <AddressInformation
-                  steps={steps}
-                  formKey=''
-                  formRef={formRef}
-                  uiRefresh={uiRefresh}
-                  key={steps.current}
-                />
-              );
+              let componentToRenderEight;
+              if (
+                formRef.current.businessTypePOS === 'Gastronomy' ||
+                formRef.current.businessTypePOS === 'Other' ||
+                formRef.current.businessTypePOS === 'Optician' ||
+                formRef.current.businessTypePOS === "'Hairdresser & Beauty'"
+              ) {
+                componentToRenderEight = (
+                  <Telephone
+                    steps={steps}
+                    formKey='phoneNumber'
+                    formRef={formRef}
+                    key={steps.current}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              } else {
+                componentToRenderEight = (
+                  <AddressInformation
+                    steps={steps}
+                    formKey=''
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                    key={steps.current}
+                  />
+                );
+              }
+              return componentToRenderEight;
             case 9:
-              return (
-                <Telephone
-                  steps={steps}
-                  formKey='phoneNumber'
-                  formRef={formRef}
-                  key={steps.current}
-                  uiRefresh={uiRefresh}
-                />
-              );
+              let componentToRenderNine;
+              if (
+                formRef.current.businessTypePOS === 'Gastronomy' ||
+                formRef.current.businessTypePOS === 'Other' ||
+                formRef.current.businessTypePOS === 'Optician' ||
+                formRef.current.businessTypePOS === "'Hairdresser & Beauty'"
+              ) {
+                componentToRenderNine = (
+                  <EmailTab
+                    steps={steps}
+                    formKey='email'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              } else {
+                componentToRenderNine = (
+                  <Telephone
+                    steps={steps}
+                    formKey='phoneNumber'
+                    formRef={formRef}
+                    key={steps.current}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              }
+              return componentToRenderNine;
             case 10:
-              return (
-                <EmailTab
-                  steps={steps}
-                  formKey='email'
-                  formRef={formRef}
-                  uiRefresh={uiRefresh}
-                />
-              );
+              let componentToRenderTen;
+              if (
+                formRef.current.businessTypePOS === 'Gastronomy' ||
+                formRef.current.businessTypePOS === 'Other' ||
+                formRef.current.businessTypePOS === 'Optician' ||
+                formRef.current.businessTypePOS === "'Hairdresser & Beauty'"
+              ) {
+                componentToRenderTen = (
+                  <DataProtectionTab
+                    steps={steps}
+                    formKey='dataProtection'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              } else {
+                componentToRenderTen = (
+                  <EmailTab
+                    steps={steps}
+                    formKey='email'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              }
+              return componentToRenderTen;
             case 11:
-              return (
-                <DataProtectionTab
-                  steps={steps}
-                  formKey='dataProtection'
-                  formRef={formRef}
-                  uiRefresh={uiRefresh}
-                />
-              );
+              let componentToRenderEleven;
+              if (
+                formRef.current.businessTypePOS === 'Gastronomy' ||
+                formRef.current.businessTypePOS === 'Other' ||
+                formRef.current.businessTypePOS === 'Optician' ||
+                formRef.current.businessTypePOS === "'Hairdresser & Beauty'"
+              ) {
+                componentToRenderEleven = (
+                  <SubmitSuccessTab
+                    formKey=''
+                    steps={steps}
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              } else {
+                componentToRenderEleven = (
+                  <DataProtectionTab
+                    steps={steps}
+                    formKey='dataProtection'
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              }
+              return componentToRenderEleven;
             case 12:
-              return (
-                <SubmitSuccessTab
-                  formKey=''
-                  steps={steps}
-                  formRef={formRef}
-                  uiRefresh={uiRefresh}
-                />
-              );
+              let componentToRenderTwelve;
+              if (
+                formRef.current.businessTypePOS === 'Gastronomy' ||
+                formRef.current.businessTypePOS === 'Other' ||
+                formRef.current.businessTypePOS === 'Optician' ||
+                formRef.current.businessTypePOS === "'Hairdresser & Beauty'"
+              ) {
+                componentToRenderTwelve = null;
+              } else {
+                componentToRenderTwelve = (
+                  <SubmitSuccessTab
+                    formKey=''
+                    steps={steps}
+                    formRef={formRef}
+                    uiRefresh={uiRefresh}
+                  />
+                );
+              }
+              return componentToRenderTwelve;
             default:
               return null;
           }

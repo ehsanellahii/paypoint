@@ -3,8 +3,10 @@ import React from 'react';
 import TabsWrapper from '../TabsWrapper';
 import { Input } from '@nextui-org/react';
 import { LuUser2 } from 'react-icons/lu';
+import { useTranslations } from 'next-intl';
 
 const UserInformation = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) => {
+  const t = useTranslations('TryForFree');
   const [, subRefresh] = React.useState(-1);
   const handleBackward = () => {
     uiRefresh((prev) => prev - 1);
@@ -26,7 +28,7 @@ const UserInformation = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType
           type='text'
           labelPlacement='outside'
           startContent={<LuUser2 />}
-          description='First name'
+          description={t('First Name')}
           value={formRef.current['firstName']}
           onValueChange={(e) => {
             formRef.current['firstName'] = e;
@@ -37,7 +39,7 @@ const UserInformation = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType
           isClearable
           type='text'
           labelPlacement='outside'
-          description='Last name'
+          description={t('Last Name')}
           value={formRef.current['lastName']}
           onValueChange={(e) => {
             formRef.current['lastName'] = e;
@@ -48,7 +50,7 @@ const UserInformation = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType
           isClearable
           type='text'
           labelPlacement='outside'
-          description='Name of the concern'
+          description={t('Name of the concern')}
           value={formRef.current['concernName']}
           onValueChange={(e) => {
             formRef.current['concernName'] = e;

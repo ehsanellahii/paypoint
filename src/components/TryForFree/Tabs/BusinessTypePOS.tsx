@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import TabsWrapper from '../TabsWrapper';
 import { ContactTabsType } from '@/interface/Common';
+import { useTranslations } from 'next-intl';
 
 interface OptionProps {
   title: string;
@@ -12,6 +13,8 @@ interface OptionProps {
 }
 
 const Option = ({ title, img, active, handleSelected }: OptionProps) => {
+  const t = useTranslations('TryForFree');
+
   return (
     <div
       onClick={() => handleSelected(title)}
@@ -21,7 +24,7 @@ const Option = ({ title, img, active, handleSelected }: OptionProps) => {
       <div className='w-[13rem] h-[10rem] relative hover:scale-105 transition-all duration-75 ease-linear'>
         <Image src={img} alt={title} fill />
       </div>
-      <h1 className='capitalize font-medium'>{title}</h1>
+      <h1 className='capitalize font-medium'>{t(title)}</h1>
     </div>
   );
 };
@@ -41,8 +44,8 @@ const BusinessTypePOS = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType
       handleForward={handleForward}
       showBackBtn={false}
       required
-      title=' What type of business do you need a POS system for ?'>
-      <div className='w-full grid grid-cols-3 gap-4'>
+      title='What type of business do you need a POS system for ?'>
+      <div className='w-full grid md:grid-cols-2 lg:grid-cols-3 place-items-center gap-4'>
         {StaticData.Contact.BusinessOptions.map((itm, idx) => (
           <Option
             key={idx}

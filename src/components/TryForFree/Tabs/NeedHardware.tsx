@@ -4,8 +4,10 @@ import TabsWrapper from '../TabsWrapper';
 import makeAnimated from 'react-select/animated';
 const animatedComponents = makeAnimated();
 import Select from 'react-select';
+import { useTranslations } from 'next-intl';
 
 const NeedHardware = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) => {
+  const t = useTranslations('TryForFree');
   const handleBackward = () => {
     uiRefresh((prev) => prev - 1);
     steps.current -= 1;
@@ -19,17 +21,17 @@ const NeedHardware = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) =
     <TabsWrapper
       handleBackward={handleBackward}
       handleForward={handleForward}
-      title=' What type of business do you need a POS system for ?'>
-      <h6>If you don&rsquo;t need any hardware, you can skip this question.</h6>
+      title='Do you need hardware as well as software? If yes, which?'>
+      <h6>{t("If you don’t need any hardware, you can skip this question")}</h6>
       <Select
         value={selectedOptions}
         onChange={(value: any) => setSelectedOptions(value)}
         isMulti
         options={[
-          { value: 'checkout', label: 'Checkout' },
-          { label: 'Cash drawer', value: 'cash-drawer' },
-          { label: 'Receipt Printer', value: 'receipt-printer' },
-          { label: 'Scanner', value: 'scanner' },
+          { value: 'checkout', label: `${t('Checkout')}` },
+          { label: 'Cash drawer', value: `${t('cash-drawer')}` },
+          { label: 'Receipt Printer', value: `${t('receipt-printer')}` },
+          { label: 'Scanner', value: `${t('scanner')}` },
         ]}
       />
     </TabsWrapper>

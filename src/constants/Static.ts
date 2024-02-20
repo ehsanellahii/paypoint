@@ -560,17 +560,17 @@ export const StaticData = {
     BusinessOptions: [
       {
         image: '/Assets/Pricing/BusinessTypeOptions/gastronomy.jpg',
-        title: 'gastronomy',
+        title: 'Gastronomy',
       },
-      { image: '/Assets/Pricing/BusinessTypeOptions/retail.jpg', title: 'retail trade' },
-      { image: '/Assets/Pricing/BusinessTypeOptions/club.jpg', title: 'club' },
-      { image: '/Assets/Pricing/BusinessTypeOptions/foodtruck.jpg', title: 'food truck' },
-      { image: '/Assets/Pricing/BusinessTypeOptions/optician.jpg', title: 'optician' },
+      { image: '/Assets/Pricing/BusinessTypeOptions/retail.jpg', title: 'Retail Trade' },
+      { image: '/Assets/Pricing/BusinessTypeOptions/club.jpg', title: 'Club' },
+      { image: '/Assets/Pricing/BusinessTypeOptions/foodtruck.jpg', title: 'Food Truck' },
+      { image: '/Assets/Pricing/BusinessTypeOptions/optician.jpg', title: 'Optician' },
       {
         image: '/Assets/Pricing/BusinessTypeOptions/hairdresser.jpg',
-        title: 'hairdresser & beauty',
+        title: 'Hairdresser & Beauty',
       },
-      { image: '/Assets/Pricing/BusinessTypeOptions/other.png', title: 'other' },
+      { image: '/Assets/Pricing/BusinessTypeOptions/other.png', title: 'Other' },
     ],
     FAQ: [
       {

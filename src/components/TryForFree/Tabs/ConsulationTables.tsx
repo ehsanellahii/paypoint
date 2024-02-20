@@ -1,10 +1,11 @@
-import { Radio, RadioGroup } from '@nextui-org/react';
+import { ContactTabsType } from '@/interface/Common';
 import React, { useState } from 'react';
 import TabsWrapper from '../TabsWrapper';
-import { ContactTabsType } from '@/interface/Common';
+import makeAnimated from 'react-select/animated';
 import { useTranslations } from 'next-intl';
+import { Radio, RadioGroup } from '@nextui-org/react';
 
-const CardPayment = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) => {
+const ConsultationTables = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) => {
   const t = useTranslations('TryForFree');
   const [, subRefresh] = useState(-1);
 
@@ -21,18 +22,19 @@ const CardPayment = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) =>
       handleForward={handleForward}
       handleBackward={handleBackward}
       required
-      title='Would you also like to accept card payments?'>
+      title='How many consultation tables do you host?'>
       <RadioGroup
         value={formRef.current[formKey]}
         onValueChange={(value) => {
           formRef.current[formKey] = value;
           subRefresh(Date.now());
         }}>
-        <Radio value='Yes'>{t('Yes')}</Radio>
-        <Radio value='No'>{t('No')}</Radio>
+        <Radio value='1-10 Tables'>{t('1-10 tables')}</Radio>
+        <Radio value='More than 10 tables'>{t('More than 10 tables')}</Radio>
+        <Radio value='None'>{t('no')}</Radio>
       </RadioGroup>
     </TabsWrapper>
   );
 };
 
-export default CardPayment;
+export default ConsultationTables;
