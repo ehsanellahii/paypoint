@@ -14,7 +14,7 @@ import { useTranslations } from 'next-intl';
 const Testimonial = () => {
   const t = useTranslations('Landing');
   return (
-    <Wrapper style='w-full h-full'>
+    <Wrapper style='w-full h-full pb-4'>
       <section className='w-full h-full'>
         <h4 className='w-full h-full text-center font-black text-2xl md:text-3xl py-10'>
           {t('Kundenstimmen')}
@@ -35,7 +35,7 @@ const Testimonial = () => {
             className='max-w-full max-h-full'>
             {StaticData.Landing.Testimonials.map((itm, idx) => (
               <SwiperSlide key={idx}>
-                <div>
+                <div className='py-4'>
                   <p className='text-black-text md:px-20 italic my-4'>
                     {`"${t(itm.testimonial)}"`}
                   </p>

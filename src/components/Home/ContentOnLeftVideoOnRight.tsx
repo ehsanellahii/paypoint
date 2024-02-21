@@ -56,7 +56,7 @@ const ContentOnLeftVideoOnRight = ({
               controls={false}
             />
           ) : (
-            <div className='w-full h-[20rem] lg:h-full relative'>
+            <div className='w-full h-[22rem] lg:h-full relative'>
               <Image
                 src={ImageUrl || ''}
                 alt={''}

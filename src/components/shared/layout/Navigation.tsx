@@ -117,7 +117,7 @@ const Navigation = () => {
                     onClick={() => router.push(path, { locale: otherLocale })}>
                     <div className='inline-flex items-center gap-3'>
                       <Image src={'/us_flag.svg'} alt='' width={30} height={30} />
-                      <p>{navbarTranslation('English')}</p>
+                      <p className="capitalize">{navbarTranslation('English')}</p>
                     </div>
                   </DropdownItem>
                   <DropdownItem
@@ -125,7 +125,7 @@ const Navigation = () => {
                     onClick={() => router.push(path, { locale: otherLocale })}>
                     <div className='inline-flex items-center gap-3'>
                       <Image src={'/germany_flag.svg'} alt='' width={30} height={30} />
-                      <p>{navbarTranslation('Germen')}</p>
+                      <p className="capitalize">{navbarTranslation('Germen')}</p>
                     </div>
                   </DropdownItem>
                 </DropdownMenu>
