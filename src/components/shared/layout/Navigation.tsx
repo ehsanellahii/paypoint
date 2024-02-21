@@ -17,6 +17,7 @@ import DropdownComponent from '../Dropdown/Dropdown';
 import { useLocale, useTranslations } from 'next-intl';
 import { IoGlobe } from 'react-icons/io5';
 import { useRouter } from '@/navigation';
+import { link } from 'fs';
 
 const Navigation = () => {
   const navbarTranslation = useTranslations('Navbar');
@@ -47,17 +48,7 @@ const Navigation = () => {
       setLastScrollY(window.scrollY);
     }
   };
-  useEffect(() => {
-    const handleRouteChange = () => {
-      setIsOpen(false);
-    };
-    (router as any).events.on('routeChangeStart', handleRouteChange);
-    return () => {
-      (router as any).events.off('routeChangeStart', handleRouteChange);
-    };
-    //eslint-disable-next-line
-  }, [(router as any).events]);
-  
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.addEventListener('scroll', controlNavbar);
@@ -66,6 +57,11 @@ const Navigation = () => {
       };
     }
   });
+
+  const handleNavigate = (link: string) => {
+    router.push(link);
+    setIsOpen(false);
+  };
   return (
     <>
       <Wrapper
@@ -158,20 +154,20 @@ const Navigation = () => {
                 return itm.name === 'Business Typen' ? (
                   itm.subLink.map((itm: any, idx: number) => (
                     <div key={idx} className='py-3 w-full border-b'>
-                      <Link
-                        href={itm.link}
+                      <button
+                        onClick={() => handleNavigate(itm.link)}
                         className='w-full text-xl hover:text-primaryDark text-black-main hover:underline font-semibold'>
                         {navbarTranslation(itm.name)}
-                      </Link>
+                      </button>
                     </div>
                   ))
                 ) : (
                   <div key={idx} className='py-3 w-full border-b'>
-                    <Link
-                      href={itm.link}
+                    <button
+                      onClick={() => handleNavigate(itm.link)}
                       className='w-full text-xl hover:text-primaryDark text-black-main hover:underline font-semibold'>
                       {navbarTranslation(itm.name)}
-                    </Link>
+                    </button>
                   </div>
                 );
               })}

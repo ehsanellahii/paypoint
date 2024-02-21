@@ -3,6 +3,7 @@ import Wrapper from '../shared/Wrapper';
 import { Button, Checkbox, Input, Select, SelectItem, Textarea } from '@nextui-org/react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { CommonApi } from '@/utils/firebase/api/Common';
 
 const ContactForm = () => {
   const t = useTranslations('Contactus');
@@ -22,9 +23,18 @@ const ContactForm = () => {
       [name]: value,
     });
   };
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    console.log(input);
+    const data = {
+      first_name: input.firstName,
+      last_name: input.lastName,
+      email: input.email,
+      phone_number: input.phoneNumber,
+      business_name: input.businessName,
+      business_type: input.storeType,
+      agree: input.agree ? 'Yes' : 'No',
+    };
+    await CommonApi.storeDataInCollection('contactForm', data);
   };
   return (
     <Wrapper style='bg-primaryDark'>

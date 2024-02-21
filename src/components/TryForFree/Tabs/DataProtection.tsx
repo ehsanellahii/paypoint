@@ -15,6 +15,7 @@ const DataProtectionTab = ({ steps, formRef, uiRefresh, formKey }: ContactTabsTy
   }, [showError]);
   const handleForward = () => {
     if (formRef.current[formKey] !== '' && formRef.current[formKey] !== undefined) {
+      console.log(formRef.current);
       uiRefresh(Date.now());
       steps.current += 1;
     } else {
@@ -33,8 +34,7 @@ const DataProtectionTab = ({ steps, formRef, uiRefresh, formKey }: ContactTabsTy
       title='Data protection'
       required
       errorMessage='Please accept our terms and conditions so that we can process your request'
-      showError={showError}
-      >
+      showError={showError}>
       <p>
         {t(
           'I agree that the data I have sent will be processed for the purpose of processing my request in accordance with the'
