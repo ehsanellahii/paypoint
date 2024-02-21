@@ -283,6 +283,7 @@
     "Liferservice": "Delivery Service",
     "Sind Sie mit unseren Allgemeinen Geschäftsbedingungen einverstanden?": "Do you agree with our terms and conditions?",
     "Vorname ist erforderlich": "First name is required",
+    "Der Vorname sollte mindestens 3 Ziffern enthalten!": "First Name should contain at least 3 digits!",
     "Nachname ist erforderlich": "Last name is required",
     "E-Mail ist erforderlic": "E-Mail is required",
     "Telefonnummer ist erforderlich": "Phone number is required",

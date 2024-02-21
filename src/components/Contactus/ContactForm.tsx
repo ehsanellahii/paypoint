@@ -4,9 +4,29 @@ import { Button, Checkbox, Input, Select, SelectItem, Textarea } from '@nextui-o
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { CommonApi } from '@/utils/firebase/api/Common';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm, SubmitHandler } from 'react-hook-form';
+import { ContactFormSchema } from '@/validations/ContactForm';
+
+type Form = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
+  businessName: string;
+  storeType: string;
+  agree: boolean;
+};
 
 const ContactForm = () => {
   const t = useTranslations('Contactus');
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Form>({
+    resolver: zodResolver(ContactFormSchema),
+  });
   const [input, setInputs] = useState({
     firstName: '',
     lastName: '',
@@ -16,14 +36,16 @@ const ContactForm = () => {
     storeType: '',
     agree: false,
   });
+  console.log(input);
   const handleInputChange = (e: any) => {
     const { name, value } = e.target;
+    console.log(name, value);
     return setInputs({
       ...input,
       [name]: value,
     });
   };
-  const handleSubmit = async (e: any) => {
+  const onSubmit = async (e: any) => {
     e.preventDefault();
     const data = {
       first_name: input.firstName,
@@ -34,34 +56,45 @@ const ContactForm = () => {
       business_type: input.storeType,
       agree: input.agree ? 'Yes' : 'No',
     };
-    await CommonApi.storeDataInCollection('contactForm', data);
+    try {
+      await CommonApi.storeDataInCollection('contactForm', data);
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <Wrapper style='bg-primaryDark'>
       <div className='w-full grid md:grid-cols-2 gap-4 lg:gap-8 py-10'>
-        <form onSubmit={handleSubmit} className='w-full h-full  flex flex-col gap-3'>
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className='w-full h-full  flex flex-col gap-3'>
           <div className='flex flex-col md:flex-row gap-2'>
             <Input
               label={t('Vorname')}
               required
+              {...register('firstName')}
+              isInvalid={errors['firstName'] ? true : false}
+              errorMessage={errors['firstName']?.message}
+              name='firstName'
               value={input.firstName}
               onChange={handleInputChange}
-              isInvalid={true}
+              autoComplete='off'
               classNames={{
                 input: '!bg-white !border-white !focus:border-white',
                 innerWrapper: '!bg-white !border-white !focus:border-white',
                 inputWrapper:
                   '!bg-white !border-white !focus:border-white !hover:bg-white !rounded-[6px] !focus-within:bg-white',
               }}
-              errorMessage={t('Vorname ist erforderlich')}
             />
             <Input
               label={t('Nachname')}
               required
+              {...register('lastName')}
+              isInvalid={errors['lastName'] ? true : false}
+              errorMessage={errors['lastName']?.message}
+              name='lastName'
               value={input.lastName}
               onChange={handleInputChange}
-              isInvalid={true}
-              errorMessage={t('Nachname ist erforderlich')}
               classNames={{
                 input: '!bg-white !border-white !focus:border-white',
                 innerWrapper: '!bg-white !border-white !focus:border-white',
@@ -78,9 +111,11 @@ const ContactForm = () => {
               inputWrapper:
                 '!bg-white !border-white !focus:border-white !hover:bg-white !rounded-[6px] !focus-within:bg-white',
             }}
+            {...register('email')}
+            isInvalid={errors['email'] ? true : false}
+            errorMessage={errors['email']?.message}
+            name='email'
             type='email'
-            isInvalid={true}
-            errorMessage={t('E-Mail ist erforderlich')}
             required
             value={input.email}
             onChange={handleInputChange}
@@ -88,8 +123,10 @@ const ContactForm = () => {
           <Input
             label={t('Telefonnummer')}
             type='tel'
-            isInvalid={true}
-            errorMessage={t('Telefonnummer ist erforderlich')}
+            {...register('phoneNumber')}
+            isInvalid={errors['phoneNumber'] ? true : false}
+            errorMessage={errors['phoneNumber']?.message}
+            name='phoneNumber'
             classNames={{
               input: '!bg-white !border-white !focus:border-white',
               innerWrapper: '!bg-white !border-white !focus:border-white',
@@ -102,8 +139,9 @@ const ContactForm = () => {
           />
           <Textarea
             label={t('Name des Gesschafts')}
-            isInvalid={true}
-            errorMessage={t('Name des Geschäfts ist erforderlich')}
+            {...register('businessName')}
+            isInvalid={errors['businessName'] ? true : false}
+            errorMessage={errors['businessName']?.message}
             classNames={{
               base: '!bg-white !border-white !focus:border-white rounded-[6px]',
               innerWrapper: '!bg-white !border-white !focus:border-white',
@@ -111,18 +149,20 @@ const ContactForm = () => {
                 '!bg-white !border-white !focus:border-white !hover:bg-white !rounded-[6px] !focus-within:bg-white',
             }}
             required
+            name='businessName'
             value={input.businessName}
             onChange={handleInputChange}
           />
           <Select
-            value={input.storeType}
-            onChange={handleInputChange}
-            isInvalid={true}
-            errorMessage={t('Geschäftstyp ist erforderlich')}
-            name='StoreType'
-            id='StoreType'
+            {...register('storeType')}
+            isInvalid={errors['storeType'] ? true : false}
+            errorMessage={errors['storeType']?.message}
+            name='storeType'
+            id='storeType'
             required
             label={t('Wählen Sie Ihren Shop aus')}
+            value={input.storeType}
+            onChange={handleInputChange}
             classNames={{
               base: '!bg-white !border-white !focus:border-white rounded-[6px]',
               innerWrapper: '!bg-white !border-white !focus:border-white',
@@ -140,8 +180,10 @@ const ContactForm = () => {
             ))}
           </Select>
           <Checkbox
+            {...register('agree')}
+            isInvalid={errors['agree'] ? true : false}
             required
-            isInvalid={true}
+            name='agree'
             isSelected={input.agree}
             onValueChange={(value) => setInputs({ ...input, agree: value })}
             classNames={{
