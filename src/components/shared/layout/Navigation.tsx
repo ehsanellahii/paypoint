@@ -40,13 +40,24 @@ const Navigation = () => {
     if (typeof window !== 'undefined') {
       if (window.scrollY < lastScrollY) {
         setShow(false);
+        setIsOpen(false);
       } else {
         setShow(true);
       }
       setLastScrollY(window.scrollY);
     }
   };
-
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setIsOpen(false);
+    };
+    (router as any).events.on('routeChangeStart', handleRouteChange);
+    return () => {
+      (router as any).events.off('routeChangeStart', handleRouteChange);
+    };
+    //eslint-disable-next-line
+  }, [(router as any).events]);
+  
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.addEventListener('scroll', controlNavbar);
@@ -117,7 +128,7 @@ const Navigation = () => {
                     onClick={() => router.push(path, { locale: otherLocale })}>
                     <div className='inline-flex items-center gap-3'>
                       <Image src={'/us_flag.svg'} alt='' width={30} height={30} />
-                      <p className="capitalize">{navbarTranslation('English')}</p>
+                      <p className='capitalize'>{navbarTranslation('English')}</p>
                     </div>
                   </DropdownItem>
                   <DropdownItem
@@ -125,7 +136,7 @@ const Navigation = () => {
                     onClick={() => router.push(path, { locale: otherLocale })}>
                     <div className='inline-flex items-center gap-3'>
                       <Image src={'/germany_flag.svg'} alt='' width={30} height={30} />
-                      <p className="capitalize">{navbarTranslation('Germen')}</p>
+                      <p className='capitalize'>{navbarTranslation('Germen')}</p>
                     </div>
                   </DropdownItem>
                 </DropdownMenu>
