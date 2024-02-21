@@ -15,8 +15,8 @@ const AddressInformation = ({ steps, formRef, uiRefresh, formKey }: ContactTabsT
   }, [showError]);
   const handleForward = () => {
     if (
-      (formRef.current['street'] !== '' && formRef.current['street'] !== undefined) ||
-      (formRef.current['city'] !== '' && formRef.current['city'] !== undefined) ||
+      (formRef.current['street'] !== '' && formRef.current['street'] !== undefined) &&
+      (formRef.current['city'] !== '' && formRef.current['city'] !== undefined) &&
       (formRef.current['postalCode'] !== '' &&
         formRef.current['postalCode'] !== undefined)
     ) {

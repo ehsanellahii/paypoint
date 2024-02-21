@@ -17,8 +17,8 @@ const UserInformation = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType
   const handleForward = () => {
     if (
       (formRef.current['firstName'] !== '' &&
-        formRef.current['firstName'] !== undefined) ||
-      (formRef.current['lastName'] !== '' && formRef.current['lastName'] !== undefined) ||
+        formRef.current['firstName'] !== undefined) &&
+      (formRef.current['lastName'] !== '' && formRef.current['lastName'] !== undefined) &&
       (formRef.current['concernName'] !== '' &&
         formRef.current['concernName'] !== undefined)
     ) {
