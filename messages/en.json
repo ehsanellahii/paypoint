@@ -349,6 +349,12 @@
     "1-10 seats": "1-10 seats",
     "10-50 seats": "10-50 seats",
     "more than 50 seats": "More than 50 seats",
-    "Data Protection": "Data Protection"
+    "Data Protection": "Data Protection",
+    "Please accept our terms and conditions so that we can process your request": "Please accept our terms and conditions so that we can process your request",
+    "Please fill out all fields": "Please fill out all fields",
+    "Please enter a valid email address": "Please enter a valid email address",
+    "Please enter a valid phone number": "Please enter a valid phone number",
+    "Please make selection": "Please make selection",
+    "Please enter a valid postal code": "Please enter a valid postal code"
   }
 }

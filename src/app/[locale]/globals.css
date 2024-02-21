@@ -64,3 +64,38 @@ body {
   border-width: 23px;
   border-radius: 0px;
 } */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-2px); /* Adjust the distance and direction as needed */
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(2px); /* Adjust the distance and direction as needed */
+  }
+}
+
+.error_animation {
+  position: relative; /* Add position relative to the parent container */
+  animation: shake 0.5s ease-in-out;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px; /* Adjust the size of the arrow */
+    border-style: solid;
+    border-color: transparent transparent red transparent; /* Adjust the color of the arrow */
+  }
+}

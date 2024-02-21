@@ -346,6 +346,12 @@
     "1-10 seats": "1-10 Plätze",
     "10-50 seats": "10-50 Plätze",
     "more than 50 seats": "mehr als 50 Plätze",
-    "Data Protection": "Datenschutz"
+    "Data Protection": "Datenschutz",
+    "Please accept our terms and conditions so that we can process your request": "Bitte akzeptiere unsere AGB's damit wir Deine Anfrage verarbeiten können.",
+    "Please fill out all fields": "Bitte fülle alle Felder aus",
+    "Please make selection": "Bitte treffen Sie eine Auswahl",
+    "Please enter a valid phone number":"Bitte geben Sie eine gültige Telefonnummer ein",
+    "Please enter a valid email address":"Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "Please enter a valid postal code":"Bitte geben Sie eine gültige Postleitzahl ein"
   }
 }

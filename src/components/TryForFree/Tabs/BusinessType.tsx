@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import TabsWrapper from '../TabsWrapper';
 import { Input } from '@nextui-org/react';
 import { BiScan } from 'react-icons/bi';
@@ -14,12 +14,18 @@ const ScanIcon = () => {
 
 const BusinessType = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) => {
   const [, subRefresh] = useState(-1);
+  const [showError, setShowError] = useState(false);
+  useEffect(() => {
+    if (showError) {
+      setTimeout(() => setShowError(false), 1000);
+    }
+  }, [showError]);
   const handleForward = () => {
-    if (formRef.current[formKey]) {
-      uiRefresh((prev) => prev + 1);
+    if (formRef.current[formKey] !== '' && formRef.current[formKey] !== undefined) {
+      uiRefresh(Date.now());
       steps.current += 1;
     } else {
-      alert('Please select a business type');
+      setShowError(true);
     }
   };
   const handleBackward = () => {
@@ -31,6 +37,8 @@ const BusinessType = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) =
       handleForward={handleForward}
       handleBackward={handleBackward}
       required
+      tabType='freeInput'
+      showError={showError}
       title='What type of business is this?'>
       <Input
         isClearable

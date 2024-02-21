@@ -66,7 +66,7 @@ const TryForFree = () => {
   };
   return (
     <Wrapper style='w-full h-full bg-primary'>
-      <div className='w-full max-w-[65%] mx-auto flex items-center justify-center py-4 md:py-16'>
+      <div className='w-full max-w-[90%] md:max-w-[65%] mx-auto flex items-center justify-center py-4 md:py-16'>
         {(() => {
           switch (steps.current) {
             case 1:
