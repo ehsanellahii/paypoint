@@ -14,10 +14,10 @@ const EmailTab = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) => {
     if (showError) {
       setTimeout(() => setShowError(false), 1000);
     }
-    if(showInValidError){
+    if (showInValidError) {
       setTimeout(() => setShowInValidError(false), 1000);
     }
-  }, [showError,showInValidError]);
+  }, [showError, showInValidError]);
 
   const isValidEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -30,7 +30,6 @@ const EmailTab = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) => {
       if (isValidEmail(emailInput)) {
         uiRefresh(Date.now());
         steps.current += 1;
-        setShowError(false);
       } else {
         setShowInValidError(true);
       }
@@ -50,10 +49,13 @@ const EmailTab = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) => {
       handleForward={handleForward}
       required
       tabType='freeInput'
-      showError={showError}
+      showError={showError || showInValidError}
       title='Email'
-      errorMessage={showInValidError ? 'Please enter a valid email address' : 'Please fill out all fields'}
-      >
+      errorMessage={
+        showInValidError
+          ? 'Please enter a valid email address'
+          : 'Please fill out all fields'
+      }>
       <p>
         {t(
           'Please let us know your email address so that we can send you your tailor-made offer'

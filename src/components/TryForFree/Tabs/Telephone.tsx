@@ -14,20 +14,20 @@ const Telephone = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) => {
     if (showError) {
       setTimeout(() => setShowError(false), 1000);
     }
-    if(showInValidError){
+    if (showInValidError) {
       setTimeout(() => setShowInValidError(false), 1000);
     }
-  }, [showError,showInValidError]);
+  }, [showError, showInValidError]);
   const handleForward = () => {
     const telephoneInput = formRef.current[formKey];
-    if (telephoneInput && /^\d+$/.test(telephoneInput)) {
-      if (telephoneInput.length >= 10) {
-        uiRefresh(Date.now());
-        steps.current += 1;
-        setShowInValidError(false); 
-      } else {
+    if (telephoneInput) {
+      if (/^\d+$/.test(telephoneInput) || telephoneInput.length < 10) {
         setShowInValidError(true);
+        return;
       }
+      uiRefresh(Date.now());
+      steps.current += 1;
+      setShowInValidError(false);
     } else {
       setShowError(true);
     }
@@ -43,9 +43,13 @@ const Telephone = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) => {
       handleForward={handleForward}
       title='Telephone'
       required
-      errorMessage={showInValidError ? 'Please enter a valid phone number' : 'Please fill out all fields'}
+      errorMessage={
+        showInValidError
+          ? 'Please enter a valid phone number'
+          : 'Please fill out all fields'
+      }
       tabType='freeInput'
-      showError={showError}>
+      showError={showError || showInValidError}>
       <p>
         {t(
           'We know you have a lot to do We only need your telephone number in case we have any questions about your request Of course, you will not receive any annoying advertising calls from us'
