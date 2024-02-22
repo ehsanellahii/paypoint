@@ -31,7 +31,7 @@ const ContactForm = () => {
   const t = useTranslations('Contactus');
   const tryT = useTranslations('TryForFree');
 
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const {
