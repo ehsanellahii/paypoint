@@ -31,17 +31,20 @@ const ContactForm = () => {
   const t = useTranslations('Contactus');
   const tryT = useTranslations('TryForFree');
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
   const {
     register,
     reset,
     handleSubmit,
+
     formState: { errors },
   } = useForm<Form>({
     resolver: zodResolver(ContactFormSchema),
   });
   const onSubmit = async (input: any) => {
+    setLoading(true);
     const data = {
       first_name: input.firstName,
       last_name: input.lastName,
@@ -54,8 +57,10 @@ const ContactForm = () => {
     try {
       await CommonApi.storeDataInCollection('contactform', data);
       reset();
+      setLoading(false);
       setIsOpen(true);
     } catch (error) {
+      setLoading(false);
       console.log(error);
     }
   };
@@ -167,6 +172,7 @@ const ContactForm = () => {
             </Select>
             <div className='flex justify-center'>
               <Button
+                isLoading={loading}
                 type='submit'
                 className='bg-white text-black-main text-lg md:text-xl rounded-[4rem]  font-bold p-6'>
                 {t('Abschicken')}
