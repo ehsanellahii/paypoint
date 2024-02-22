@@ -28,16 +28,10 @@ export const ContactFormSchema = z.object({
   businessName: z
     .string()
     .min(3, {
-      message: 'Business Name is required and should contain at least 3 characters!',
+      message: 'Business Name is required and should contain at least 5 characters!',
     })
     .refine((val) => val !== '', { message: 'Business Name is required!' }),
-
-  storeType: z
+  businessType: z
     .string()
-    .min(3, {
-      message: 'Store Type is required and should contain at least 3 characters!',
-    })
-    .refine((val) => val !== '', { message: 'Store Type is required!' }),
-
-  agree: z.boolean().refine((val) => val, { message: 'Agreement is required!' }),
+    .refine((val) => val !== '', { message: 'Business Type is required!' }),
 });

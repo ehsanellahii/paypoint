@@ -278,15 +278,19 @@
     "Kiosk": "Kiosk",
     "Supermarket": "Supermarket",
     "Liferservice": "Liferservice",
-    "Sind Sie mit unseren Allgemeinen Geschäftsbedingungen einverstanden?": "Sind Sie mit unseren Allgemeinen Geschäftsbedingungen einverstanden?",
-    "Vorname ist erforderlich": "Vorname ist erforderlich",
-    "Der Vorname sollte mindestens 3 Ziffern enthalten!":"Der Vorname sollte mindestens 3 Ziffern enthalten!",
-    "Nachname ist erforderlich": "Nachname ist erforderlich",
-    "E-Mail ist erforderlic": "E-Mail ist erforderlic",
-    "Telefonnummer ist erforderlich": "Telefonnummer ist erforderlich",
-    "Name des Geschäfts ist erforderlich": "Name des Geschäfts ist erforderlich",
-    "Geschäftstyp ist erforderlich": "Geschäftstyp ist erforderlich",
-    "AGB ist erforderlich": "AGB ist erforderlich"
+    "Select Your Business Type": "Wählen Sie Ihre Unternehmensart",
+    "Wählen Sie Ihr Unternehmen aus": "Wählen Sie Ihr Unternehmen aus",
+    "First Name is required!": "Vorname ist erforderlich!",
+    "First Name is required and should contain at least 3 characters!": "Vorname ist erforderlich und sollte mindestens 3 Zeichen enthalten!",
+    "Last Name is required!": "Nachname ist erforderlich!",
+    "Last Name is required and should contain at least 3 characters!": "Nachname ist erforderlich und sollte mindestens 3 Zeichen enthalten!",
+    "Email is required!": "E-Mail ist erforderlich!",
+    "Email should be in a correct format!": "Die E-Mail sollte im richtigen Format sein!",
+    "Phone Number is required!": "Telefonnummer ist erforderlich!",
+    "Phone Number should contain at least 10 digits!": "Die Telefonnummer sollte mindestens 10 Ziffern enthalten!",
+    "Business Name is required!": "Firmenname ist erforderlich!",
+    "Business Type is required!": "Unternehmensart ist erforderlich!",
+    "Business Name is required and should contain at least 5 characters!": "Der Firmenname ist erforderlich und sollte mindestens 5 Zeichen enthalten!"
   },
   "TryForFree": {
     "Back": "Zurück",
@@ -351,8 +355,8 @@
     "Please accept our terms and conditions so that we can process your request": "Bitte akzeptiere unsere AGB's damit wir Deine Anfrage verarbeiten können.",
     "Please fill out all fields": "Bitte fülle alle Felder aus",
     "Please make selection": "Bitte treffen Sie eine Auswahl",
-    "Please enter a valid phone number":"Bitte geben Sie eine gültige Telefonnummer ein",
-    "Please enter a valid email address":"Bitte geben Sie eine gültige E-Mail-Adresse ein",
-    "Please enter a valid postal code":"Bitte geben Sie eine gültige Postleitzahl ein"
+    "Please enter a valid phone number": "Bitte geben Sie eine gültige Telefonnummer ein",
+    "Please enter a valid email address": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "Please enter a valid postal code": "Bitte geben Sie eine gültige Postleitzahl ein"
   }
 }
