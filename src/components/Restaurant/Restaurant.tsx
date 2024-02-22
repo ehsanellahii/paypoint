@@ -16,7 +16,7 @@ const Restaurant = () => {
         <AboutService
           headerTitle={'Für volle Teller und stressfreien Service'}
           about={
-            'Vereinfache deine Bestellaufnahme! Mit der mobilen Kasse nimmst du Bestellungen im Restaurant schneller entgegen Alle Bestellkanäle laufen direkt in der SIDES Restaurant Software zusammen, egal ob Bestellung an der Theke, per QR-Code oder online Das entlastet deinen in-House Betrieb und verringert deine Fehlerquote  Die automatische Übertragung von Bestellungen an den Küchenmanager ermöglicht die schnellere Abarbeitung von Bestellungen'
+            'Vereinfache deine Bestellaufnahme! Mit der mobilen Kasse nimmst du Bestellungen im Restaurant schneller entgegen Alle Bestellkanäle laufen direkt in der PayPoint Restaurant Software zusammen, egal ob Bestellung an der Theke, per QR-Code oder online Das entlastet deinen in-House Betrieb und verringert deine Fehlerquote  Die automatische Übertragung von Bestellungen an den Küchenmanager ermöglicht die schnellere Abarbeitung von Bestellungen'
           }
         />
         <OneSystem />
