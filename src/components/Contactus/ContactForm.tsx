@@ -7,6 +7,7 @@ import { CommonApi } from '@/utils/firebase/api/Common';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { ContactFormSchema } from '@/validations/ContactForm';
+import { serverTimestamp } from 'firebase/firestore';
 
 type Form = {
   firstName: string;
@@ -36,9 +37,10 @@ const ContactForm = () => {
       phone_number: input.phoneNumber,
       business_name: input.businessName,
       business_type: input.businessType,
+      contacted_at: serverTimestamp(),
     };
     try {
-      await CommonApi.storeDataInCollection('contactForm', data);
+      await CommonApi.storeDataInCollection('contactform', data);
       reset();
     } catch (error) {
       console.log(error);

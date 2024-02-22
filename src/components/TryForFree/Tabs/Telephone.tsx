@@ -21,7 +21,7 @@ const Telephone = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) => {
   const handleForward = () => {
     const telephoneInput = formRef.current[formKey];
     if (telephoneInput) {
-      if (/^\d+$/.test(telephoneInput) || telephoneInput.length < 10) {
+      if (telephoneInput.length < 10) {
         setShowInValidError(true);
         return;
       }

@@ -16,12 +16,14 @@ import SubmitSuccessTab from './Tabs/SubmitSuccessTab';
 import ServingTables from './Tabs/ServingTables';
 import CustomerSeats from './Tabs/CustomerSeats';
 import ConsultationTables from './Tabs/ConsulationTables';
+import { CommonApi } from '@/utils/firebase/api/Common';
+import { serverTimestamp } from 'firebase/firestore';
 export const initialState: { [key: string]: string | boolean } = {
   businessTypePOS: '',
   businessType: '',
-  needHardware: 'Yes',
+  needHardware: '',
   acceptPayment: '',
-  receiptRolls: 'Yes',
+  receiptRolls: '',
   additionalFunctionality: '',
   firstName: '',
   lastName: '',
@@ -41,28 +43,52 @@ const TryForFree = () => {
   const formRef = useRef<{ [key: string]: string | boolean }>(initialState);
   const [ui, uiRefresh] = useState(0);
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // setOpenPopUp(true);
-    // setLoading(true);
-    // const Data = {
-    //   store_type: Inputs.StoreType,
-    //   country: Inputs.Country,
-    //   store_name: Inputs.StoreName,
-    //   no_of_stores: Inputs.NumberOfLocations,
-    //   pos_kind: Inputs.POS,
-    //   first_name: Inputs.FirstName,
-    //   last_name: Inputs.LastName,
-    //   phone_number: Inputs.PhoneNumber,
-    //   business_email: Inputs.BusinessEmail,
-    //   contacted_at: serverTimestamp(),
-    // };
-    // try {
-    //   await CommonApi.storeDataInCollection('UsersContacted', Data);
-    // } catch (error) {
-    //   console.log(error);
-    // }
-    // setLoading(false);
+  const handleSubmit = async () => {
+    const data: any = {
+      contacted_at: serverTimestamp(),
+      business_type: formRef.current.businessType,
+      pos_type: formRef.current.businessTypePOS,
+      need_hardware: formRef.current.needHardware,
+      accept_payments: formRef.current.acceptPayment,
+      receipt_rolls: formRef.current.receiptRolls,
+      additional_functionalities: formRef.current.additionalFunctionality,
+      number_of_tables_host: formRef.current.tablesHost,
+      number_of_customer_seats: formRef.current.customerSeats,
+      number_of_consultation_tabes: formRef.current.consultationTables,
+      user_details: {
+        first_name: formRef.current.firstName,
+        last_name: formRef.current.lastName,
+        name_of_concern: formRef.current.concernName,
+        street: formRef.current.concernName,
+        city: formRef.current.city,
+        postal_code: formRef.current.postalCode,
+        email: formRef.current.email,
+        phone_number: formRef.current.phoneNumber,
+      },
+      data_protection_agree: formRef.current.dataProtection,
+    };
+    //@ts-ignore
+    Object.entries(formRef.current).forEach(([key, value]) => {
+      // Check if the value is not empty (assuming non-empty strings)
+      if (value && typeof value === 'string' && value.trim() !== '') {
+        // Handle nested objects
+        if (key.includes('.')) {
+          const [parentKey, nestedKey] = key.split('.');
+          if (!data[parentKey]) {
+            data[parentKey] = {};
+          }
+          data[parentKey][nestedKey] = value;
+        } else {
+          data[key] = value;
+        }
+      }
+    });
+
+    try {
+      await CommonApi.storeDataInCollection('tryforfree', data);
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <Wrapper style='w-full h-full bg-primary'>
@@ -349,6 +375,7 @@ const TryForFree = () => {
                     formKey='dataProtection'
                     formRef={formRef}
                     uiRefresh={uiRefresh}
+                    handleSubmit={handleSubmit}
                   />
                 );
               } else {
@@ -385,6 +412,7 @@ const TryForFree = () => {
                     formKey='dataProtection'
                     formRef={formRef}
                     uiRefresh={uiRefresh}
+                    handleSubmit={handleSubmit}
                   />
                 );
               }

@@ -29,8 +29,8 @@ const TabsWrapper = ({
 
   return (
     <section className='bg-white w-full h-full space-y-4  rounded-2xl'>
-      <div className='w-full px-6 md:px-2 sm:px-8 pt-6 pb-2 space-y-4'>
-        <h1 className='text-xl  md:px-0 font-medium '>
+      <div className='w-full px-6 sm:px-8 pt-6 pb-2 space-y-4'>
+        <h1 className='text-xl font-medium '>
           {t(title)}
           {required && <span className='text-red-400'> *</span>}
         </h1>

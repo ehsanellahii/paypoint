@@ -5,7 +5,17 @@ import { MdOutlineEmail } from 'react-icons/md';
 import { ContactTabsType } from '@/interface/Common';
 import { useTranslations } from 'next-intl';
 
-const DataProtectionTab = ({ steps, formRef, uiRefresh, formKey }: ContactTabsType) => {
+interface SubmitTabType extends ContactTabsType {
+  handleSubmit: () => void;
+}
+
+const DataProtectionTab = ({
+  handleSubmit,
+  steps,
+  formRef,
+  uiRefresh,
+  formKey,
+}: SubmitTabType) => {
   const t = useTranslations('TryForFree');
   const [showError, setShowError] = useState(false);
   useEffect(() => {
@@ -15,7 +25,7 @@ const DataProtectionTab = ({ steps, formRef, uiRefresh, formKey }: ContactTabsTy
   }, [showError]);
   const handleForward = () => {
     if (formRef.current[formKey] !== '' && formRef.current[formKey] !== undefined) {
-      console.log(formRef.current);
+      handleSubmit();
       uiRefresh(Date.now());
       steps.current += 1;
     } else {
