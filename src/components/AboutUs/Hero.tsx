@@ -10,7 +10,8 @@ const Hero = () => {
       <div className='w-full h-full  flex flex-col md:flex-row gap-4'>
         <div className='w-full md:max-w-[40%] h-full  flex flex-col justify-between gap-4 lg:gap-16 lg:pt-20'>
           <h1 className='font-bold md:h-full text-[4rem] lg:text-[5rem] leading-[5rem] lg:leading-[5rem]'>
-            <span>{t('Wir sind')}</span> <span className='text-primaryDark'>PayPoint.</span>
+            <span>{t('Wir sind')}</span>{' '}
+            <span className='text-primaryDark'>PayPoint.</span>
           </h1>
           <p className='text-base md:h-full md:text-lg text-black-text'>
             {t(
@@ -21,8 +22,8 @@ const Hero = () => {
         {/* Right Side Video one */}
         <article className='h-full w-full  md:max-w-[60%] border-none rounded-lg outline-none '>
           <video
-            src={'/Assets/Aboutus/paypointteam.mp4'}
-            className='w-auto h-full max-h-[30rem] object-cover border-none outline-none leading-3 rounded-xl shadow-video'
+            src={'/Assets/Aboutus/paypoint_team.mp4'}
+            className='w-auto h-full lg:h-[30rem] max-h-[30rem] object-cover border-none outline-none leading-3 rounded-xl shadow-video'
             autoPlay
             muted
             loop
