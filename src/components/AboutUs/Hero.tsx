@@ -21,7 +21,7 @@ const Hero = () => {
         {/* Right Side Video one */}
         <article className='h-full w-full  md:max-w-[60%] border-none rounded-lg outline-none '>
           <video
-            src={'/Assets/Home/DummyVideo.mp4'}
+            src={'/Assets/Aboutus/paypointteam.mp4'}
             className='w-auto h-full max-h-[30rem] object-cover border-none outline-none leading-3 rounded-xl shadow-video'
             autoPlay
             muted
