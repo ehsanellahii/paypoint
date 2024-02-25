@@ -44,13 +44,13 @@ const ContentOnLeftVideoOnRight = ({
         </article>
         <article
           className={`w-full h-full  ${
-            video ? 'sm:h-[22rem] lg:h-[23rem] rounded-2xl overflow-hidden' : ''
+            video ? 'sm:h-[22rem] lg:h-[23rem] rounded-lg overflow-hidden' : ''
           }`}>
           {video ? (
             <video
               ref={videoRef}
               src={video}
-              className='w-full h-full object-contain rounded-2xl'
+              className='w-full h-full object-contain rounded-lg'
               autoPlay
               muted
               loop
