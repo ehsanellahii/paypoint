@@ -33,7 +33,7 @@ const ContentOnLeftVideoOnRight = ({
       <section
         className={`w-full h-full grid ${
           isGif ? 'lg:grid-cols-[36fr,56fr]' : 'lg:grid-cols-[36fr,50fr]'
-        }  place-items-center  gap-4 md:gap-2 md:pl-4`}>
+        }  place-items-center  gap-4 md:gap-12 md:pl-4`}>
         <article className='w-full h-full md:py-12'>
           <div className='w-full h-full space-y-4'>
             <h1 className='font-black text-[2.3rem] leading-[2.3rem] md:text-[3.4rem] md:leading-[3.4rem] text-wrap'>
@@ -42,17 +42,20 @@ const ContentOnLeftVideoOnRight = ({
             <p className='text-grey-text text-base md:text-xl'>{t(text)}</p>
           </div>
         </article>
-        <article className={`w-full h-full  ${video ? 'md:px-[6.8rem]' : ''}`}>
+        <article
+          className={`w-full h-full  ${
+            video ? 'sm:h-[22rem] lg:h-[23rem] rounded-xl overflow-hidden' : ''
+          }`}>
           {video ? (
             <video
               ref={videoRef}
               src={video}
-              className='w-full h-full sm:h-[22rem] lg:h-full object-contain rounded-lg'
+              className='w-full h-full object-contain rounded-xl'
               autoPlay
               muted
               loop
               preload='auto'
-              playsInline // Add this line
+              playsInline
               controls={false}
             />
           ) : (

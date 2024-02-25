@@ -19,7 +19,7 @@ const ContentOnRightVideoOnLeft = ({
   return (
     <Wrapper style='w-full h-full my-4'>
       <section
-        className={`w-full h-full grid lg:grid-cols-[50fr,36fr] place-items-center gap-4 md:gap-2`}>
+        className={`w-full h-full grid lg:grid-cols-[50fr,36fr] place-items-center gap-4 md:gap-8 lg:gap-12 `}>
         <article className='w-full h-full flex justify-start order-2 lg:order-1'>
           {video ? (
             <video
@@ -31,7 +31,7 @@ const ContentOnRightVideoOnLeft = ({
               preload='auto'
             />
           ) : (
-            <div className='w-full  h-[19.9rem] relative'>
+            <div className='w-full  h-[22rem] lg:h-full relative'>
               <Image
                 src={ImageUrl || ''}
                 alt={''}

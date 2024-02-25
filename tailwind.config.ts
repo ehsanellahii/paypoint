@@ -15,12 +15,13 @@ module.exports = {
       },
       screens: {
         xs: '450px',
+        xl:"1440px"
       },
       colors: {
         primary: '#5897CD',
         primaryDark: '#0071BB',
         bgApp: '#f6f6f6',
-        white:"#ffffff",
+        white: '#ffffff',
         main: {
           brand: '#5897CD',
           off: '',
@@ -31,7 +32,7 @@ module.exports = {
           royal: '#0057fc',
           teal: '#2f3460',
         },
-        
+
         black: {
           main: '#0a0a0a',
           text: '#0e1318',
@@ -54,6 +55,7 @@ module.exports = {
     },
   },
   plugins: [
+   
     nextui({
       addCommonColors: true,
       defaultTheme: 'light',
