@@ -42,6 +42,7 @@ const DataProtectionTab = ({
       handleBackward={handleBackward}
       handleForward={handleForward}
       title='Data protection'
+      forwardBtnText='Submit'
       required
       errorMessage='Please accept our terms and conditions so that we can process your request'
       showError={showError}>

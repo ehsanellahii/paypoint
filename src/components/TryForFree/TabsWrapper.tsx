@@ -13,6 +13,8 @@ const TabsWrapper = ({
   tabType,
   showError,
   errorMessage,
+  forwardBtnText,
+  backBtnText,
 }: {
   children: React.ReactNode;
   title: string;
@@ -24,6 +26,8 @@ const TabsWrapper = ({
   tabType?: 'freeInput' | 'freeSelect';
   showError?: boolean;
   errorMessage?: string;
+  forwardBtnText?: string;
+  backBtnText?: string;
 }) => {
   const t = useTranslations('TryForFree');
 
@@ -53,6 +57,8 @@ const TabsWrapper = ({
         backward={handleBackward}
         showFurtherBtn={showForwardBtn}
         showBackBtn={showBackBtn}
+        forwardBtnText={forwardBtnText}
+        backBtnText={backBtnText}
       />
     </section>
   );
