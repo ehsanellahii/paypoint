@@ -28,6 +28,8 @@ const Hero = () => {
             muted
             loop
             preload='auto'
+            playsInline
+            controls={false}
           />
         </article>
       </div>
