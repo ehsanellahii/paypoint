@@ -23,7 +23,7 @@ const Hero = () => {
         <article className='h-full w-full md:max-w-[60%] border-none rounded-lg outline-none'>
           <video
             src={'/Assets/AboutUs/paypoint_team.mp4'}
-            className='w-auto h-full max-h-[30rem] object-cover border-none outline-none leading-3 rounded-xl shadow-video'
+            className='w-auto h-full md:max-h-[30rem] object-cover border-none outline-none leading-3 rounded-xl shadow-video'
             autoPlay
             muted
             loop
