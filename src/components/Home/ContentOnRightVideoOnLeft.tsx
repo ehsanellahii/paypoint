@@ -20,7 +20,7 @@ const ContentOnRightVideoOnLeft = ({
     <Wrapper style='w-full h-full my-4'>
       <section
         className={`w-full h-full grid lg:grid-cols-[50fr,36fr] place-items-center gap-4 md:gap-8 lg:gap-12 `}>
-        <article className='w-full h-full flex justify-start order-2 lg:order-1'>
+        <article className='w-full h-full order-2 lg:order-1'>
           {video ? (
             <video
               src={video}
