@@ -16,6 +16,23 @@ export const StaticData = {
       ],
     },
     {
+      name: 'Produkte',
+      Title: 'Produkte',
+      link: '',
+      Category1: {
+        Title: 'Manage orders efficiently',
+        Items: [{ Name: 'QR code order', Route: '/qr-code-order' }],
+      },
+      Category2: {
+        Title: 'Run catering efficiently',
+        Items: [{ Name: 'QR code order', Route: '/qr-code-order' }],
+      },
+      Category3: {
+        Title: 'Process & deliver orders',
+        Items: [{ Name: 'QR code order', Route: '/qr-code-order' }],
+      },
+    },
+    {
       name: 'Preise',
       link: '/pricing',
     },

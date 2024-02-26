@@ -31,9 +31,9 @@ const ContentOnLeftVideoOnRight = ({
   return (
     <Wrapper style='w-full h-full my-4'>
       <section
-        className={`w-full h-full grid ${
-          isGif ? 'lg:grid-cols-[36fr,56fr]' : 'lg:grid-cols-[36fr,50fr]'
-        }  place-items-center  gap-4 md:gap-12 md:pl-4`}>
+        className={`w-full h-full lg:h-[23rem] grid ${
+          video ? 'lg:grid-cols-[36fr,56fr]' : 'lg:grid-cols-[36fr,50fr]'
+        }  place-items-center gap-4 md:gap-12`}>
         <article className='w-full h-full md:py-12'>
           <div className='w-full h-full space-y-4'>
             <h1 className='font-black text-[2.3rem] leading-[2.3rem] md:text-[3.4rem] md:leading-[3.4rem] text-wrap'>
@@ -42,15 +42,12 @@ const ContentOnLeftVideoOnRight = ({
             <p className='text-grey-text text-base md:text-xl'>{t(text)}</p>
           </div>
         </article>
-        <article
-          className={`w-full h-full  ${
-            video ? 'sm:h-[22rem] lg:h-[23rem] rounded-lg overflow-hidden' : ''
-          }`}>
+        <article className={`w-full h-full  ${video ? ' ' : ''}`}>
           {video ? (
             <video
               ref={videoRef}
               src={video}
-              className='w-full h-full object-contain rounded-lg'
+              className='w-full h-full rounded-lg'
               autoPlay
               muted
               loop

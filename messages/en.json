@@ -11,7 +11,8 @@
     "Life Style": "Life Style",
     "Kontakt": "Contact Us",
     "English": "English",
-    "Germen": "German"
+    "Germen": "German",
+    "Produkte": "Products"
   },
   "Landing": {
     "Entdecken Sie unsere Lösungen": "Discover our solutions.",
@@ -281,7 +282,7 @@
     "Kiosk": "Kiosk",
     "Supermarket": "Supermarket",
     "Liferservice": "Delivery Service",
-    "Select Your Business Type":"Select Your Business Type",
+    "Select Your Business Type": "Select Your Business Type",
     "First Name is required!": "First Name is required!",
     "First Name is required and should contain at least 3 characters!": "First Name is required and should contain at least 3 characters!",
     "Last Name is required!": "Last Name is required!",

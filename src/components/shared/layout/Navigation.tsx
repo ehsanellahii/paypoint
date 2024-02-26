@@ -18,6 +18,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { IoGlobe } from 'react-icons/io5';
 import { useRouter } from '@/navigation';
 import { link } from 'fs';
+import FullWidthNavDropdown from './FullWidthNavDropdown';
 
 const Navigation = () => {
   const navbarTranslation = useTranslations('Navbar');
@@ -88,6 +89,8 @@ const Navigation = () => {
                     DropdownTitle={navbarTranslation('Business Typen')}
                     item={itm.subLink}
                   />
+                ) : itm.name === 'Produkte' ? (
+                  <FullWidthNavDropdown key={idx} Items={itm} />
                 ) : (
                   <Link
                     href={itm.link}

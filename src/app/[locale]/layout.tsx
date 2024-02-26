@@ -10,7 +10,7 @@ import {
 } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { Providers } from './providers';
-import { locales } from '@/navigation';
+import { locales, useRouter } from '@/navigation';
 import { Metadata } from 'next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
@@ -28,7 +28,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://get-paypoint.de/en',
   },
-  keywords: ['delivery', 'management', 'system', 'automations', 'orders', 'paypoint', 'get-paypoint', 'get-paypoint.de',],
+  keywords: [
+    'delivery',
+    'management',
+    'system',
+    'automations',
+    'orders',
+    'paypoint',
+    'get-paypoint',
+    'get-paypoint.de',
+  ],
   openGraph: {
     title: 'Paypoint - The smart delivery management system',
     description:
@@ -62,9 +71,9 @@ export default function RootLayout({
       <body className={roboto.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <SpeedInsights />
-          <Navigation />
+          {/* <Navigation /> */}
           <Providers>{children}</Providers>
-          <Footer />
+          {/* <Footer /> */}
         </NextIntlClientProvider>
       </body>
     </html>
