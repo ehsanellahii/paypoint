@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
+import './TryForFree.css';
 import BusinessTypePOS from './Tabs/BusinessTypePOS';
 import BusinessType from './Tabs/BusinessType';
 import NeedHardware from './Tabs/NeedHardware';
@@ -46,18 +47,18 @@ const TryForFree = () => {
   const steps = useRef(1);
   const formRef = useRef<{ [key: string]: string | boolean }>(initialState);
   const [ui, uiRefresh] = useState(0);
-  useEffect(() => {
-    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
-      const confirmationMessage =
-        'You have unsaved changes. Are you sure you want to leave?';
-      e.returnValue = confirmationMessage;
-      return confirmationMessage;
-    };
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+  //     const confirmationMessage =
+  //       'You have unsaved changes. Are you sure you want to leave?';
+  //     e.returnValue = confirmationMessage;
+  //     return confirmationMessage;
+  //   };
+  //   window.addEventListener('beforeunload', handleBeforeUnload);
+  //   return () => {
+  //     window.removeEventListener('beforeunload', handleBeforeUnload);
+  //   };
+  // }, []);
   const handleSubmit = async () => {
     const data: any = {
       contacted_at: serverTimestamp(),
@@ -106,8 +107,8 @@ const TryForFree = () => {
     }
   };
   return (
-    <section className='w-full h-full min-h-screen bg-primary relative'>
-      <div className='w-full h-full p-8'>
+    <section className='w-full h-full min-h-screen bg-primary relative bg-logo'>
+      <div className='p-8'>
         <button
           onClick={() => router.push('/')}
           className='text-white text-xl md:text-3xl lg:text-[2rem] flex items-center justify-start gap-4'>
@@ -115,8 +116,7 @@ const TryForFree = () => {
           {t('Back')}
         </button>
       </div>
-
-      <div className='w-full h-full max-w-[1420px] mx-auto px-4 relative'>
+      <div className='w-full h-full min-h-screen max-w-[1420px] mx-auto px-4 relative bg-girl'>
         <div className='w-full max-w-[90%] md:max-w-[65%] mx-auto flex items-center justify-center py-4 md:py-16'>
           {(() => {
             switch (steps.current) {

@@ -1,0 +1,32 @@
+.bg-girl {
+  background-image: url('/Assets/TryForFree/bg_girl.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 786px) {
+  .bg-girl {
+    background-position: right;
+  }
+}
+
+@media only screen and (min-width: 786px) {
+  .bg-girl {
+    background-position: top center;
+  }
+}
+
+.bg-logo {
+  background-image: url('/Assets/TryForFree/bg_logo.png');
+  background-size: 10rem 10rem;
+  background-position: calc(100% - 70px) calc(100% - 20px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-logo {
+    background-image: none;
+  }
+}
