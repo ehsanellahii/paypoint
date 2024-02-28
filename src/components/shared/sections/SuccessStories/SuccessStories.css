@@ -6,7 +6,7 @@
   right: 0px !important;
   width: auto !important;
   display: inline-flex !important;
-  align-items: end;
+  align-items: flex-end;
   margin-left: auto;
   left: auto !important;
 }

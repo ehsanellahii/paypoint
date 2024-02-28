@@ -1,7 +1,8 @@
 'use client';
 import React from 'react';
-import Wrapper from '../shared/Wrapper';
+import Wrapper from '../../Wrapper';
 import Image from 'next/image';
+import './SuccessStories.css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';
@@ -53,12 +54,12 @@ const SuccessStories: React.FC<ISuccessStoriesProps> = ({ stories }) => {
                   <p>{itm.designation}</p>
                 </div>
                 <div className='w-full h-full md:max-w-[25rem] mr-auto flex gap-6'>
-                  <div className='relative w-[200px] h-[150px]'>
+                  <div className='relative w-[150px] h-[150px]'>
                     <Image
                       src={itm.image}
                       alt={itm.name}
                       fill
-                      className='object-cover rounded-full'
+                      className='object-contain'
                     />
                   </div>
                 </div>

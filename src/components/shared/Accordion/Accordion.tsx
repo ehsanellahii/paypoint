@@ -2,6 +2,7 @@
 import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 import { GoChevronRight, GoChevronDown } from 'react-icons/go';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 const Accordion = ({
   accordionList,
@@ -18,22 +19,22 @@ const Accordion = ({
   return (
     <div className='w-full h-full'>
       {accordionList?.map((item: any, index: number) => (
-        <div
-          key={index}
-          className={`w-full border-b-[.1px] py-4 border-grey-text ${
-            index === 0 && 'border-t-[.1px]'
-          }`}>
+        <div key={index} className={`w-full border-b-[.15rem] py-4 border-black-main `}>
           <div
-            className='w-full h-full flex justify-between font-bold text-xl px-4 text-black-text'
+            className='w-full h-full flex justify-between font-bold text-xl  text-black-text'
             onClick={() => handleAccordionClick(index)}
             style={{ cursor: 'pointer' }}>
-            <h1 className=''>{t(item.title)}</h1>
-            <span className={arrowColor}>
-              {activeIndex === index ? <GoChevronDown /> : <GoChevronRight />}
+            <div className='flex '>
+              <p className='text-primaryDark mr-1'>{index + 1}.</p>
+              <h1 className=''>{t(item.title)}</h1>
+            </div>
+
+            <span className={`${arrowColor} text-primaryDark`}>
+              {activeIndex === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
             </span>
           </div>
           {activeIndex === index && (
-            <div className='px-4 py-4'>
+            <div className='py-4 leading-[1.5rem] text-[1.2rem]'>
               {item.contentParts.map((part: any, partIndex: any) => (
                 <span key={partIndex} className={part.bold ? 'font-bold px-1' : ''}>
                   {t(part.text)}

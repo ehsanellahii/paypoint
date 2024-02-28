@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import { Button } from '@nextui-org/react';
-import Wrapper from '../shared/Wrapper';
+import Wrapper from '../Wrapper';
 
-interface IHeroProps {
+interface IProductsHeroProps {
   header: string;
   title: string;
   about: string;
@@ -11,7 +11,13 @@ interface IHeroProps {
   productTitle: string;
 }
 
-const Hero: React.FC<IHeroProps> = ({ header, title, about, image, productTitle }) => {
+const ProductsHero: React.FC<IProductsHeroProps> = ({
+  header,
+  title,
+  about,
+  image,
+  productTitle,
+}) => {
   return (
     <Wrapper style='w-full h-full pb-8 pt-4 bg-white'>
       <div className='w-full h-full pb-8 px-4'>
@@ -24,7 +30,7 @@ const Hero: React.FC<IHeroProps> = ({ header, title, about, image, productTitle 
             {title}
           </h1>
           <p className='text-[1.25rem] font-medium lg:max-w-[80%]'>{about}</p>
-          <div className='flex w-full font-semibold  items-center gap-5 mt-4'>
+          <div className='flex flex-col md:flex-row w-full font-semibold  items-center gap-5 mt-4'>
             <Button className='bg-primaryDark text-base font-medium text-white  px-7 py-6 rounded-md'>
               Kontakt aufnehmen
             </Button>
@@ -73,4 +79,4 @@ const Hero: React.FC<IHeroProps> = ({ header, title, about, image, productTitle 
   );
 };
 
-export default Hero;
+export default ProductsHero;

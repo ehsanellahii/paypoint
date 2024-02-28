@@ -1,5 +1,5 @@
 import React from 'react';
-import Wrapper from '../shared/Wrapper';
+import Wrapper from '../Wrapper';
 import { StaticData } from '@/constants/Static';
 import Image from 'next/image';
 import { Button } from '@nextui-org/react';
@@ -58,10 +58,17 @@ const Features: React.FC<IFeaturesProps> = ({
                 fill
                 className='w-full h-full object-cover'
               />
+              {/* <div className='flex flex-col bg-white'>
+                <Image
+                  src='/Assets/Icons/qr-code.png'
+                  alt=''
+                  width={100}
+                  height={100}
+                  className=''
+                />
+
+              </div> */}
             </div>
-            {/* <div>
-            <Image src='' alt='' className='' />
-          </div> */}
           </div>
           <div className='w-full h-full flex flex-col justify-center gap-4 px-4'>
             <p className='font-semibold'>{header}</p>

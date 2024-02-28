@@ -1,5 +1,5 @@
 import React from 'react';
-import Wrapper from '../shared/Wrapper';
+import Wrapper from '../Wrapper';
 
 const Heading: React.FC<{ text: string; style?: string }> = ({
   text,

@@ -21,7 +21,7 @@ export const StaticData = {
       link: '',
       Category1: {
         Title: 'Manage orders efficiently',
-        Items: [{ Name: 'QR code order', Route: '/qr-code-order' }],
+        Items: [{ Name: 'QR code order', Route: '/qr-code-order' }, { Name: 'Integration of delivery portals', Route: '/integration-delivery-portal' }],
       },
       Category2: {
         Title: 'Run catering efficiently',

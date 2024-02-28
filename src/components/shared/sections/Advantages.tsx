@@ -1,5 +1,5 @@
 import React from 'react';
-import Wrapper from '../shared/Wrapper';
+import Wrapper from '../Wrapper';
 import Image from 'next/image';
 import { Link } from '@/navigation';
 import { StaticData } from '@/constants/Static';
@@ -21,7 +21,7 @@ const AdvantagesCard: React.FC<AdvantageType> = ({
   learnMoreUrl,
 }) => {
   return (
-    <div className='w-full max-w-[30rem] h-full flex flex-col gap-8 items-center text-white px-4'>
+    <div className='w-full max-w-[30rem] h-full flex flex-col gap-8 items-center text-white px-4 lg:px-6'>
       <div className='w-[4rem] h-[4.7rem] relative'>
         <Image src={image} alt={title} className='w-full h-full object-contain' fill />
       </div>
@@ -29,7 +29,7 @@ const AdvantagesCard: React.FC<AdvantageType> = ({
       <p className='text-center font-medium'>{about}</p>
       <Link
         href={learnMoreUrl}
-        className='space-x-4 underline flex items-center gap-2 decoration-white'>
+        className='space-x-4 underline  flex items-center gap-2 decoration-white underline-offset-4 decoration-2'>
         Learn More
         <svg
           xmlns='http://www.w3.org/2000/svg'
