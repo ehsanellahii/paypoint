@@ -1,0 +1,17 @@
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0px !important;
+  right: 0px !important;
+  width: auto !important;
+  display: inline-flex !important;
+  align-items: end;
+  margin-left: auto;
+  left: auto !important;
+}
+
+.swiper-pagination-bullet {
+  width: 0.7rem !important;
+  height: 0.7rem !important;
+}

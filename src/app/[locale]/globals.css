@@ -5,10 +5,9 @@
 
 :root {
   --primary: '#5897CD';
-}
-
-body {
-  background-color: #faf7f3;
+  --secondary: '#0071BB';
+  /* --swiper-pagination-color: '#0071BB' !important;
+  --swiper-theme-color: '#0071BB' !important; */
 }
 
 .Full_Menu:hover div {

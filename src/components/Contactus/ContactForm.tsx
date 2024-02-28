@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import Wrapper from '../shared/Wrapper';
 import { Button, Input, Select, SelectItem, Textarea } from '@nextui-org/react';
@@ -179,11 +180,11 @@ const ContactForm = () => {
               </Button>
             </div>
           </form>
-          <div className='text-white space-y-4 py-4 md:px-8 lg:px-20'>
+          <div className='text-white space-y-4 md:space-y-8 py-4 md:px-8 lg:px-20'>
             <h3 className='text-[3rem] md:text-[4rem] md:leading-[3.5rem] font-semibold '>
               {t('Brauchst du einen Rückruf?')}
             </h3>
-            <p className='text-xl'>
+            <p className='text-base md:pl-8 '>
               {t(
                 'Füll den Online-Fragebogen aus für ein maßgeschneidertes Kassensystem-Angebot'
               )}

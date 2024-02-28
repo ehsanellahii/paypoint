@@ -626,4 +626,144 @@ export const StaticData = {
       },
     ],
   },
+  QRCodeOrder: {
+    SuccessStories: [
+      {
+        story:
+          'Wir als Unternehmen sind sehr froh, SIDES als Kassensystem gefunden zu haben. Küchenmanagement, Webshop und vieles mehr gepaart mit spitzen Service in einer Anwendung!',
+        name: 'Katja Wissel',
+        designation: `managing director of Mario's ice cream and Pizza`,
+        image: '/Assets/QRCodeOrder/Reviews/marios_logo.svg',
+      },
+      {
+        story:
+          'With the continuous innovation and quality of the software solution, we were able to concentrate completely on our growth and operational business.',
+        name: `Manfred “Luigi” Lugmayr`,
+        designation: `Head of Marketing at burgerme`,
+        image: '/Assets/QRCodeOrder/Reviews/marios_logo.svg',
+      },
+    ],
+
+    Advantages: [
+      {
+        image: '/Assets/QRCodeOrder/About/one.png',
+        about:
+          'Deine Gäste können über einen QR-Code selbst am Tisch bestellen, wodurch du den Service- Aufwand verringerst.',
+        learnMoreUrl: '#',
+        title: 'Einsparung von Personalkosten',
+      },
+      {
+        image: '/Assets/QRCodeOrder/About/two.svg',
+        about:
+          'Mit der digitalen Speisekarte kannst du gegen einen Aufpreis Artikel automatisch vorschlagen, und den Ø Bon erhöhen.',
+        learnMoreUrl: '#',
+        title: 'Mehr Zusatzverkäufe',
+      },
+      {
+        image: '/Assets/QRCodeOrder/About/three.png',
+        about:
+          'Durch Selbstbedienung müssen Gäste nicht erst auf Servicekräfte warten, wodurch du mehr Gäste abwickeln kannst.',
+        learnMoreUrl: '#',
+        title: 'Schnelle Abwicklung',
+      },
+    ],
+    Features: [
+      {
+        image: '/Assets/QRCodeOrder/Features/qr.png',
+        title: 'QR code table order',
+        about:
+          'You can offer the contactless table ordering system in your restaurant via an interface to the cash register system and web shop.',
+      },
+      {
+        image: '/Assets/QRCodeOrder/Features/phone.png',
+        title: 'Digital menu',
+        about:
+          'You can edit the online menu for contactless table ordering via the web shop, regardless of your delivery service offer.',
+      },
+      {
+        image: '/Assets/QRCodeOrder/Features/live.png',
+        title: 'Live order status',
+        about:
+          'Your guests can track the status of their order live on their smartphone and know exactly when the order is ready.',
+      },
+      {
+        image: '/Assets/QRCodeOrder/Features/settings.png',
+        title: 'Automatic transfer',
+        about:
+          'The order is automatically transferred to your cloud-based cash register system and can be further processed there.a',
+      },
+      {
+        image: '/Assets/QRCodeOrder/Features/pizza.png',
+        title: 'Article suggestions',
+        about:
+          'In the digital menu you can set up item suggestions that are automatically offered to your guests when they choose certain dishes.',
+      },
+      {
+        image: '/Assets/QRCodeOrder/Features/settings.png',
+        title: 'Cashless payment',
+        about:
+          'Thanks to integrated online payment methods such as PayPal, your guests can pay for their order digitally and leave tips.',
+      },
+    ],
+    FeatureGridLayout: {
+      title: 'Einfach bestellen',
+      header: '',
+      about: [
+        {
+          text: 'Steigere',
+          bold: true,
+        },
+        {
+          text: 'deinen durchschnittlichen',
+        },
+        {
+          text: 'Umsatz pro Gast um 20%',
+          bold: true,
+        },
+        {
+          text: 'dank kontaktloser Tischbestellung mit QR-Code.',
+        },
+      ],
+      image: '/Assets/QRCodeOrder/qrcode_hero.svg',
+      learnMoreUrl: '#',
+      features: [
+        {
+          image: '/Assets/QRCodeOrder/Features/qr.png',
+          title: 'QR code table order',
+          about:
+            'You can offer the contactless table ordering system in your restaurant via an interface to the cash register system and web shop.',
+        },
+        {
+          image: '/Assets/QRCodeOrder/Features/phone.png',
+          title: 'Digital menu',
+          about:
+            'You can edit the online menu for contactless table ordering via the web shop, regardless of your delivery service offer.',
+        },
+        {
+          image: '/Assets/QRCodeOrder/Features/live.png',
+          title: 'Live order status',
+          about:
+            'Your guests can track the status of their order live on their smartphone and know exactly when the order is ready.',
+        },
+        {
+          image: '/Assets/QRCodeOrder/Features/settings.png',
+          title: 'Automatic transfer',
+          about:
+            'The order is automatically transferred to your cloud-based cash register system and can be further processed there.a',
+        },
+        {
+          image: '/Assets/QRCodeOrder/Features/pizza.png',
+          title: 'Article suggestions',
+          about:
+            'In the digital menu you can set up item suggestions that are automatically offered to your guests when they choose certain dishes.',
+        },
+        {
+          image: '/Assets/QRCodeOrder/Features/settings.png',
+          title: 'Cashless payment',
+          about:
+            'Thanks to integrated online payment methods such as PayPal, your guests can pay for their order digitally and leave tips.',
+        },
+      ],
+    },
+  },
 };
