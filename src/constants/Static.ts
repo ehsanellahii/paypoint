@@ -21,10 +21,10 @@ export const StaticData = {
       Title: 'Produkte',
       link: '',
       Category1: {
-        Title: 'Manage orders efficiently',
+        Title: 'Bestellungen effizient managen',
         Items: [
           {
-            Name: 'Integration Von Lieferportalen',
+            Name: 'Integartion von Lieferportalen',
             Route: '/integration-delivery-portal',
           },
           { Name: 'WebShop & App', Route: '/webshop-app' },

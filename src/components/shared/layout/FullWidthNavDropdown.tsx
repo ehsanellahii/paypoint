@@ -1,4 +1,5 @@
 import { Link } from '@/navigation';
+import { useTranslations } from 'next-intl';
 import React from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
 import { RiArrowDownSLine } from 'react-icons/ri';
@@ -8,11 +9,12 @@ interface Props {
 }
 
 function FullWidthNavDropdown({ Items }: Props) {
+  const t = useTranslations('Navbar');
   return (
     <div className='Full_Menu flex justify-center items-center h-[100%]'>
       <button className='relative text-xl  break-keep font-semibold whitespace-nowrap group capitalize'>
         <span className='inline-flex gap-3 items-center'>
-          {Items.Title}
+          {t(Items.Title)}
           <span className='arrow'>
             <IoIosArrowDown size={20} />
           </span>
@@ -25,7 +27,7 @@ function FullWidthNavDropdown({ Items }: Props) {
         style={{ boxShadow: 'rgba(0,0,0,.2) 2px 2px 5px' }}>
         <div className=' w-full h-full flex flex-col'>
           <h2 className='font-inter font-[700] text-lg  mb-4 uppercase'>
-            {Items.Category1.Title}
+            {t(Items.Category1.Title)}
           </h2>
           <div className='flex justify-start items-start flex-col gap-2'>
             {Items.Category1.Items.map((item: any, index: number) => {
@@ -34,7 +36,7 @@ function FullWidthNavDropdown({ Items }: Props) {
                   key={index}
                   href={item.Route}
                   className='font-inter font-normal text-black-cool text-base leading-[1.25rem] hover:underline hover:text-main-brand cursor-pointer'>
-                  {item.Name}
+                  {t(item.Name)}
                 </Link>
               );
             })}

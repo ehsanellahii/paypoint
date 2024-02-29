@@ -13,7 +13,12 @@
     "English": "Englisch",
     "Germen": "deutsch",
     "Produkte": "Produkte",
-    "Supermarket": "Supermarkt"
+    "Supermarket": "Supermarkt",
+    "Bestellungen effizient managen": "Bestellungen effizient managen",
+    "Kassensystem": "Kassensystem",
+    "Integartion von Lieferportalen": "Integartion von Lieferportalen",
+    "WebShop & App": "WebShop & App",
+    "QR-Code Bestellung": "QR-Code Bestellung"
   },
   "Landing": {
     "Entdecken Sie unsere Lösungen": "Entdecken Sie unsere Lösungen.",
@@ -537,7 +542,7 @@
     "Mit den richtigen Partnern an deiner Seite": "Mit den richtigen Partnern an deiner Seite",
     "Nimm mit dem integrierten Gutscheinsystems und dem Bonussystem dein Marketing selbst in die Hand und binde deine Kund:innen langfristig an dich": "Nimm mit dem integrierten Gutscheinsystems und dem Bonussystem dein Marketing selbst in die Hand und binde deine Kund:innen langfristig an dich",
     "Unkompliziert & individuell​": "Unkompliziert & individuell​",
-    "Mit der digitalen Speisekarte kannst du gegen einen Aufpreis Artikel automatisch vorschlagen, und den Ø Bon erhöhen": "Mit der digitalen Speisekarte kannst du gegen einen Aufpreis Artikel automatisch vorschlagen, und den Ø Bon erhöhen."
-  ,"Vertrag":"Vertrag"
+    "Mit der digitalen Speisekarte kannst du gegen einen Aufpreis Artikel automatisch vorschlagen, und den Ø Bon erhöhen": "Mit der digitalen Speisekarte kannst du gegen einen Aufpreis Artikel automatisch vorschlagen, und den Ø Bon erhöhen.",
+    "Vertrag": "Vertrag"
   }
 }
