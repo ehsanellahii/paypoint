@@ -1,4 +1,4 @@
-import Restaurant from '@/components/Restaurant/Restaurant';
+import Restaurant from '@/components/BussinessTypes/Restaurant/Restaurant';
 import { Metadata } from 'next';
 import React from 'react';
 

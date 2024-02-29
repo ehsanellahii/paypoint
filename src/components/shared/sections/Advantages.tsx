@@ -3,6 +3,7 @@ import Wrapper from '../Wrapper';
 import Image from 'next/image';
 import { Link } from '@/navigation';
 import { StaticData } from '@/constants/Static';
+import { useTranslations } from 'next-intl';
 
 type AdvantageType = {
   image: string;
@@ -20,17 +21,18 @@ const AdvantagesCard: React.FC<AdvantageType> = ({
   about,
   learnMoreUrl,
 }) => {
+  const t = useTranslations('Common');
   return (
     <div className='w-full max-w-[30rem] h-full flex flex-col gap-8 items-center text-white px-4 lg:px-6'>
       <div className='w-[4rem] h-[4.7rem] relative'>
-        <Image src={image} alt={title} className='w-full h-full object-contain' fill />
+        <Image src={image} alt={t(title)} className='w-full h-full object-contain' fill />
       </div>
-      <h1 className='text-center text-2xl font-bold'>{title}</h1>
-      <p className='text-center font-medium'>{about}</p>
+      <h1 className='text-center text-2xl font-bold'>{t(title)}</h1>
+      <p className='text-center font-medium'>{t(about)}</p>
       <Link
         href={learnMoreUrl}
         className='space-x-4 underline  flex items-center gap-2 decoration-white underline-offset-4 decoration-2'>
-        Learn More
+        {t('Erfahren Sie mehr')}
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='16'

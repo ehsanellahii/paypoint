@@ -13,6 +13,7 @@ export const StaticData = {
       subLink: [
         { name: 'Restaurant', link: '/restaurant' },
         { name: 'Life Style', link: '/lifestyle' },
+        { name: 'Supermarket', link: '/supermarket' },
       ],
     },
     {
@@ -21,15 +22,14 @@ export const StaticData = {
       link: '',
       Category1: {
         Title: 'Manage orders efficiently',
-        Items: [{ Name: 'QR code order', Route: '/qr-code-order' }, { Name: 'Integration of delivery portals', Route: '/integration-delivery-portal' }],
-      },
-      Category2: {
-        Title: 'Run catering efficiently',
-        Items: [{ Name: 'QR code order', Route: '/qr-code-order' }],
-      },
-      Category3: {
-        Title: 'Process & deliver orders',
-        Items: [{ Name: 'QR code order', Route: '/qr-code-order' }],
+        Items: [
+          {
+            Name: 'Integration Von Lieferportalen',
+            Route: '/integration-delivery-portal',
+          },
+          { Name: 'WebShop & App', Route: '/webshop-app' },
+          { Name: 'QR-Code Bestellung', Route: '/qr-code-order' },
+        ],
       },
     },
     {

@@ -1,4 +1,4 @@
-import LifeStyle from '@/components/LifeStyle/LifeStyle';
+import LifeStyle from '@/components/BussinessTypes/LifeStyle/LifeStyle';
 import { Metadata } from 'next';
 import React from 'react';
 

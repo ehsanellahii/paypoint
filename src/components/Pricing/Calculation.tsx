@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import Wrapper from '../shared/Wrapper';
 import { Select, SelectItem } from '@nextui-org/react';
@@ -30,6 +31,7 @@ const Calculation = () => {
             </h5>
             <div className='w-full h-full flex flex-col items-center md:flex-row md:justify-start md:flex-wrap lg:flex-nowrap gap-3 px-4 md:pl-0 md:pr-[3rem] lg:pr-[4rem]'>
               <Select
+                aria-label='Portal Provision'
                 variant='bordered'
                 placeholder='Select an Portal Provision'
                 selectedKeys={values.portalProvision}
@@ -44,6 +46,7 @@ const Calculation = () => {
                 ))}
               </Select>
               <Select
+                aria-label='Bestel Lungen'
                 variant='bordered'
                 placeholder='Select an BestelLungen'
                 selectedKeys={values.bestelLungen}
@@ -88,7 +91,9 @@ const Calculation = () => {
                 )}
                 €
               </p>
-              <p className='text-grey-pText text-center md:text-start text-sm'>{t('monatlich')}</p>
+              <p className='text-grey-pText text-center md:text-start text-sm'>
+                {t('monatlich')}
+              </p>
             </div>
           </div>
         </article>

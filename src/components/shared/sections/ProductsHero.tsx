@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Button } from '@nextui-org/react';
 import Wrapper from '../Wrapper';
+import { useTranslations } from 'next-intl';
 
 interface IProductsHeroProps {
   header: string;
@@ -9,6 +10,7 @@ interface IProductsHeroProps {
   about: string;
   image: string;
   productTitle: string;
+  video?: string;
 }
 
 const ProductsHero: React.FC<IProductsHeroProps> = ({
@@ -17,22 +19,26 @@ const ProductsHero: React.FC<IProductsHeroProps> = ({
   about,
   image,
   productTitle,
+  video,
 }) => {
+  const t = useTranslations('Common');
   return (
-    <Wrapper style='w-full h-full pb-8 pt-4 bg-white'>
-      <div className='w-full h-full pb-8 px-4'>
-        <h1 className='text-2xl font-bold'>{productTitle}</h1>
-      </div>
+    <Wrapper style={`w-full h-full pb-8 pt-4 ${video ? 'bg-white' : 'bg-white'}`}>
+      {productTitle && (
+        <div className='w-full h-full pb-8 px-4'>
+          <h1 className='text-2xl font-bold'>{t(productTitle)}</h1>
+        </div>
+      )}
       <div className='w-full h-full grid md:grid-cols-2 gap-8 md:gap-0 '>
         <div className='w-full h-full flex flex-col justify-center gap-4 px-4 md:bg-bgApp'>
-          <p className='font-semibold text-lg'>{header}</p>
+          <p className='font-semibold text-lg'>{t(header)}</p>
           <h1 className='font-bold text-[3rem] leading-[4rem] lg:text-[4rem] lg:leading-[5rem]'>
-            {title}
+            {t(title)}
           </h1>
-          <p className='text-[1.25rem] font-medium lg:max-w-[80%]'>{about}</p>
+          <p className='text-[1.25rem] font-medium lg:max-w-[80%]'>{t(about)}</p>
           <div className='flex flex-col md:flex-row w-full font-semibold  items-center gap-5 mt-4'>
             <Button className='bg-primaryDark text-base font-medium text-white  px-7 py-6 rounded-md'>
-              Kontakt aufnehmen
+              {t('Kontakt aufnehmen')}
             </Button>
             <Button className='text-primary bg-transparent text-base font-medium px-7 py-6 rounded-md flex items-center gap-2'>
               <svg
@@ -62,17 +68,32 @@ const ProductsHero: React.FC<IProductsHeroProps> = ({
                   </clipPath>
                 </defs>
               </svg>
-              Video abspielen
+              {t('Video abspielen')}
             </Button>
           </div>
         </div>
-        <div className='w-full h-full'>
-          <div className='relative w-full h-[32.35rem]  rounded-lg overflow-hidden'>
-            <Image src={image} alt='' fill className='w-full h-full object-cover' />
-          </div>
-          {/* <div>
-            <Image src='' alt='' className='' />
-          </div> */}
+        <div className='w-full h-[32.35rem]'>
+          {video ? (
+            <video
+              src={video}
+              className='w-full h-full object-contain border-none outline-none leading-3'
+              autoPlay
+              muted
+              loop
+              preload='auto'
+              playsInline
+              controls={false}
+            />
+          ) : (
+            <div className='relative w-full h-[32.35rem]  rounded-lg overflow-hidden'>
+              <Image
+                src={image}
+                alt={t(title)}
+                fill
+                className='w-full h-full object-cover'
+              />
+            </div>
+          )}
         </div>
       </div>
     </Wrapper>

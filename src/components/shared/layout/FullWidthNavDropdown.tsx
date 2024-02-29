@@ -21,10 +21,10 @@ function FullWidthNavDropdown({ Items }: Props) {
       </button>
 
       <div
-        className='absolute bg-white hidden z-[9999999] max-w-[80%] mx-auto py-8 px-12 top-[70px] left-0 right-0 justify-center items-center'
+        className='absolute bg-white hidden z-[9999999] max-w-[80%] mx-auto py-4 px-6 top-[70px] left-0 right-0 justify-center items-center'
         style={{ boxShadow: 'rgba(0,0,0,.2) 2px 2px 5px' }}>
         <div className=' w-full h-full flex flex-col'>
-          <h2 className='font-inter font-[700] text-medium  mb-4 uppercase'>
+          <h2 className='font-inter font-[700] text-lg  mb-4 uppercase'>
             {Items.Category1.Title}
           </h2>
           <div className='flex justify-start items-start flex-col gap-2'>
@@ -33,7 +33,7 @@ function FullWidthNavDropdown({ Items }: Props) {
                 <Link
                   key={index}
                   href={item.Route}
-                  className='font-inter font-normal text-black-cool text-[.875rem] leading-[1.25rem] hover:underline hover:text-main-brand cursor-pointer'>
+                  className='font-inter font-normal text-black-cool text-base leading-[1.25rem] hover:underline hover:text-main-brand cursor-pointer'>
                   {item.Name}
                 </Link>
               );
