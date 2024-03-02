@@ -21,7 +21,7 @@ const LeftImageProductHero: React.FC<ILeftImageProductHeroProps> = ({
   return (
     <Wrapper style={`w-full h-full pb-8 pt-4 bg-white`}>
       <div className='w-full h-full grid md:grid-cols-2 gap-8 md:gap-0 '>
-        <div className='w-full h-full flex flex-col justify-center gap-4 px-4 md:bg-bgApp'>
+        <div className='w-full h-full flex flex-col justify-center gap-4 px-4'>
           <p className='font-semibold text-lg'>{t(header)}</p>
           <h1 className='font-bold text-[3rem] leading-[3rem] lg:text-[4rem] lg:leading-[4rem]'>
             {t(title)}
@@ -35,7 +35,7 @@ const LeftImageProductHero: React.FC<ILeftImageProductHeroProps> = ({
         </div>
         <div className='w-full h-[32.35rem]'>
           <div className='relative w-full h-[32.35rem]  rounded-lg overflow-hidden'>
-            <Image src={image} alt='' fill className='w-full h-full object-cover' />
+            <Image src={image} alt='' fill className='w-full h-full object-contain' />
           </div>
         </div>
       </div>

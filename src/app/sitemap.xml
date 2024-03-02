@@ -11,113 +11,99 @@
     <loc>https://get-paypoint.de/en</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de" />
     <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
     <priority>1.0</priority>
-    <xhtml:link rel="canonical" href="https://get-paypoint.de/en" />
   </url>
   <url>
     <loc>https://get-paypoint.de/de</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de" />
     <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
     <priority>1.0</priority>
-    <xhtml:link rel="canonical" href="https://get-paypoint.de/de" />
   </url>
   <!-- English Pricing Page -->
   <url>
-    <loc>https://get-paypoint.de/en/pricing</loc>
+    <loc>https://get-paypoint.de/pricing</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/pricing" />
     <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/pricing" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
     <priority>0.9</priority>
-     <xhtml:link rel="canonical" href="https://get-paypoint.de/en/pricing" />
   </url>
   <url>
-    <loc>https://get-paypoint.de/de/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/pricing" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/pricing" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
-    <priority>0.9</priority>
-    <xhtml:link rel="canonical" href="https://get-paypoint.de/de/pricing" />
-  </url>
-  <url>
-    <loc>https://get-paypoint.de/en/tryforfree</loc>
+    <loc>https://get-paypoint.de/tryforfree</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/tryforfree" />
     <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/tryforfree" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
     <priority>0.7</priority>
-    <xhtml:link rel="canonical" href="https://get-paypoint.de/en/tryforfree" />
-  </url>
-  <url>
-    <loc>https://get-paypoint.de/de/tryforfree</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/tryforfree" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/tryforfree" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="canonical" href="https://get-paypoint.de/de/tryforfree" />
   </url>
   <url>
     <loc>https://get-paypoint.de/en/aboutus</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/aboutus" />
     <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/aboutus" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
     <priority>0.7</priority>
-    <xhtml:link rel="canonical" href="https://get-paypoint.de/en/aboutus" />
   </url>
   <url>
     <loc>https://get-paypoint.de/de/aboutus</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/aboutus" />
     <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/aboutus" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
     <priority>0.7</priority>  
-    <xhtml:link rel="canonical" href="https://get-paypoint.de/de/aboutus" />
   </url>
   <url>
-    <loc>https://get-paypoint.de/en/contactus</loc>
+    <loc>https://get-paypoint.de/contactus</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/contactus" />
     <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/contactus" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
     <priority>0.9</priority>  
-    <xhtml:link rel="canonical" href="https://get-paypoint.de/en/contactus" />
   </url>
-  <url>
-    <loc>https://get-paypoint.de/de/contactus</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/contactus" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/contactus" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
-    <priority>0.9</priority>  
-    <xhtml:link rel="canonical" href="https://get-paypoint.de/de/contactus" />
-  </url>
+ 
   <url>
     <loc>https://get-paypoint.de/en/restaurant</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/restaurant" />
     <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/restaurant" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
     <priority>0.8</priority>  
-    <xhtml:link rel="canonical" href="https://get-paypoint.de/en/restaurant" />
   </url>
   <url>
-    <loc>https://get-paypoint.de/de/restaurant</loc>
+    <loc>https://get-paypoint.de/restaurant</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/restaurant" />
     <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/restaurant" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
     <priority>0.8</priority>  
-    <xhtml:link rel="canonical" href="https://get-paypoint.de/de/restaurant" />
   </url>
   <url>
-    <loc>https://get-paypoint.de/en/lifestyle</loc>
+    <loc>https://get-paypoint.de/lifestyle</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/lifestyle" />
     <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/lifestyle" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
     <priority>0.8</priority>  
-    <xhtml:link rel="canonical" href="https://get-paypoint.de/en/lifestyle" />
+  </url>
+   <url>
+    <loc>https://get-paypoint.de/webshop-app</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/webshop-app" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/webshop-app" />
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
+    <priority>0.8</priority>  
   </url>
   <url>
-    <loc>https://get-paypoint.de/de/lifestyle</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/lifestyle" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/lifestyle" />
-    <lastmod>2024-02-25T10:00:00Z</lastmod>
+    <loc>https://get-paypoint.de/qr-code-order</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/webshop-app" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/webshop-app" />
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
     <priority>0.8</priority>  
-    <xhtml:link rel="canonical" href="https://get-paypoint.de/de/lifestyle" />
+  </url>
+  <url>
+    <loc>https://get-paypoint.de/supermarket</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/supermarket" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/supermarket" />
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
+    <priority>0.8</priority>  
+  </url><url>
+    <loc>https://get-paypoint.de/integration-delivery-portal</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://get-paypoint.de/de/integration-delivery-portal" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://get-paypoint.de/en/integration-delivery-portal" />
+    <lastmod>2024-03-02T10:00:00Z</lastmod>
+    <priority>0.8</priority>  
   </url>
 </urlset>

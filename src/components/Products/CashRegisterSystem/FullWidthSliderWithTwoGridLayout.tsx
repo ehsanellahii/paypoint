@@ -27,16 +27,15 @@ const FullWidthSliderWithTwoGridLayout: React.FC<
 > = ({ slides }) => {
   return (
     <Wrapper style='w-full h-full bg-white py-8'>
-      <div
-        className='w-full h-full'
-        style={{
-          backgroundImage: `url('/Assets/CashRegisterSystem/sliderBgImage.png')`,
-          backgroundPosition: 'center right',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-        }}>
+      <div className='w-full h-full relative'>
         <Swiper
           loop={true}
+          style={{
+            backgroundImage: `url('/Assets/CashRegisterSystem/sliderBgImage.png')`,
+            backgroundPosition: 'center right',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+          }}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,

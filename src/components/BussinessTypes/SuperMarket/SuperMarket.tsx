@@ -16,7 +16,7 @@ import { useTranslations } from 'next-intl';
 const SuperMarket = () => {
   const t = useTranslations('Common');
   return (
-    <>
+    <div className='bg-white'>
       <BusinessTypeHero
         header={BusinessTypeStatic.SuperMarket.Hero.header}
         titleOne={BusinessTypeStatic.SuperMarket.Hero.titleOne}
@@ -77,7 +77,7 @@ const SuperMarket = () => {
       <FAQ />
       <ContactForm />
       <ProductDetails />
-    </>
+    </div>
   );
 };
 

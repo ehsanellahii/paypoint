@@ -22,45 +22,53 @@ const CashRegisterSystem = () => {
         video={ProductStaticData.CashRegisterSystem.Hero.video}
         image=''
       />
-      <SuccessStories stories={ProductStaticData.CashRegisterSystem.SuccessStories} />
-      <Advantages advantages={ProductStaticData.CashRegisterSystem.Advantages} />
-      <FullWidthSliderWithTwoGridLayout
-        slides={ProductStaticData.CashRegisterSystem.Slider}
-      />
-      <LeftImageProductHero
-        header={
-          ProductStaticData.CashRegisterSystem.MobileCashRegisterCategorizing.header
-        }
-        title={ProductStaticData.CashRegisterSystem.MobileCashRegisterCategorizing.title}
-        about={ProductStaticData.CashRegisterSystem.MobileCashRegisterCategorizing.about}
-        image={ProductStaticData.CashRegisterSystem.MobileCashRegisterCategorizing.image}
-      />
-      <RightImageProductHero
-        header={ProductStaticData.CashRegisterSystem.IntegratedPayments.header}
-        title={ProductStaticData.CashRegisterSystem.IntegratedPayments.title}
-        about={ProductStaticData.CashRegisterSystem.IntegratedPayments.about}
-        image={ProductStaticData.CashRegisterSystem.IntegratedPayments.image}
-      />
-      <LeftImageProductHero
-        header={ProductStaticData.CashRegisterSystem.ContactLessOrdering.header}
-        title={ProductStaticData.CashRegisterSystem.ContactLessOrdering.title}
-        about={ProductStaticData.CashRegisterSystem.ContactLessOrdering.about}
-        image={ProductStaticData.CashRegisterSystem.ContactLessOrdering.image}
-      />
-      <RightImageProductHero
-        header={ProductStaticData.CashRegisterSystem.CreateTrust.header}
-        title={ProductStaticData.CashRegisterSystem.CreateTrust.title}
-        about={ProductStaticData.CashRegisterSystem.CreateTrust.about}
-        image={ProductStaticData.CashRegisterSystem.CreateTrust.image}
-      />
-      <Features
-        header=''
-        title={''}
-        about={[]}
-        image={''}
-        showFeaturesHero={false}
-        features={ProductStaticData.CashRegisterSystem.Features}
-      />
+      <div className='w-full h-full bg-white'>
+        <SuccessStories stories={ProductStaticData.CashRegisterSystem.SuccessStories} />
+        <Advantages advantages={ProductStaticData.CashRegisterSystem.Advantages} />
+        <FullWidthSliderWithTwoGridLayout
+          slides={ProductStaticData.CashRegisterSystem.Slider}
+        />
+        <LeftImageProductHero
+          header={
+            ProductStaticData.CashRegisterSystem.MobileCashRegisterCategorizing.header
+          }
+          title={
+            ProductStaticData.CashRegisterSystem.MobileCashRegisterCategorizing.title
+          }
+          about={
+            ProductStaticData.CashRegisterSystem.MobileCashRegisterCategorizing.about
+          }
+          image={
+            ProductStaticData.CashRegisterSystem.MobileCashRegisterCategorizing.image
+          }
+        />
+        <RightImageProductHero
+          header={ProductStaticData.CashRegisterSystem.IntegratedPayments.header}
+          title={ProductStaticData.CashRegisterSystem.IntegratedPayments.title}
+          about={ProductStaticData.CashRegisterSystem.IntegratedPayments.about}
+          image={ProductStaticData.CashRegisterSystem.IntegratedPayments.image}
+        />
+        <LeftImageProductHero
+          header={ProductStaticData.CashRegisterSystem.ContactLessOrdering.header}
+          title={ProductStaticData.CashRegisterSystem.ContactLessOrdering.title}
+          about={ProductStaticData.CashRegisterSystem.ContactLessOrdering.about}
+          image={ProductStaticData.CashRegisterSystem.ContactLessOrdering.image}
+        />
+        <RightImageProductHero
+          header={ProductStaticData.CashRegisterSystem.CreateTrust.header}
+          title={ProductStaticData.CashRegisterSystem.CreateTrust.title}
+          about={ProductStaticData.CashRegisterSystem.CreateTrust.about}
+          image={ProductStaticData.CashRegisterSystem.CreateTrust.image}
+        />
+        <Features
+          header=''
+          title={''}
+          about={[]}
+          image={''}
+          showFeaturesHero={false}
+          features={ProductStaticData.CashRegisterSystem.Features}
+        />
+      </div>
       <FAQ />
       <ContactForm />
       <ProductDetails />

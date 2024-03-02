@@ -19,11 +19,11 @@ const RightImageProductHero: React.FC<IRightImageProductHeroProps> = ({
 }) => {
   const t = useTranslations('Common');
   return (
-    <Wrapper style={`w-full h-full pb-8 pt-4 bg-white`}>
+    <Wrapper style={`w-full h-full pb-8 pt-4`}>
       <div className='w-full h-full grid md:grid-cols-2 gap-8 md:gap-0 '>
         <div className='w-full h-[32.35rem]'>
           <div className='relative w-full h-[32.35rem]  rounded-lg overflow-hidden'>
-            <Image src={image} alt='' fill className='w-full h-full object-cover' />
+            <Image src={image} alt='' fill className='w-full h-full object-contain' />
           </div>
         </div>
         <div className='w-full h-full flex flex-col gap-4 px-4 '>

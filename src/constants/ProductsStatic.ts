@@ -387,12 +387,12 @@ export const ProductStaticData = {
         header: 'Zertifiziertes Kassensystem mit Cloud-TSE​',
         title: 'Für alle Fälle gewappnet',
         about:
-          'Thekenverkauf, Inhouse, zum Abholen oder für deinen Lieferdienst. PayPoint ist an deiner Seite',
+          'Thekenverkauf, Inhouse, zum Abholen oder für deinen Lieferdienst PayPoint ist an deiner Seite',
         image: '/Assets/CashRegisterSystem/slide_2.png',
       },
     ],
     MobileCashRegisterCategorizing: {
-      header: 'Unbegrenzte Kassenplätze​',
+      header: 'Unbegrenzte Kassenplätze​​',
       title: 'Mobile Kasse Gastronomie',
       about:
         'Unser mobiles POS System kann von unbegrenzt vielen Mitarbeiter:innen verwendet werden und spart viel Zeit im stressigen Restaurant-Alltag',
@@ -435,25 +435,25 @@ export const ProductStaticData = {
       {
         image: '/Assets/Icons/team.png',
         about:
-          'Erstelle mit unserem Gutscheinsystem schnell und unkompliziert Rabattaktionen und binde so Kund:innen langfristig an dein Restaurant.',
+          'Erstelle mit unserem Gutscheinsystem schnell und unkompliziert Rabattaktionen und binde so Kund:innen langfristig an dein Restaurant',
         title: 'Gutscheinsystem',
       },
       {
         image: '/Assets/Icons/team.png',
         about:
-          'Steuere alle Standorte über ein POS System und profitiere von der unbegrenzten Auswahl an stationären und mobilen Kassenplätzen.',
+          'Steuere alle Standorte über ein POS System und profitiere von der unbegrenzten Auswahl an stationären und mobilen Kassenplätzen',
         title: 'Unbegrenzte Kassenplätze',
       },
       {
         image: '/Assets/Icons/stopwatch.png',
         about:
-          'Stressfreie Buchhaltung dank DATEV-kompatiblem Datenexport: Nutze das Kassenbuch direkt in der SIDES Kassensoftware.',
+          'Stressfreie Buchhaltung dank DATEV-kompatiblem Datenexport: Nutze das Kassenbuch direkt in der SIDES Kassensoftware',
         title: 'Integriertes Kassenbuch',
       },
       {
         image: '/Assets/Icons/team.png',
         about:
-          'Alle Bestellungen automatisiert in deiner TSE Kasse: Mit den Schnittstellen zu Lieferando, Wolt, Uber Eats und Co werden Bestellungen synchronisiert.',
+          'Alle Bestellungen automatisiert in deiner TSE Kasse: Mit den Schnittstellen zu Lieferando, Wolt, Uber Eats und Co werden Bestellungen synchronisiert',
         title: 'Anbindung an Lieferportale',
       },
     ],
