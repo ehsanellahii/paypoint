@@ -243,7 +243,7 @@ export const ProductStaticData = {
         title: 'Google Food Anbindung',
       },
       {
-        image: '/Assets/Icons/online-survery.png',
+        image: '/Assets/Icons/online-survey.png',
         about:
           'Du kannst deinen Restaurant Webshop selbst verwalten und alle Daten, wie Artikel, Warengruppen oder Bilder, bequem einstellen und ändern',
         title: 'Flexible Verwaltung',
@@ -267,7 +267,7 @@ export const ProductStaticData = {
         title: 'Echtzeit-Bestellstatus',
       },
       {
-        image: '/Assets/Icons/exist.png',
+        image: '/Assets/Icons/exit.png',
         about:
           'Das Gastronomie Bestellsystem verfügt über einen Kundenlogin mit dem du Gäste an dein Restaurant bindest und das Speichern von Adressen und Bestellungen ermöglichst',
         title: 'Kundenlogin',
