@@ -38,7 +38,7 @@ const PickUpApp = ({
           <div className='absolute -bottom-[6rem] md:-bottom-[6.5rem] right-[1.5rem]'>
             <div className='relative w-[8rem] h-[8rem] rounded-lg overflow-hidden'>
               <Image
-                src='/Assets/BusinessType/SuperMarket/items-box.jpg'
+                src='/Assets/BusinessType/SuperMarket/items-box.png'
                 alt=''
                 fill
                 className='w-full h-full object-contain md:object-cover'

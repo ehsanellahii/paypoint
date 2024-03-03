@@ -38,7 +38,7 @@ const FleetManagement = ({
           <div className='absolute -top-[4rem] md:-top-[4.5rem] left-5'>
             <div className='relative w-[8rem] h-[8rem] rounded-lg overflow-hidden'>
               <Image
-                src='/Assets/BusinessType/SuperMarket/bicycle.jpg'
+                src='/Assets/BusinessType/SuperMarket/bicycle.png'
                 alt=''
                 fill
                 className='w-full h-full object-contain md:object-cover'
