@@ -10,6 +10,7 @@ import React from 'react';
 import FullWidthSliderWithTwoGridLayout from './FullWidthSliderWithTwoGridLayout';
 import LeftImageProductHero from './LeftImageHero';
 import RightImageProductHero from './RightImageHero';
+import DeliveryPortalDetails from '../DeliveryPortal/DeliveryPortalDetails';
 
 const CashRegisterSystem = () => {
   return (
@@ -71,7 +72,7 @@ const CashRegisterSystem = () => {
       </div>
       <FAQ />
       <ContactForm />
-      <ProductDetails />
+      <DeliveryPortalDetails />
     </>
   );
 };

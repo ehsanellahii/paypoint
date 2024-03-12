@@ -14,6 +14,7 @@ import Calculation from '@/components/Pricing/Calculation';
 import ImageOnRightContentOnLeft from '@/components/shared/sections/ImageContentSides/ImageOnRightContentOnLeft';
 import ImageOnLeftContentOnRight from '@/components/shared/sections/ImageContentSides/ImageOnLeftContentOnRight';
 import { StaticData } from '@/constants/Static';
+import DeliveryPortalDetails from '../DeliveryPortal/DeliveryPortalDetails';
 
 const WebShopApp = () => {
   return (
@@ -64,7 +65,7 @@ const WebShopApp = () => {
       />
       <FAQ />
       <ContactForm />
-      <ProductDetails />
+      <DeliveryPortalDetails />
     </>
   );
 };

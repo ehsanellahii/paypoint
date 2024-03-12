@@ -9,6 +9,7 @@ import ProductDetails from '../../shared/sections/ProductDetails';
 
 import { ProductStaticData } from '@/constants/ProductsStatic';
 import ProductsHero from '../../shared/sections/ProductsHero';
+import DeliveryPortalDetails from '../DeliveryPortal/DeliveryPortalDetails';
 
 const QRCodeOrder = () => {
   return (
@@ -31,7 +32,7 @@ const QRCodeOrder = () => {
       />
       <FAQ />
       <ContactForm />
-      <ProductDetails />
+      <DeliveryPortalDetails />
     </>
   );
 };

@@ -1,14 +1,13 @@
 import ContactForm from '@/components/Contactus/ContactForm';
-import Features from '@/components/Home/Features';
 import FAQ from '@/components/Pricing/FAQ';
 import Advantages from '@/components/shared/sections/Advantages';
-import ProductDetails from '@/components/shared/sections/ProductDetails';
 import ProductsHero from '@/components/shared/sections/ProductsHero';
 import SuccessStories from '@/components/shared/sections/SuccessStories/SuccessStories';
 import { ProductStaticData } from '@/constants/ProductsStatic';
 import React from 'react';
 import Partners from './Partners';
 import HowItWorks from './HowItWorks';
+import DeliveryPortalDetails from './DeliveryPortalDetails';
 
 const DeliveryPortal = () => {
   return (
@@ -37,7 +36,7 @@ const DeliveryPortal = () => {
       />
       <FAQ />
       <ContactForm />
-      <ProductDetails />
+      <DeliveryPortalDetails />
     </>
   );
 };

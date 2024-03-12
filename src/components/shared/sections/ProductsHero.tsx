@@ -31,7 +31,7 @@ const ProductsHero: React.FC<IProductsHeroProps> = ({
       )}
       <div className='w-full h-full grid md:grid-cols-2 gap-8 md:gap-0 '>
         <div className='w-full h-full flex flex-col justify-center gap-4 px-4 '>
-          <p className='font-semibold text-lg'>{t(header)}</p>
+          <p className='font-semibold text-2xl'>{t(header)}</p>
           <h1 className='font-bold text-[3rem] leading-[4rem] lg:text-[4rem] lg:leading-[5rem]'>
             {t(title)}
           </h1>

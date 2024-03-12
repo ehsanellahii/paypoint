@@ -416,7 +416,7 @@ export const ProductStaticData = {
       header: 'Kundenmonitor für Thekenbestellungen​',
       title: 'Schaffe Vertrauen',
       about:
-        'Über den Kundenmonitor sehen deine Kund:innen ihre Bestellung samt Extras und Bonuspunkten. So schaffst du mehr Transparenz und Vertrauen im Bestellabschluss',
+        'Über den Kundenmonitor sehen deine Kund:innen ihre Bestellung samt Extras und Bonuspunkten So schaffst du mehr Transparenz und Vertrauen im Bestellabschluss',
       image: '/Assets/CashRegisterSystem/contactless-ordering.webp',
     },
     Features: [
