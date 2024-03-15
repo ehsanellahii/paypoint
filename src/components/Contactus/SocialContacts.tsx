@@ -18,7 +18,7 @@ const SocialContacts = () => {
           <div className='w-full space-y-2 flex flex-col items-center'>
             <h2 className='text-white text-xl font-semibold text-center'>Whatsapp</h2>
             <a
-              href={'https://wa.me/+923078607264'}
+              href={'https://wa.me/030/45023722'}
               target='_blank'
               className={`rounded-3xl bg-white text-black-main font-semibold text-xl px-[3rem] py-1`}>
               Kontakt
@@ -39,7 +39,7 @@ const SocialContacts = () => {
               Customer Support
             </h2>
             <a
-              href={'tel:+923078607264'}
+              href={'tel:030/45023722'}
               target='_blank'
               className={`rounded-3xl bg-black-main text-white font-semibold text-base px-[1.5rem] py-2`}>
               +923078607264
