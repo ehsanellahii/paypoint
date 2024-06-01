@@ -18,20 +18,32 @@ export const StaticData = {
     },
     {
       name: 'Produkte',
-      Title: 'Produkte',
       link: '',
-      Category1: {
-        Title: 'Bestellungen effizient managen',
-        Items: [
-          {
-            Name: 'Integartion von Lieferportalen',
-            Route: '/integration-delivery-portal',
-          },
-          { Name: 'WebShop & App', Route: '/webshop-app' },
-          { Name: 'QR-Code Bestellung', Route: '/qr-code-order' },
-        ],
-      },
+      subLink: [
+        {
+          name: 'Integartion von Lieferportalen',
+          link: '/integration-delivery-portal',
+        },
+        { name: 'WebShop & App', link: '/webshop-app' },
+        { name: 'QR-Code Bestellung', link: '/qr-code-order' },
+      ],
     },
+    // {
+    //   name: 'Produkte',
+    //   Title: 'Produkte',
+    //   link: '',
+    //   Category1: {
+    //     Title: 'Bestellungen effizient managen',
+    //     Items: [
+    //       {
+    //         Name: 'Integartion von Lieferportalen',
+    //         Route: '/integration-delivery-portal',
+    //       },
+    //       { Name: 'WebShop & App', Route: '/webshop-app' },
+    //       { Name: 'QR-Code Bestellung', Route: '/qr-code-order' },
+    //     ],
+    //   },
+    // },
     {
       name: 'Preise',
       link: '/pricing',

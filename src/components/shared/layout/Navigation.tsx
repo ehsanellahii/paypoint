@@ -90,7 +90,11 @@ const Navigation = () => {
                     item={itm.subLink}
                   />
                 ) : itm.name === 'Produkte' ? (
-                  <FullWidthNavDropdown key={idx} Items={itm} />
+                  <DropdownComponent
+                    key={idx}
+                    DropdownTitle={navbarTranslation('Produkte')}
+                    item={itm.subLink}
+                  />
                 ) : (
                   <Link
                     href={itm.link}
